@@ -1,0 +1,55 @@
+
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+    <definition name="mainTemplate" template="Views/TilesTemplates/main-template.jsp">
+        <put-attribute name="top" value="/Views/TilesTemplates/top-template.jsp"/>
+        <put-attribute name="bottom" value="/Views/TilesTemplates/bottom-template.jsp"/>
+        <put-attribute name="side" value=""/>
+    </definition>
+    <definition name="mainTemplateWithoutSide" template="Views/TilesTemplates/main-template-withoudSide.jsp">
+        <put-attribute name="top" value="/Views/TilesTemplates/top-template.jsp"/>
+        <put-attribute name="bottom" value="/Views/TilesTemplates/bottom-template.jsp"/>
+    </definition>
+    <definition name="home" extends="mainTemplateWithoutSide">
+        <put-attribute name="content" value="/Views/home.jsp"/>
+    </definition>
+
+    <definition name="createNewUser" extends="mainTemplateWithoutSide">
+        <put-attribute name="content" value="/Views/createNewUser.jsp"/>
+    </definition>
+
+    <definition name="login" extends="mainTemplateWithoutSide">
+        <put-attribute name="content" value="/Views/Authentification/login.jsp"/>
+    </definition>
+
+    <definition name="resetPasswordByUser" extends="mainTemplateWithoutSide">
+        <put-attribute name="content" value="/Views/Authentification/resetPasswordByUser.jsp"/>
+    </definition>
+
+
+    <definition name="createNewRequestPage" extends="mainTemplateWithoutSide">
+        <put-attribute name="content" value="/Views/createNewRequest.jsp"/>
+    </definition>
+
+    <definition name="privateOfficePage" extends="mainTemplateWithoutSide">
+        <put-attribute name="content" value="/Views/privateOffice/PrivateOfficeOwnRequests.jsp"/>
+    </definition>
+    <definition name="allRequestsInSystem" extends="mainTemplateWithoutSide">
+        <put-attribute name="content" value="/Views/allRequstsInSystemPage.jsp"/>
+    </definition>
+    <definition name="detailedRequest" extends="mainTemplateWithoutSide">
+        <put-attribute name="content" value="/Views/showRequestInfo.jsp"/>
+    </definition>
+    <definition name="userInformation" extends="mainTemplateWithoutSide">
+        <put-attribute name="content" value="/Views/showUserInfo.jsp"/>
+    </definition>
+    <definition name="errorMessage" extends="mainTemplateWithoutSide">
+        <put-attribute name="content" value="/Views/errorMessageToConsumer.jsp"/>
+    </definition>
+    <definition name="aboutUsPage" extends="mainTemplateWithoutSide">
+        <put-attribute name="content" value="/Views/aboutUsPage.jsp"/>
+    </definition>
+</tiles-definitions>

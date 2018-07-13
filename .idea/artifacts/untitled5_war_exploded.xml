@@ -1,0 +1,57 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="untitled5:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/untitled5_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="untitled5/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="untitled5" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Spring-4.3.16.RELEASE" />
+          <element id="library" level="project" name="Spring MVC-4.3.16.RELEASE" />
+          <element id="library" level="project" name="Spring Security-3.2.5" />
+          <element id="file-copy" path="D:/tiles-3.0.8/tiles-el-3.0.8.jar" />
+          <element id="file-copy" path="D:/tiles-3.0.8/tiles-api-3.0.8.jar" />
+          <element id="file-copy" path="D:/tiles-3.0.8/tiles-jsp-3.0.8.jar" />
+          <element id="file-copy" path="D:/tiles-3.0.8/tiles-core-3.0.8.jar" />
+          <element id="file-copy" path="D:/tiles-3.0.8/tiles-mvel-3.0.8.jar" />
+          <element id="file-copy" path="D:/tiles-3.0.8/tiles-ognl-3.0.8.jar" />
+          <element id="file-copy" path="D:/tiles-3.0.8/tiles-compat-3.0.8.jar" />
+          <element id="file-copy" path="D:/tiles-3.0.8/tiles-extras-3.0.8.jar" />
+          <element id="file-copy" path="D:/tiles-3.0.8/tiles-servlet-3.0.8.jar" />
+          <element id="file-copy" path="D:/tiles-3.0.8/tiles-template-3.0.8.jar" />
+          <element id="file-copy" path="D:/tiles-3.0.8/tiles-velocity-3.0.8.jar" />
+          <element id="file-copy" path="D:/tiles-3.0.8/tiles-freemarker-3.0.8.jar" />
+          <element id="file-copy" path="D:/tiles-3.0.8/tiles-request-api-1.0.7.jar" />
+          <element id="file-copy" path="D:/tiles-3.0.8/tiles-request-jsp-1.0.7.jar" />
+          <element id="file-copy" path="D:/tiles-3.0.8/tiles-request-servlet-1.0.7.jar" />
+          <element id="file-copy" path="D:/tiles-3.0.8/tiles-request-mustache-1.0.7.jar" />
+          <element id="file-copy" path="D:/tiles-3.0.8/tiles-request-velocity-1.0.7.jar" />
+          <element id="file-copy" path="D:/tiles-3.0.8/tiles-autotag-core-runtime-1.2.jar" />
+          <element id="file-copy" path="D:/tiles-3.0.8/tiles-request-freemarker-1.0.7.jar" />
+          <element id="file-copy" path="D:/tiles-3.0.8/tiles-request-servlet-wildcard-1.0.7.jar" />
+          <element id="file-copy" path="D:/Загрузки/slf4j-api-1.8.0-beta1.jar" />
+          <element id="file-copy" path="D:/Загрузки/commons-beanutils-1.9.3.jar" />
+          <element id="file-copy" path="D:/Загрузки/commons-collections-3.2.1.jar" />
+          <element id="file-copy" path="D:/Загрузки/commons-digester-2.1.jar" />
+          <element id="file-copy" path="D:/Загрузки/commons-logging-1.2.jar" />
+          <element id="file-copy" path="D:/Загрузки/jasperreports-6.5.1.jar" />
+          <element id="file-copy" path="D:/Загрузки/jsp-api-2.0.jar" />
+          <element id="file-copy" path="D:/Загрузки/jstl-1.2.jar" />
+          <element id="library" level="project" name="Hibernate 5.2.16-5.2.16" />
+          <element id="file-copy" path="D:/Загрузки/ojdbc8.jar" />
+          <element id="file-copy" path="D:/Загрузки/jaxb-api-2.2.11.jar" />
+          <element id="file-copy" path="D:/Загрузки/validation-api-2.0.1.Final.jar" />
+          <element id="file-copy" path="D:/Загрузки/hibernate-validator-4.2.0.Final.jar" />
+          <element id="file-copy" path="D:/Загрузки/mail-1.4.7.jar" />
+          <element id="file-copy" path="D:/Загрузки/javax.activation-1.1.0.v201105071233.jar/javax.activation-1.1.0.v201105071233.jar" />
+          <element id="file-copy" path="D:/Загрузки/commons-fileupload-1.3.3.jar" />
+          <element id="file-copy" path="D:/Загрузки/commons-io-2.6.jar" />
+          <element id="file-copy" path="D:/Загрузки/servlet-api-2.5.jar" />
+          <element id="file-copy" path="D:/Загрузки/aspectjweaver-1.8.9.jar" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
