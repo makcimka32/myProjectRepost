@@ -11,8 +11,6 @@
     <title>Title</title>
 </head>
 <body>
-<p>НУ ПОЖАЛУЙСТАЙ</p>
-<a href="/rejectRequest">удАЛИ</a>
-<!--<img src="/resources/images/Безымянный.png">-->
+
 </body>
 </html>
