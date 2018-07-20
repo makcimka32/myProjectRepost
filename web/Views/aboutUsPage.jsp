@@ -10,6 +10,9 @@
 <head>
     <title>Title</title>
     <style>
+<<<<<<< HEAD
+
+=======
         .row > .column {
             padding: 0 8px;
         }
@@ -135,13 +138,18 @@
         .hover-shadow:hover {
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         }
+>>>>>>> d34c3d5722835f0080d1081930c54e45f72cf3b1
     </style>
 
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 
 
     <script>
+<<<<<<< HEAD
+        var map;
+=======
         var map
+>>>>>>> d34c3d5722835f0080d1081930c54e45f72cf3b1
         ymaps.ready(function(){
             map = new ymaps.Map(document.getElementById('map'), {
                 center: [53.233012, 34.328190],
@@ -221,6 +229,27 @@
         </div>
         <div class="col-12">
             <h2 class="text-center">Сертификаты</h2>
+<<<<<<< HEAD
+            <div class="row justify-content-center">
+                <div class="col-md-3">
+                    <img class="img-thumbnail rounded m-auto m-2 " src="/resources/images/ourSertificates/Квал.%20Аттестат%20КИ%20Пеньков.jpg">
+                    <img class="img-thumbnail rounded m-auto m-2  " src="/resources/images/ourSertificates/Квал.%20Аттестат%20КИ%20Тарасов.jpg">
+                </div>
+                <div class="col-md-3">
+                    <img class="img-thumbnail rounded m-auto m-2  " src="/resources/images/ourSertificates/Квал.%20Аттестат%20КИ%20Чернявский.jpg">
+                    <img class="img-thumbnail rounded m-auto m-2  " src="/resources/images/ourSertificates/Квал.Аттестат%20КИ%20Семиленкова.jpg">
+                </div>
+                <div class="col-md-3">
+                    <img class="img-thumbnail rounded m-auto m-2  " src="/resources/images/ourSertificates/Свидетельство%20СРО%20Пеньков%20А%20В-001.jpg">
+                    <img class="img-thumbnail rounded m-auto m-2  " src="/resources/images/ourSertificates/Свидетельство%20СРО%20Тарасов.jpg">
+                </div>
+                <div class="col-md-3">
+                    <img class="img-thumbnail rounded m-auto m-2  " src="/resources/images/ourSertificates/Свидетельство%20СРО%20Семиленкова-001.jpg">
+                    <img class="img-thumbnail rounded m-auto m-2 " style="rotatate:270deg" src="/resources/images/ourSertificates/Свиетельство%20СРО%20Чернявский.jpg">
+                </div>
+            </div>
+=======
+>>>>>>> d34c3d5722835f0080d1081930c54e45f72cf3b1
         </div>
         <div class="col-12">
             <h2 class="text-center">Расположение</h2>

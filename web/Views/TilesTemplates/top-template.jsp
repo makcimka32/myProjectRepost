@@ -31,7 +31,11 @@
 
             <div class="nav nav-pills  justify-content-end">
                 <security:authorize access="hasRole('ROLE_DEFAULT_USER')">
+<<<<<<< HEAD
+                    <a id="createNewRequest" class="nav-link  active m-2" style="background-color: #b94964" href="/createNewRequest">Создать заказ</a>
+=======
                     <a class="nav-link  active m-2" style="background-color: #b94964" href="/createNewRequest">Создать заказ</a>
+>>>>>>> d34c3d5722835f0080d1081930c54e45f72cf3b1
                 </security:authorize>
                 <security:authorize  access="hasRole('ROLE_WORKER_USER')">
                     <a class="nav-link redColor active m-2" style="background-color: #b94964" href="/allRequestInSystem">Заявки в системе</a>
@@ -43,7 +47,11 @@
         </security:authorize>
         <security:authorize access="isAnonymous()">
             <div class="nav nav-pills justify-content-end ">
+<<<<<<< HEAD
+                <a id="createUser" class="nav-link  active m-2 redColor"  style="background-color: #b94964" href="/createUser?new"><param name="new" value="">Создать нового пользователя</a>
+=======
                 <a class="nav-link  active m-2 redColor"  style="background-color: #b94964" href="/createUser?new"><param name="new" value="">Создать нового пользователя</a>
+>>>>>>> d34c3d5722835f0080d1081930c54e45f72cf3b1
                 <a class="nav-link  active m-2 redColor"  style="background-color: #b94964" href="/aboutUs">О нас</a>
                 <a class="redColor nav-link  active m-2" style="background-color: #b94964"  href="/login">Войти</a>
             </div>
