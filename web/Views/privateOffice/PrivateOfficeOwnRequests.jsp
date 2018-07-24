@@ -66,8 +66,6 @@
                                                     <!-- The Modal -->
                                                     <div id="myModal" class="modal">
 
-
-
                                                         <!-- Modal Content (The Image) -->
                                                         <img class="modal-content" id="img01">
 

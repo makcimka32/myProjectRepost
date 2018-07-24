@@ -84,6 +84,7 @@
         .modal-content {
             margin: auto;
             margin-top: 5%;
+
             display: block;
             width: 80%;
             max-width: 1000px;
@@ -167,10 +168,13 @@
             captionText.innerHTML = this.alt;
         }
     }
+
     modal.onclick=function () {
         modal.style.display="none";
 
     }
+
+
 
 </script>
 <!-- add margin to body dymanicly-->

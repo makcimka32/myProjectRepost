@@ -10,11 +10,17 @@
 <head>
     <title>Title</title>
 
+
+
+
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 
 
     <script>
+
         var map;
+
+
         ymaps.ready(function(){
             map = new ymaps.Map(document.getElementById('map'), {
                 center: [53.233012, 34.328190],
@@ -94,6 +100,7 @@
         </div>
         <div class="col-12">
             <h2 class="text-center">Сертификаты</h2>
+
             <div class="row justify-content-center">
                 <div class="col-md-3">
                     <img class="img-thumbnail rounded m-2 myImg" src="/resources/images/ourSertificates/Свидетельство%20СРО%20Семиленкова-001.jpg">
@@ -112,6 +119,9 @@
                     <img class="img-thumbnail rounded m-2 myImg" src="/resources/images/ourSertificates/Квал.%20Аттестат%20КИ%20Пеньков.jpg">
                 </div>
             </div>
+
+
+
         </div>
         <div class="col-12">
             <h2 class="text-center">Расположение</h2>
@@ -120,6 +130,7 @@
                 </div>
             </div>
         </div>
+
         <div id="myModal" class="modal">
 
 
@@ -129,6 +140,7 @@
             <!-- Modal Caption (Image Text) -->
             <div id="caption"></div>
         </div>
+
     </div>
 </div>
 

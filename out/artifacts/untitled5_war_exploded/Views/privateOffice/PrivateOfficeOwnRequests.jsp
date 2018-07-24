@@ -66,7 +66,12 @@
                                                     <!-- The Modal -->
                                                     <div id="myModal" class="modal">
 
+<<<<<<< HEAD
 
+=======
+                                                        <!-- The Close Button -->
+                                                        <span class="close">&times;</span>
+>>>>>>> origin/master
 
                                                         <!-- Modal Content (The Image) -->
                                                         <img class="modal-content" id="img01">
