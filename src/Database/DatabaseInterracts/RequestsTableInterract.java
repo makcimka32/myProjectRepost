@@ -84,7 +84,7 @@ public class RequestsTableInterract {
     @Transactional(propagation=Propagation.REQUIRED)
     public List<RequestsEntity> getAllRequests()
     {
-        Query query=sessionFactory.getCurrentSession().createQuery("from RequestsEntity ");
+        Query query=sessionFactory.getCurrentSession().createQuery("from RequestsEntity order by id desc ");
         return query.list();
     }
 

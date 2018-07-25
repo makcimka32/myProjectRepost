@@ -12,6 +12,18 @@
 <html>
 <head>
     <title>Title</title>
+    <style>
+        .defaultButton
+        {
+            background-color: #b94964;
+            color:black;
+        }
+      .inactiveLink
+      {
+          pointer-events: none;
+          cursor: default;
+      }
+    </style>
 </head>
 <body>
 <div class="container">
@@ -54,7 +66,19 @@
             </div>
         </c:forEach>
     </div>
-
+   <div class="row mt-2 justify-content-center">
+       <div class="nav nav-pills">
+           <a class="nav-link  m-1" style="background-color: #b94964;color: black;" href="#">Первая</a>
+           <a class="nav-link  m-1" style="background-color: #b94964;color: black;" href="#">Предыдущая</a>
+           <a class="nav-link  m-1" style="background-color: #b94964;color: black;" href="#">1</a>
+           <a class="nav-link  m-1" style="background-color: #b94964;color: black;" href="#">2</a>
+           <a class="nav-link  m-1" style="background-color: #b94964;color: black;" href="#">3</a>
+           <a class="nav-link  m-1" style="background-color: #b94964;color: black;" href="#">4</a>
+           <a class="nav-link  m-1" style="background-color: #b94964;color: black;" href="#">5</a>
+           <a class="nav-link  m-1" style="background-color: #b94964;color: black;" href="#">Следующая</a>
+           <a class="nav-link  m-1" style="background-color: #b94964;color: black;" href="/allRequestInSystem?pageNumber=${endPageNumber}">Последняя</a>
+       </div>
+   </div>
 </div>
 </body>
 </html>

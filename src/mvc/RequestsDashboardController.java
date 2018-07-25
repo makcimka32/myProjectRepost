@@ -6,9 +6,7 @@ import Database.EmailInterracts.Sender;
 import Database.Entities.RequestsEntity;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.Authentication;
-import org.springframework.security.core.context.SecurityContext;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -31,10 +29,34 @@ public class RequestsDashboardController {
         this.userTableInterract=userTableInterract;
     }
     @RequestMapping("/allRequestInSystem")
-    String showAllRequestInSystem(Model model)
+    String showAllRequestInSystem(@RequestParam(value="pageNumber",defaultValue = "0") long pageNumber, Model model)
     {
         List<RequestsEntity> requestsEntities=requestsTableInterract.getAllRequests();
-        model.addAttribute("requestsEntities",requestsEntities);
+        int requestsCount=requestsEntities.size();
+
+        ArrayList<RequestsEntity> requestsEntitysForView=new ArrayList<>();
+        for(int i=0;i<15;i++)
+        {
+            try{
+                requestsEntitysForView.add(requestsEntities.get((int)(15*pageNumber+i)));
+            }
+            catch (IndexOutOfBoundsException e)
+            {
+                break;
+            }
+        }
+        int endPageNumber=(int)pageNumber;
+        int currentRequests=(int)(requestsCount-15*(pageNumber+1));
+        while (currentRequests>0) {
+            currentRequests-=15;
+            endPageNumber+=1;
+        }
+
+
+        model.addAttribute("requestsCount",requestsCount);
+        model.addAttribute("pageNumber",pageNumber);
+        model.addAttribute("endPageNumber",endPageNumber);
+        model.addAttribute("requestsEntities",requestsEntitysForView);
         return "allRequestsInSystem";
     }
 

@@ -83,10 +83,8 @@
         /* Modal Content (Image) */
         .modal-content {
             margin: auto;
-<<<<<<< HEAD
             margin-top: 5%;
-=======
->>>>>>> origin/master
+
             display: block;
             width: 80%;
             max-width: 1000px;
@@ -170,22 +168,14 @@
             captionText.innerHTML = this.alt;
         }
     }
-<<<<<<< HEAD
+
     modal.onclick=function () {
         modal.style.display="none";
 
     }
 
-=======
 
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
 
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() {
-        modal.style.display = "none";
-    }
->>>>>>> origin/master
 </script>
 <!-- add margin to body dymanicly-->
 <script>
