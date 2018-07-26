@@ -7,21 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b190476f-33c1-46d9-9074-898e9e43bb66" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/javascripts/menuItemOrganization.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/WEB-INF/classes/Database/DatabaseInterracts/RequestsTableInterract.class" afterPath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/WEB-INF/classes/Database/DatabaseInterracts/RequestsTableInterract.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/WEB-INF/classes/mvc/RequestsDashboardController.class" afterPath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/WEB-INF/classes/mvc/RequestsDashboardController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled5/Database/DatabaseInterracts/RequestsTableInterract.class" afterPath="$PROJECT_DIR$/out/production/untitled5/Database/DatabaseInterracts/RequestsTableInterract.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled5/mvc/RequestsDashboardController.class" afterPath="$PROJECT_DIR$/out/production/untitled5/mvc/RequestsDashboardController.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/resources/javascripts/menuItemOrganization.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/resources/javascripts/menuItemOrganization.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/Views/TilesTemplates/main-template-withoudSide.jsp" afterPath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/Views/TilesTemplates/main-template-withoudSide.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/Views/TilesTemplates/top-template.jsp" afterPath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/Views/TilesTemplates/top-template.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/Views/aboutUsPage.jsp" afterPath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/Views/aboutUsPage.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/Views/allRequstsInSystemPage.jsp" afterPath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/Views/allRequstsInSystemPage.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/Views/privateOffice/PrivateOfficeOwnRequests.jsp" afterPath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/Views/privateOffice/PrivateOfficeOwnRequests.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/Views/showRequestInfo.jsp" afterPath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/Views/showRequestInfo.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Database/DatabaseInterracts/RequestsTableInterract.java" afterPath="$PROJECT_DIR$/src/Database/DatabaseInterracts/RequestsTableInterract.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mvc/RequestsDashboardController.java" afterPath="$PROJECT_DIR$/src/mvc/RequestsDashboardController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/Views/TilesTemplates/top-template.jsp" afterPath="$PROJECT_DIR$/web/Views/TilesTemplates/top-template.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/Views/allRequstsInSystemPage.jsp" afterPath="$PROJECT_DIR$/web/Views/allRequstsInSystemPage.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -82,7 +71,7 @@
         <entry file="file://$PROJECT_DIR$/untitled5.iml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="38" lean-forward="true" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
+              <caret line="0" column="38" lean-forward="false" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -91,31 +80,19 @@
       <file leaf-file-name="allRequstsInSystemPage.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/Views/allRequstsInSystemPage.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="66" column="20" lean-forward="true" selection-start-line="66" selection-start-column="20" selection-end-line="66" selection-end-column="20" />
+            <state relative-caret-position="219">
+              <caret line="173" column="33" lean-forward="true" selection-start-line="173" selection-start-column="33" selection-end-line="173" selection-end-column="33" />
               <folding>
-                <element signature="n#style#0;n#a#6;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#7;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#3;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#4;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#5;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#6;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#7;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#8;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#5658#8730#0#HTML" expanded="false" />
+                <element signature="e#8806#11192#0#HTML" expanded="false" />
+                <element signature="e#11286#14762#0#HTML" expanded="false" />
+                <element signature="e#14864#16709#0#HTML" expanded="false" />
+                <element signature="e#15261#15762#0#HTML" expanded="false" />
+                <element signature="e#16841#18048#0#HTML" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="menuItemOrganization.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/resources/javascripts/menuItemOrganization.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -123,8 +100,8 @@
       <file leaf-file-name="RequestsDashboardController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/mvc/RequestsDashboardController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="457">
-              <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+            <state relative-caret-position="389">
+              <caret line="57" column="41" lean-forward="false" selection-start-line="57" selection-start-column="28" selection-end-line="57" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -133,8 +110,8 @@
       <file leaf-file-name="RequestsTableInterract.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Database/DatabaseInterracts/RequestsTableInterract.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="548">
-              <caret line="89" column="0" lean-forward="true" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+            <state relative-caret-position="300">
+              <caret line="89" column="0" lean-forward="false" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -143,7 +120,7 @@
       <file leaf-file-name="aboutUsPage.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/Views/aboutUsPage.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1828">
+            <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -153,7 +130,7 @@
       <file leaf-file-name="privateOfficeController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/mvc/privateOfficeController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
+            <state relative-caret-position="1292">
               <caret line="93" column="86" lean-forward="false" selection-start-line="93" selection-start-column="86" selection-end-line="93" selection-end-column="86" />
               <folding />
             </state>
@@ -163,8 +140,8 @@
       <file leaf-file-name="top-template.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/Views/TilesTemplates/top-template.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="32" column="74" lean-forward="true" selection-start-line="32" selection-start-column="74" selection-end-line="32" selection-end-column="74" />
+            <state relative-caret-position="544">
+              <caret line="32" column="74" lean-forward="false" selection-start-line="32" selection-start-column="74" selection-end-line="32" selection-end-column="74" />
               <folding />
             </state>
           </provider>
@@ -261,8 +238,8 @@
         <option value="$PROJECT_DIR$/web/Views/aboutUsPage.jsp" />
         <option value="$PROJECT_DIR$/web/Views/TilesTemplates/top-template.jsp" />
         <option value="$PROJECT_DIR$/src/Database/DatabaseInterracts/RequestsTableInterract.java" />
-        <option value="$PROJECT_DIR$/web/resources/javascripts/menuItemOrganization.js" />
         <option value="$PROJECT_DIR$/src/mvc/RequestsDashboardController.java" />
+        <option value="$PROJECT_DIR$/web/resources/javascripts/menuItemOrganization.js" />
         <option value="$PROJECT_DIR$/web/Views/allRequstsInSystemPage.jsp" />
       </list>
     </option>
@@ -386,8 +363,8 @@
       </pane>
       <pane id="Scope" />
       <pane id="Scratches" />
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -629,12 +606,13 @@
       <workItem from="1532249076523" duration="2304000" />
       <workItem from="1532451231871" duration="975000" />
       <workItem from="1532460763452" duration="816000" />
-      <workItem from="1532556626567" duration="5947000" />
+      <workItem from="1532556626567" duration="6311000" />
+      <workItem from="1532595607646" duration="15040000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="558517000" />
+    <option name="totallyTimeSpent" value="573921000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -713,6 +691,16 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -1355,15 +1343,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/Views/TilesTemplates/top-template.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="32" column="74" lean-forward="true" selection-start-line="32" selection-start-column="74" selection-end-line="32" selection-end-column="74" />
+        <state relative-caret-position="544">
+          <caret line="32" column="74" lean-forward="false" selection-start-line="32" selection-start-column="74" selection-end-line="32" selection-end-column="74" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/mvc/privateOfficeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
+        <state relative-caret-position="1292">
           <caret line="93" column="86" lean-forward="false" selection-start-line="93" selection-start-column="86" selection-end-line="93" selection-end-column="86" />
           <folding />
         </state>
@@ -1371,7 +1359,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/Views/aboutUsPage.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1828">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -1388,54 +1376,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/untitled5.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="38" lean-forward="false" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Database/DatabaseInterracts/RequestsTableInterract.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="548">
-          <caret line="89" column="0" lean-forward="true" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+        <state relative-caret-position="300">
+          <caret line="89" column="0" lean-forward="false" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/resources/javascripts/menuItemOrganization.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+        <state relative-caret-position="34">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="19" selection-end-column="2" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/mvc/RequestsDashboardController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/untitled5.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="38" lean-forward="true" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
+        <state relative-caret-position="389">
+          <caret line="57" column="41" lean-forward="false" selection-start-line="57" selection-start-column="28" selection-end-line="57" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/Views/allRequstsInSystemPage.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="66" column="20" lean-forward="true" selection-start-line="66" selection-start-column="20" selection-end-line="66" selection-end-column="20" />
+        <state relative-caret-position="219">
+          <caret line="173" column="33" lean-forward="true" selection-start-line="173" selection-start-column="33" selection-end-line="173" selection-end-column="33" />
           <folding>
-            <element signature="n#style#0;n#a#6;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#7;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#3;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#4;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#5;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#6;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#7;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#8;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#5658#8730#0#HTML" expanded="false" />
+            <element signature="e#8806#11192#0#HTML" expanded="false" />
+            <element signature="e#11286#14762#0#HTML" expanded="false" />
+            <element signature="e#14864#16709#0#HTML" expanded="false" />
+            <element signature="e#15261#15762#0#HTML" expanded="false" />
+            <element signature="e#16841#18048#0#HTML" expanded="false" />
           </folding>
         </state>
       </provider>
