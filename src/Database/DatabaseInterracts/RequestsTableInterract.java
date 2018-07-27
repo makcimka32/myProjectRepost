@@ -48,7 +48,7 @@ public class RequestsTableInterract {
     @Transactional(propagation = Propagation.REQUIRED)
     public List<RequestsEntity> getRequestsByusername(String username)
     {
-        Query query=sessionFactory.getCurrentSession().createQuery("from RequestsEntity where usersEntity.username=:tempUsername");
+        Query query=sessionFactory.getCurrentSession().createQuery("from RequestsEntity where usersEntity.username=:tempUsername order by id desc ");
         query.setParameter("tempUsername",username);
         return query.list();
 
@@ -110,7 +110,7 @@ public class RequestsTableInterract {
    @Transactional(propagation = Propagation.REQUIRED)
     public List<RequestsEntity> getWorkerRequestsByUsername(String username)
    {
-       Query query=sessionFactory.getCurrentSession().createQuery("from RequestsEntity where worker=:tempWorkerName");
+       Query query=sessionFactory.getCurrentSession().createQuery("from RequestsEntity where worker=:tempWorkerName order by id desc");
        query.setParameter("tempWorkerName",username);
        return query.list();
    }

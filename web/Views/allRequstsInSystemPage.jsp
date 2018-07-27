@@ -263,7 +263,7 @@
             }
         }
         //если между первыми двумя и последними двумя
-        else if((${pageNumber})>1&&${pageNumber}<${endPageNumber-1})
+        else if((${pageNumber})>1&&(${pageNumber})<${endPageNumber-1})
         {
             $('#firstPage').prop('href','/allRequestInSystem?pageNumber=0');
             $('#prevPage').prop('href','/allRequestInSystem?pageNumber=${pageNumber-1}');

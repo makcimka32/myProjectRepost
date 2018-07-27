@@ -32,7 +32,7 @@ public class privateOfficeController {
     }
 
     @RequestMapping(value = "/privateOffice",method = RequestMethod.GET)
-    String privateOfficeAccess(@RequestParam(value="username",required = true) String username, Model model)
+    String privateOfficeAccess(@RequestParam(value="username",required = true) String username,@RequestParam(value = "pageNumber",defaultValue = "0") long pageNumber, Model model)
     {
 
         UsersEntity usersEntity=userTableInterract.getUsersFromDbByUsername(username);
@@ -41,27 +41,83 @@ public class privateOfficeController {
         {
             //Получаем все заявки из БД
              List<RequestsEntity> list=requestsTableInterract.getRequestsByusername(username);
+            //Здесь необходимо отображать заявки соответствующие параметру в запросе pageNumber
+            //общее количество заявок
+            int requestsCount=list.size();
 
+            //создаем список для элементов,которые будут помещены на форму
+            ArrayList<RequestsEntity> requestsEntitysForView=new ArrayList<>();
+
+            for(int i=0;i<10;i++)
+            {
+                try{
+                    requestsEntitysForView.add(list.get((int)(10*pageNumber+i)));
+                }
+                catch (IndexOutOfBoundsException e)
+                {
+                    break;
+                }
+            }
+            //определяем номер последней страницы в запросах
+            int endPageNumber=(int)pageNumber;
+            int currentRequests=(int)(requestsCount-10*(pageNumber+1));
+            while (currentRequests>0) {
+                currentRequests-=10;
+                endPageNumber+=1;
+            }
+            //Добавляем имена файлов, которые соответствуют текущим заявкам.
              HashMap<Long,String []> fileNameImages=new HashMap<>();
 
              showFilesOnPage2(list,fileNameImages,username);
 
-
-             model.addAttribute("listRequests",list);
+             //формируем модель представлеия
+             model.addAttribute("listRequests",requestsEntitysForView);
              model.addAttribute("mapFiles",fileNameImages);
-             return "privateOfficePage";
+             model.addAttribute("endPageNumber",endPageNumber);
+             model.addAttribute("requestsCount",requestsCount);
+             model.addAttribute("pageNumber",pageNumber);
         }
+        //иначе получаем заявки из системы,которые выполняются данным сотрудником
         else
-            {    System.out.println("Мы тут");
-                //Получаем все заявки из БД
+            {    //Получаем все заявки из БД
                  List<RequestsEntity> list=requestsTableInterract.getWorkerRequestsByUsername(username);
+                //Здесь необходимо отображать заявки соответствующие параметру в запросе pageNumber
+             //общее количество заявок
+                int requestsCount=list.size();
+
+                //создаем список для элементов,которые будут помещены на форму
+                ArrayList<RequestsEntity> requestsEntitysForView=new ArrayList<>();
+
+                for(int i=0;i<10;i++)
+                {
+                    try{
+                        requestsEntitysForView.add(list.get((int)(10*pageNumber+i)));
+                    }
+                    catch (IndexOutOfBoundsException e)
+                    {
+                        break;
+                    }
+                }
+                //определяем номер последней страницы в запросах
+                int endPageNumber=(int)pageNumber;
+                int currentRequests=(int)(requestsCount-10*(pageNumber+1));
+                while (currentRequests>0) {
+                    currentRequests-=10;
+                    endPageNumber+=1;
+                }
+                //Добавляем имена файлов, которые соответствуют текущим заявкам.
                  HashMap<Long,String[]> fileNameImages=new HashMap<>();
                  showFilesOnPage2(list,fileNameImages,username);
-                 model.addAttribute("listRequests",list);
+                 //формируем модель представления
+                 model.addAttribute("listRequests",requestsEntitysForView);
                  model.addAttribute("mapFiles",fileNameImages);
-                 return "privateOfficePage";
-    }
+                 model.addAttribute("endPageNumber",endPageNumber);
+                 model.addAttribute("requestsCount",requestsCount);
+                 model.addAttribute("pageNumber",pageNumber);
+            }
 
+
+        return "privateOfficePage";
     }
 
     void showFilesOnPage2(List<RequestsEntity> list,HashMap<Long,String []> hashMap,String username)
