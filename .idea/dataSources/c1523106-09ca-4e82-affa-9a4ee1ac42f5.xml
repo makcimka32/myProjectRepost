@@ -4,9 +4,9 @@
     <root id="1"/>
     <schema id="2" parent="1" name="C##MAX">
       <ObjectId>103</ObjectId>
-      <IntrospectionTimestamp>2018-07-05.17:46:27</IntrospectionTimestamp>
+      <IntrospectionTimestamp>2018-07-31.00:51:12</IntrospectionTimestamp>
       <CreatedTimestamp>2018-02-27.16:44:13</CreatedTimestamp>
-      <ModifiedTimestamp>2018-07-05.17:39:08</ModifiedTimestamp>
+      <ModifiedTimestamp>2018-07-31.00:50:35</ModifiedTimestamp>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -134,7 +134,47 @@
       <SequenceIdentity>1</SequenceIdentity>
       <BelongsToColumn>1</BelongsToColumn>
     </sequence>
-    <sequence id="41" parent="2" name="ISEQ$$_94358">
+    <sequence id="41" parent="2" name="ISEQ$$_105573">
+      <ObjectId>105574</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-07-09.16:26:13</CreatedTimestamp>
+      <ModifiedTimestamp>2018-07-09.16:26:13</ModifiedTimestamp>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+    </sequence>
+    <sequence id="42" parent="2" name="ISEQ$$_105576">
+      <ObjectId>105577</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-07-09.16:26:22</CreatedTimestamp>
+      <ModifiedTimestamp>2018-07-09.16:26:22</ModifiedTimestamp>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+    </sequence>
+    <sequence id="43" parent="2" name="ISEQ$$_105579">
+      <ObjectId>105580</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-07-09.16:26:57</CreatedTimestamp>
+      <ModifiedTimestamp>2018-07-09.16:26:57</ModifiedTimestamp>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+    </sequence>
+    <sequence id="44" parent="2" name="ISEQ$$_105582">
+      <ObjectId>105583</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-07-09.16:27:05</CreatedTimestamp>
+      <ModifiedTimestamp>2018-07-09.16:27:05</ModifiedTimestamp>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+    </sequence>
+    <sequence id="45" parent="2" name="ISEQ$$_107759">
+      <ObjectId>107760</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-07-31.00:50:35</CreatedTimestamp>
+      <ModifiedTimestamp>2018-07-31.00:50:35</ModifiedTimestamp>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+    </sequence>
+    <sequence id="46" parent="2" name="ISEQ$$_94358">
       <ObjectId>94359</ObjectId>
       <NameSurrogate>1</NameSurrogate>
       <CreatedTimestamp>2018-03-15.20:36:13</CreatedTimestamp>
@@ -142,7 +182,7 @@
       <SequenceIdentity>1</SequenceIdentity>
       <BelongsToColumn>1</BelongsToColumn>
     </sequence>
-    <sequence id="42" parent="2" name="ISEQ$$_94629">
+    <sequence id="47" parent="2" name="ISEQ$$_94629">
       <ObjectId>99446</ObjectId>
       <NameSurrogate>1</NameSurrogate>
       <CreatedTimestamp>2018-05-07.02:03:50</CreatedTimestamp>
@@ -150,7 +190,7 @@
       <SequenceIdentity>1</SequenceIdentity>
       <BelongsToColumn>1</BelongsToColumn>
     </sequence>
-    <sequence id="43" parent="2" name="ISEQ$$_99447">
+    <sequence id="48" parent="2" name="ISEQ$$_99447">
       <ObjectId>99448</ObjectId>
       <NameSurrogate>1</NameSurrogate>
       <CreatedTimestamp>2018-05-07.02:05:28</CreatedTimestamp>
@@ -158,118 +198,142 @@
       <SequenceIdentity>1</SequenceIdentity>
       <BelongsToColumn>1</BelongsToColumn>
     </sequence>
-    <table id="44" parent="2" name="ACCOUNT">
-      <ObjectId>105077</ObjectId>
-      <CreatedTimestamp>2018-07-05.16:24:15</CreatedTimestamp>
-      <ModifiedTimestamp>2018-07-05.16:24:15</ModifiedTimestamp>
+    <table id="49" parent="2" name="ACCOUNT">
+      <ObjectId>105571</ObjectId>
+      <CreatedTimestamp>2018-07-09.16:26:07</CreatedTimestamp>
+      <ModifiedTimestamp>2018-07-09.16:26:07</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <table id="45" parent="2" name="DBUSER">
+    <table id="50" parent="2" name="DBUSER">
       <ObjectId>92845</ObjectId>
       <CreatedTimestamp>2018-02-27.16:44:13</CreatedTimestamp>
       <ModifiedTimestamp>2018-02-27.16:44:13</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <table id="46" parent="2" name="IDENTITY_TEST_TAB">
+    <table id="51" parent="2" name="IDENTITY_TEST_TAB">
       <ObjectId>99447</ObjectId>
       <CreatedTimestamp>2018-05-07.02:05:28</CreatedTimestamp>
       <ModifiedTimestamp>2018-05-07.02:05:28</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <table id="47" parent="2" name="REQUESTS">
+    <table id="52" parent="2" name="REQUESTS">
       <ObjectId>100904</ObjectId>
       <CreatedTimestamp>2018-05-22.01:23:33</CreatedTimestamp>
       <ModifiedTimestamp>2018-06-10.01:58:30</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <table id="48" parent="2" name="RESETS">
-      <ObjectId>105086</ObjectId>
-      <CreatedTimestamp>2018-07-05.17:39:08</CreatedTimestamp>
-      <ModifiedTimestamp>2018-07-05.17:39:08</ModifiedTimestamp>
+    <table id="53" parent="2" name="RESETS">
+      <ObjectId>105582</ObjectId>
+      <CreatedTimestamp>2018-07-09.16:27:05</CreatedTimestamp>
+      <ModifiedTimestamp>2018-07-09.16:27:05</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <table id="49" parent="2" name="SPITTERS">
+    <table id="54" parent="2" name="SPITTERS">
       <ObjectId>94358</ObjectId>
       <CreatedTimestamp>2018-03-15.20:36:13</CreatedTimestamp>
       <ModifiedTimestamp>2018-05-10.11:46:31</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <table id="50" parent="2" name="SPITTER_USERS">
+    <table id="55" parent="2" name="SPITTER_USERS">
       <ObjectId>94629</ObjectId>
       <CreatedTimestamp>2018-03-17.01:02:56</CreatedTimestamp>
       <ModifiedTimestamp>2018-05-08.01:10:23</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <table id="51" parent="2" name="SUBACCOUNT">
-      <ObjectId>105079</ObjectId>
-      <CreatedTimestamp>2018-07-05.16:42:45</CreatedTimestamp>
-      <ModifiedTimestamp>2018-07-05.16:42:45</ModifiedTimestamp>
+    <table id="56" parent="2" name="SUBACCOUNT">
+      <ObjectId>105573</ObjectId>
+      <CreatedTimestamp>2018-07-09.16:26:13</CreatedTimestamp>
+      <ModifiedTimestamp>2018-07-09.16:26:13</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <table id="52" parent="2" name="TRANSACTION">
-      <ObjectId>105081</ObjectId>
-      <CreatedTimestamp>2018-07-05.16:52:03</CreatedTimestamp>
-      <ModifiedTimestamp>2018-07-05.16:52:03</ModifiedTimestamp>
+    <table id="57" parent="2" name="TRANSACTION">
+      <ObjectId>105576</ObjectId>
+      <CreatedTimestamp>2018-07-09.16:26:22</CreatedTimestamp>
+      <ModifiedTimestamp>2018-07-09.16:26:22</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <table id="53" parent="2" name="TRANSACTION_PARTS">
-      <ObjectId>105084</ObjectId>
-      <CreatedTimestamp>2018-07-05.17:16:41</CreatedTimestamp>
-      <ModifiedTimestamp>2018-07-05.17:16:41</ModifiedTimestamp>
+    <table id="58" parent="2" name="TRANSACTION_PARTS">
+      <ObjectId>105579</ObjectId>
+      <CreatedTimestamp>2018-07-09.16:26:57</CreatedTimestamp>
+      <ModifiedTimestamp>2018-07-09.16:26:57</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <table id="54" parent="2" name="USERS">
+    <table id="59" parent="2" name="USERS">
       <ObjectId>100563</ObjectId>
       <CreatedTimestamp>2018-05-18.23:45:36</CreatedTimestamp>
       <ModifiedTimestamp>2018-05-29.20:37:40</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <column id="55" parent="44" name="ACCOUNT_ID">
+    <table id="60" parent="2" name="USER_MESSAGES">
+      <ObjectId>107759</ObjectId>
+      <CreatedTimestamp>2018-07-31.00:50:35</CreatedTimestamp>
+      <ModifiedTimestamp>2018-07-31.00:50:35</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <routine id="61" parent="2" name="CREATENEWACCOUNT">
+      <ObjectId>105226</ObjectId>
+      <RoutineKind>procedure</RoutineKind>
+      <CreatedTimestamp>2018-07-06.01:02:45</CreatedTimestamp>
+      <ModifiedTimestamp>2018-07-09.16:27:14</ModifiedTimestamp>
+    </routine>
+    <routine id="62" parent="2" name="MAKETRANSACTON">
+      <ObjectId>105585</ObjectId>
+      <RoutineKind>procedure</RoutineKind>
+      <CreatedTimestamp>2018-07-09.16:52:42</CreatedTimestamp>
+      <ModifiedTimestamp>2018-07-10.02:57:13</ModifiedTimestamp>
+    </routine>
+    <routine id="63" parent="2" name="RESETSUBACCOUNT">
+      <ObjectId>105460</ObjectId>
+      <RoutineKind>procedure</RoutineKind>
+      <CreatedTimestamp>2018-07-09.02:51:03</CreatedTimestamp>
+      <ModifiedTimestamp>2018-07-10.12:35:42</ModifiedTimestamp>
+    </routine>
+    <column id="64" parent="49" name="ACCOUNT_ID">
       <Position>1</Position>
       <DataType>NUMBER(*)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="56" parent="44" name="ACCOUNT_COUNT">
+    <column id="65" parent="49" name="ACCOUNT_SUM">
       <Position>2</Position>
       <DataType>NUMBER(*)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="57" parent="44" name="ACCOUNT_ID_PRIMARY_K">
-      <ObjectId>105078</ObjectId>
-      <CreatedTimestamp>2018-07-05.16:24:15</CreatedTimestamp>
-      <ModifiedTimestamp>2018-07-05.16:24:15</ModifiedTimestamp>
+    <index id="66" parent="49" name="ACCOUNT_ID_PRIMARY_K">
+      <ObjectId>105572</ObjectId>
+      <CreatedTimestamp>2018-07-09.16:26:08</CreatedTimestamp>
+      <ModifiedTimestamp>2018-07-09.16:26:08</ModifiedTimestamp>
       <TablespaceName>SYSTEM</TablespaceName>
       <ColNames>ACCOUNT_ID</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="58" parent="44" name="ACCOUNT_ID_PRIMARY_K">
-      <ModifiedTimestamp>2018-07-05.16:24:15</ModifiedTimestamp>
+    <key id="67" parent="49" name="ACCOUNT_ID_PRIMARY_K">
+      <ModifiedTimestamp>2018-07-09.16:26:08</ModifiedTimestamp>
       <ColNames>ACCOUNT_ID</ColNames>
       <InitiallyDeferred>1</InitiallyDeferred>
       <UnderlyingIndexName>ACCOUNT_ID_PRIMARY_K</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="59" parent="45" name="USER_ID">
+    <column id="68" parent="50" name="USER_ID">
       <Position>1</Position>
       <DataType>NUMBER(5)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="60" parent="45" name="USERNAME">
+    <column id="69" parent="50" name="USERNAME">
       <Position>2</Position>
       <DataType>VARCHAR2(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="61" parent="45" name="CREATED_BY">
+    <column id="70" parent="50" name="CREATED_BY">
       <Position>3</Position>
       <DataType>VARCHAR2(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="62" parent="45" name="CREATED_DATE">
+    <column id="71" parent="50" name="CREATED_DATE">
       <Position>4</Position>
       <DataType>DATE|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="63" parent="45" name="SYS_C0010070">
+    <index id="72" parent="50" name="SYS_C0010070">
       <ObjectId>92846</ObjectId>
       <NameSurrogate>1</NameSurrogate>
       <CreatedTimestamp>2018-02-27.16:44:14</CreatedTimestamp>
@@ -278,7 +342,7 @@
       <ColNames>USER_ID</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="64" parent="45" name="SYS_C0010070">
+    <key id="73" parent="50" name="SYS_C0010070">
       <NameSurrogate>1</NameSurrogate>
       <ModifiedTimestamp>2018-02-27.16:44:14</ModifiedTimestamp>
       <ColNames>USER_ID</ColNames>
@@ -286,75 +350,75 @@
       <UnderlyingIndexName>SYS_C0010070</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="65" parent="46" name="USER_ID">
+    <column id="74" parent="51" name="USER_ID">
       <Position>1</Position>
       <DataType>NUMBER(*)|0</DataType>
       <NotNull>1</NotNull>
       <AutoInc>1</AutoInc>
     </column>
-    <column id="66" parent="46" name="DESCRIPTION">
+    <column id="75" parent="51" name="DESCRIPTION">
       <Position>2</Position>
       <DataType>VARCHAR2(30)|0</DataType>
     </column>
-    <column id="67" parent="47" name="REQUEST_ID">
+    <column id="76" parent="52" name="REQUEST_ID">
       <Position>1</Position>
       <DataType>NUMBER(*)|0</DataType>
       <NotNull>1</NotNull>
       <AutoInc>1</AutoInc>
     </column>
-    <column id="68" parent="47" name="PASPORT_NUMBER">
+    <column id="77" parent="52" name="PASPORT_NUMBER">
       <Position>2</Position>
       <DataType>VARCHAR2(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="69" parent="47" name="PASPORT_SERIA">
+    <column id="78" parent="52" name="PASPORT_SERIA">
       <Position>3</Position>
       <DataType>VARCHAR2(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="70" parent="47" name="PASPORT_DATE">
+    <column id="79" parent="52" name="PASPORT_DATE">
       <Position>4</Position>
       <DataType>DATE|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="71" parent="47" name="PASPORT_WHO_LET">
+    <column id="80" parent="52" name="PASPORT_WHO_LET">
       <Position>5</Position>
       <DataType>VARCHAR2(80)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="72" parent="47" name="SNILS">
+    <column id="81" parent="52" name="SNILS">
       <Position>6</Position>
       <DataType>VARCHAR2(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="73" parent="47" name="REQUEST_TYPE">
+    <column id="82" parent="52" name="REQUEST_TYPE">
       <Position>7</Position>
       <DataType>VARCHAR2(40)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="74" parent="47" name="USER_ID">
+    <column id="83" parent="52" name="USER_ID">
       <Position>8</Position>
       <DataType>NUMBER(*)|0</DataType>
     </column>
-    <column id="75" parent="47" name="CREATION_DATE">
+    <column id="84" parent="52" name="CREATION_DATE">
       <Position>9</Position>
       <DataType>DATE|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="76" parent="47" name="WORK_STATUS">
+    <column id="85" parent="52" name="WORK_STATUS">
       <Position>10</Position>
       <DataType>VARCHAR2(40)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="77" parent="47" name="WORKER">
+    <column id="86" parent="52" name="WORKER">
       <Position>11</Position>
       <DataType>VARCHAR2(20)|0</DataType>
     </column>
-    <column id="78" parent="47" name="MESSAGE_TO_CUSTOMER">
+    <column id="87" parent="52" name="MESSAGE_TO_CUSTOMER">
       <Position>12</Position>
       <DataType>VARCHAR2(200)|0</DataType>
     </column>
-    <index id="79" parent="47" name="REQUESTID_PRIMARY_K">
+    <index id="88" parent="52" name="REQUESTID_PRIMARY_K">
       <ObjectId>100906</ObjectId>
       <CreatedTimestamp>2018-05-22.01:23:33</CreatedTimestamp>
       <ModifiedTimestamp>2018-05-22.01:23:33</ModifiedTimestamp>
@@ -362,14 +426,14 @@
       <ColNames>REQUEST_ID</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="80" parent="47" name="REQUESTID_PRIMARY_K">
+    <key id="89" parent="52" name="REQUESTID_PRIMARY_K">
       <ModifiedTimestamp>2018-05-22.01:23:33</ModifiedTimestamp>
       <ColNames>REQUEST_ID</ColNames>
       <InitiallyDeferred>1</InitiallyDeferred>
       <UnderlyingIndexName>REQUESTID_PRIMARY_K</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="81" parent="47" name="FK_USERS">
+    <foreign-key id="90" parent="52" name="FK_USERS">
       <ModifiedTimestamp>2018-05-22.01:23:33</ModifiedTimestamp>
       <ColNames>USER_ID</ColNames>
       <RefSchemaName>C##MAX</RefSchemaName>
@@ -377,70 +441,71 @@
       <RefKeyName>ID_PRIMARY_K</RefKeyName>
       <OnDelete>restrict</OnDelete>
     </foreign-key>
-    <column id="82" parent="48" name="RESET_ID">
+    <column id="91" parent="53" name="RESET_ID">
       <Position>1</Position>
       <DataType>NUMBER(*)|0</DataType>
       <NotNull>1</NotNull>
+      <AutoInc>1</AutoInc>
     </column>
-    <column id="83" parent="48" name="RESET_SUM">
+    <column id="92" parent="53" name="RESET_SUM">
       <Position>2</Position>
       <DataType>NUMBER(*)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="84" parent="48" name="RESET_DATE">
+    <column id="93" parent="53" name="RESET_DATE">
       <Position>3</Position>
       <DataType>DATE|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="85" parent="48" name="SUBACCOUNT_ID">
+    <column id="94" parent="53" name="SUBACCOUNT_ID">
       <Position>4</Position>
       <DataType>NUMBER(*)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="86" parent="48" name="RESET_PRIMARY_K">
-      <ObjectId>105087</ObjectId>
-      <CreatedTimestamp>2018-07-05.17:39:08</CreatedTimestamp>
-      <ModifiedTimestamp>2018-07-05.17:39:08</ModifiedTimestamp>
+    <index id="95" parent="53" name="RESET_PRIMARY_K">
+      <ObjectId>105584</ObjectId>
+      <CreatedTimestamp>2018-07-09.16:27:05</CreatedTimestamp>
+      <ModifiedTimestamp>2018-07-09.16:27:05</ModifiedTimestamp>
       <TablespaceName>SYSTEM</TablespaceName>
       <ColNames>RESET_ID</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="87" parent="48" name="RESET_PRIMARY_K">
-      <ModifiedTimestamp>2018-07-05.17:39:08</ModifiedTimestamp>
+    <key id="96" parent="53" name="RESET_PRIMARY_K">
+      <ModifiedTimestamp>2018-07-09.16:27:05</ModifiedTimestamp>
       <ColNames>RESET_ID</ColNames>
       <InitiallyDeferred>1</InitiallyDeferred>
       <UnderlyingIndexName>RESET_PRIMARY_K</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="88" parent="48" name="FK_RESET_SUBACCOUNT">
-      <ModifiedTimestamp>2018-07-05.17:39:08</ModifiedTimestamp>
+    <foreign-key id="97" parent="53" name="FK_RESET_SUBACCOUNT">
+      <ModifiedTimestamp>2018-07-09.16:27:05</ModifiedTimestamp>
       <ColNames>SUBACCOUNT_ID</ColNames>
       <RefSchemaName>C##MAX</RefSchemaName>
       <RefTableName>SUBACCOUNT</RefTableName>
       <RefKeyName>SUBACCOUNT_ID_PRIMARY_K</RefKeyName>
       <OnDelete>restrict</OnDelete>
     </foreign-key>
-    <column id="89" parent="49" name="ID">
+    <column id="98" parent="54" name="ID">
       <Position>1</Position>
       <DataType>NUMBER(5)|0</DataType>
       <NotNull>1</NotNull>
       <AutoInc>1</AutoInc>
     </column>
-    <column id="90" parent="49" name="TEXT">
+    <column id="99" parent="54" name="TEXT">
       <Position>2</Position>
       <DataType>VARCHAR2(200)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="91" parent="49" name="CREATED_DATE">
+    <column id="100" parent="54" name="CREATED_DATE">
       <Position>3</Position>
       <DataType>TIMESTAMP(6)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="92" parent="49" name="USER_ID">
+    <column id="101" parent="54" name="USER_ID">
       <Position>4</Position>
       <DataType>NUMBER(*)|0</DataType>
     </column>
-    <index id="93" parent="49" name="SYS_C0010188">
+    <index id="102" parent="54" name="SYS_C0010188">
       <ObjectId>94360</ObjectId>
       <NameSurrogate>1</NameSurrogate>
       <CreatedTimestamp>2018-03-15.20:36:13</CreatedTimestamp>
@@ -449,7 +514,7 @@
       <ColNames>ID</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="94" parent="49" name="SYS_C0010188">
+    <key id="103" parent="54" name="SYS_C0010188">
       <NameSurrogate>1</NameSurrogate>
       <ModifiedTimestamp>2018-03-15.20:36:13</ModifiedTimestamp>
       <ColNames>ID</ColNames>
@@ -457,7 +522,7 @@
       <UnderlyingIndexName>SYS_C0010188</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="95" parent="49" name="USER_ID_FK">
+    <foreign-key id="104" parent="54" name="USER_ID_FK">
       <ModifiedTimestamp>2018-05-09.00:54:35</ModifiedTimestamp>
       <ColNames>USER_ID</ColNames>
       <RefSchemaName>C##MAX</RefSchemaName>
@@ -465,51 +530,51 @@
       <RefKeyName>USER_ID_PK</RefKeyName>
       <OnDelete>restrict</OnDelete>
     </foreign-key>
-    <column id="96" parent="50" name="FIRST_NAME">
+    <column id="105" parent="55" name="FIRST_NAME">
       <Position>1</Position>
       <DataType>VARCHAR2(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="97" parent="50" name="SECOND_NAME">
+    <column id="106" parent="55" name="SECOND_NAME">
       <Position>2</Position>
       <DataType>VARCHAR2(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="98" parent="50" name="USERNAME">
+    <column id="107" parent="55" name="USERNAME">
       <Position>3</Position>
       <DataType>VARCHAR2(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="99" parent="50" name="PASSWORD">
+    <column id="108" parent="55" name="PASSWORD">
       <Position>4</Position>
       <DataType>VARCHAR2(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="100" parent="50" name="EMAIL">
+    <column id="109" parent="55" name="EMAIL">
       <Position>5</Position>
       <DataType>VARCHAR2(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="101" parent="50" name="EMAIL_NEWSLETTER">
+    <column id="110" parent="55" name="EMAIL_NEWSLETTER">
       <Position>6</Position>
       <DataType>NUMBER(1)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="102" parent="50" name="ENABLED">
+    <column id="111" parent="55" name="ENABLED">
       <Position>7</Position>
       <DataType>NUMBER(1)|0</DataType>
     </column>
-    <column id="103" parent="50" name="ROLE">
+    <column id="112" parent="55" name="ROLE">
       <Position>8</Position>
       <DataType>VARCHAR2(20)|0</DataType>
     </column>
-    <column id="104" parent="50" name="USER_ID">
+    <column id="113" parent="55" name="USER_ID">
       <Position>9</Position>
       <DataType>NUMBER(*)|0</DataType>
       <NotNull>1</NotNull>
       <AutoInc>1</AutoInc>
     </column>
-    <index id="105" parent="50" name="USER_ID_PK">
+    <index id="114" parent="55" name="USER_ID_PK">
       <ObjectId>99593</ObjectId>
       <CreatedTimestamp>2018-05-08.01:10:23</CreatedTimestamp>
       <ModifiedTimestamp>2018-05-08.01:10:23</ModifiedTimestamp>
@@ -517,199 +582,207 @@
       <ColNames>USER_ID</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="106" parent="50" name="USER_ID_PK">
+    <key id="115" parent="55" name="USER_ID_PK">
       <ModifiedTimestamp>2018-05-08.01:10:23</ModifiedTimestamp>
       <ColNames>USER_ID</ColNames>
       <InitiallyDeferred>1</InitiallyDeferred>
       <UnderlyingIndexName>USER_ID_PK</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="107" parent="51" name="SUBACCOUNT_ID">
+    <column id="116" parent="56" name="SUBACCOUNT_ID">
       <Position>1</Position>
       <DataType>NUMBER(*)|0</DataType>
       <NotNull>1</NotNull>
+      <AutoInc>1</AutoInc>
     </column>
-    <column id="108" parent="51" name="SUBACCOUNT_SUM">
+    <column id="117" parent="56" name="SUBACCOUNT_INDEX">
       <Position>2</Position>
       <DataType>NUMBER(*)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="109" parent="51" name="ACCOUNT_ID">
+    <column id="118" parent="56" name="SUBACCOUNT_SUM">
       <Position>3</Position>
       <DataType>NUMBER(*)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="110" parent="51" name="SUBACCOUNT_ID_PRIMARY_K">
-      <ObjectId>105080</ObjectId>
-      <CreatedTimestamp>2018-07-05.16:42:45</CreatedTimestamp>
-      <ModifiedTimestamp>2018-07-05.16:42:45</ModifiedTimestamp>
+    <column id="119" parent="56" name="ACCOUNT_ID">
+      <Position>4</Position>
+      <DataType>NUMBER(*)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="120" parent="56" name="SUBACCOUNT_ID_PRIMARY_K">
+      <ObjectId>105575</ObjectId>
+      <CreatedTimestamp>2018-07-09.16:26:13</CreatedTimestamp>
+      <ModifiedTimestamp>2018-07-09.16:26:13</ModifiedTimestamp>
       <TablespaceName>SYSTEM</TablespaceName>
       <ColNames>SUBACCOUNT_ID</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="111" parent="51" name="SUBACCOUNT_ID_PRIMARY_K">
-      <ModifiedTimestamp>2018-07-05.16:42:45</ModifiedTimestamp>
+    <key id="121" parent="56" name="SUBACCOUNT_ID_PRIMARY_K">
+      <ModifiedTimestamp>2018-07-09.16:26:13</ModifiedTimestamp>
       <ColNames>SUBACCOUNT_ID</ColNames>
       <InitiallyDeferred>1</InitiallyDeferred>
       <UnderlyingIndexName>SUBACCOUNT_ID_PRIMARY_K</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="112" parent="51" name="FK_ACCOUNTID_SUBACCOUNT">
-      <ModifiedTimestamp>2018-07-05.16:42:45</ModifiedTimestamp>
+    <foreign-key id="122" parent="56" name="FK_ACCOUNTID_SUBACCOUNT">
+      <ModifiedTimestamp>2018-07-09.16:26:13</ModifiedTimestamp>
       <ColNames>ACCOUNT_ID</ColNames>
       <RefSchemaName>C##MAX</RefSchemaName>
       <RefTableName>ACCOUNT</RefTableName>
       <RefKeyName>ACCOUNT_ID_PRIMARY_K</RefKeyName>
       <OnDelete>restrict</OnDelete>
     </foreign-key>
-    <column id="113" parent="52" name="TRANSACTION_ID">
+    <column id="123" parent="57" name="TRANSACTION_ID">
       <Position>1</Position>
       <DataType>NUMBER(*)|0</DataType>
       <NotNull>1</NotNull>
+      <AutoInc>1</AutoInc>
     </column>
-    <column id="114" parent="52" name="TRANSACTION_SUM">
+    <column id="124" parent="57" name="TRANSACTION_SUM">
       <Position>2</Position>
       <DataType>NUMBER(*)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="115" parent="52" name="TRANSACTION_DATE">
+    <column id="125" parent="57" name="TRANSACTION_DATE">
       <Position>3</Position>
       <DataType>DATE|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="116" parent="52" name="ACCOUNT_ID">
+    <column id="126" parent="57" name="ACCOUNT_ID">
       <Position>4</Position>
       <DataType>NUMBER(*)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="117" parent="52" name="TRANSACTION_ID_PRIMARY_K">
-      <ObjectId>105082</ObjectId>
-      <CreatedTimestamp>2018-07-05.16:52:03</CreatedTimestamp>
-      <ModifiedTimestamp>2018-07-05.16:52:03</ModifiedTimestamp>
+    <index id="127" parent="57" name="TRANSACTION_ID_PRIMARY_K">
+      <ObjectId>105578</ObjectId>
+      <CreatedTimestamp>2018-07-09.16:26:22</CreatedTimestamp>
+      <ModifiedTimestamp>2018-07-09.16:26:22</ModifiedTimestamp>
       <TablespaceName>SYSTEM</TablespaceName>
       <ColNames>TRANSACTION_ID</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="118" parent="52" name="TRANSACTION_ID_PRIMARY_K">
-      <ModifiedTimestamp>2018-07-05.16:52:03</ModifiedTimestamp>
+    <key id="128" parent="57" name="TRANSACTION_ID_PRIMARY_K">
+      <ModifiedTimestamp>2018-07-09.16:26:22</ModifiedTimestamp>
       <ColNames>TRANSACTION_ID</ColNames>
       <InitiallyDeferred>1</InitiallyDeferred>
       <UnderlyingIndexName>TRANSACTION_ID_PRIMARY_K</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="119" parent="52" name="FK_ACCOUNTID_TRANSACTION">
-      <ModifiedTimestamp>2018-07-05.16:52:03</ModifiedTimestamp>
+    <foreign-key id="129" parent="57" name="FK_ACCOUNTID_TRANSACTION">
+      <ModifiedTimestamp>2018-07-09.16:26:22</ModifiedTimestamp>
       <ColNames>ACCOUNT_ID</ColNames>
       <RefSchemaName>C##MAX</RefSchemaName>
       <RefTableName>ACCOUNT</RefTableName>
       <RefKeyName>ACCOUNT_ID_PRIMARY_K</RefKeyName>
       <OnDelete>restrict</OnDelete>
     </foreign-key>
-    <column id="120" parent="53" name="PART_ID">
+    <column id="130" parent="58" name="PART_ID">
       <Position>1</Position>
       <DataType>NUMBER(*)|0</DataType>
       <NotNull>1</NotNull>
+      <AutoInc>1</AutoInc>
     </column>
-    <column id="121" parent="53" name="PART_SUM">
+    <column id="131" parent="58" name="PART_SUM">
       <Position>2</Position>
       <DataType>NUMBER(*)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="122" parent="53" name="TRANSACTION_ID">
+    <column id="132" parent="58" name="TRANSACTION_ID">
       <Position>3</Position>
       <DataType>NUMBER(*)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="123" parent="53" name="SUBACCOUNT_ID">
+    <column id="133" parent="58" name="SUBACCOUNT_ID">
       <Position>4</Position>
       <DataType>NUMBER(*)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="124" parent="53" name="PARTID_PRIMARY_K">
-      <ObjectId>105085</ObjectId>
-      <CreatedTimestamp>2018-07-05.17:16:41</CreatedTimestamp>
-      <ModifiedTimestamp>2018-07-05.17:16:41</ModifiedTimestamp>
+    <index id="134" parent="58" name="PARTID_PRIMARY_K">
+      <ObjectId>105581</ObjectId>
+      <CreatedTimestamp>2018-07-09.16:26:57</CreatedTimestamp>
+      <ModifiedTimestamp>2018-07-09.16:26:57</ModifiedTimestamp>
       <TablespaceName>SYSTEM</TablespaceName>
       <ColNames>PART_ID</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="125" parent="53" name="PARTID_PRIMARY_K">
-      <ModifiedTimestamp>2018-07-05.17:16:41</ModifiedTimestamp>
+    <key id="135" parent="58" name="PARTID_PRIMARY_K">
+      <ModifiedTimestamp>2018-07-09.16:26:57</ModifiedTimestamp>
       <ColNames>PART_ID</ColNames>
       <InitiallyDeferred>1</InitiallyDeferred>
       <UnderlyingIndexName>PARTID_PRIMARY_K</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="126" parent="53" name="FK_PARTS_TRANSACTIONS">
-      <ModifiedTimestamp>2018-07-05.17:16:41</ModifiedTimestamp>
+    <foreign-key id="136" parent="58" name="FK_PARTS_TRANSACTIONS">
+      <ModifiedTimestamp>2018-07-09.16:26:57</ModifiedTimestamp>
       <ColNames>TRANSACTION_ID</ColNames>
       <RefSchemaName>C##MAX</RefSchemaName>
       <RefTableName>TRANSACTION</RefTableName>
       <RefKeyName>TRANSACTION_ID_PRIMARY_K</RefKeyName>
       <OnDelete>restrict</OnDelete>
     </foreign-key>
-    <foreign-key id="127" parent="53" name="FK_PARTS_SUBACCOUNT">
-      <ModifiedTimestamp>2018-07-05.17:16:41</ModifiedTimestamp>
+    <foreign-key id="137" parent="58" name="FK_PARTS_SUBACCOUNT">
+      <ModifiedTimestamp>2018-07-09.16:26:57</ModifiedTimestamp>
       <ColNames>SUBACCOUNT_ID</ColNames>
       <RefSchemaName>C##MAX</RefSchemaName>
       <RefTableName>SUBACCOUNT</RefTableName>
       <RefKeyName>SUBACCOUNT_ID_PRIMARY_K</RefKeyName>
       <OnDelete>restrict</OnDelete>
     </foreign-key>
-    <column id="128" parent="54" name="USER_ID">
+    <column id="138" parent="59" name="USER_ID">
       <Position>1</Position>
       <DataType>NUMBER(*)|0</DataType>
       <NotNull>1</NotNull>
       <AutoInc>1</AutoInc>
     </column>
-    <column id="129" parent="54" name="FIRST_NAME">
+    <column id="139" parent="59" name="FIRST_NAME">
       <Position>2</Position>
       <DataType>VARCHAR2(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="130" parent="54" name="SECOND_NAME">
+    <column id="140" parent="59" name="SECOND_NAME">
       <Position>3</Position>
       <DataType>VARCHAR2(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="131" parent="54" name="PHONE_NUMBER">
+    <column id="141" parent="59" name="PHONE_NUMBER">
       <Position>4</Position>
       <DataType>VARCHAR2(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="132" parent="54" name="USERNAME">
+    <column id="142" parent="59" name="USERNAME">
       <Position>5</Position>
       <DataType>VARCHAR2(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="133" parent="54" name="PASSWORD">
+    <column id="143" parent="59" name="PASSWORD">
       <Position>6</Position>
       <DataType>VARCHAR2(60)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="134" parent="54" name="EMAIL">
+    <column id="144" parent="59" name="EMAIL">
       <Position>7</Position>
       <DataType>VARCHAR2(40)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="135" parent="54" name="EMAIL_NEWSLETTER">
+    <column id="145" parent="59" name="EMAIL_NEWSLETTER">
       <Position>8</Position>
       <DataType>NUMBER(1)|0</DataType>
       <NotNull>1</NotNull>
-      <DefaultExpression>0  </DefaultExpression>
+      <DefaultExpression>0</DefaultExpression>
     </column>
-    <column id="136" parent="54" name="ENABLED">
+    <column id="146" parent="59" name="ENABLED">
       <Position>9</Position>
       <DataType>NUMBER(1)|0</DataType>
       <NotNull>1</NotNull>
-      <DefaultExpression>0 </DefaultExpression>
+      <DefaultExpression>0</DefaultExpression>
     </column>
-    <column id="137" parent="54" name="ROLE">
+    <column id="147" parent="59" name="ROLE">
       <Position>10</Position>
       <DataType>VARCHAR2(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="138" parent="54" name="ID_PRIMARY_K">
+    <index id="148" parent="59" name="ID_PRIMARY_K">
       <ObjectId>100565</ObjectId>
       <CreatedTimestamp>2018-05-18.23:45:36</CreatedTimestamp>
       <ModifiedTimestamp>2018-05-18.23:45:36</ModifiedTimestamp>
@@ -717,12 +790,77 @@
       <ColNames>USER_ID</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="139" parent="54" name="ID_PRIMARY_K">
+    <key id="149" parent="59" name="ID_PRIMARY_K">
       <ModifiedTimestamp>2018-05-18.23:45:36</ModifiedTimestamp>
       <ColNames>USER_ID</ColNames>
       <InitiallyDeferred>1</InitiallyDeferred>
       <UnderlyingIndexName>ID_PRIMARY_K</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
+    <column id="150" parent="60" name="MESSAGE_ID">
+      <Position>1</Position>
+      <DataType>NUMBER(*)|0</DataType>
+      <NotNull>1</NotNull>
+      <AutoInc>1</AutoInc>
+    </column>
+    <column id="151" parent="60" name="TEXT_MESSAGE">
+      <Position>2</Position>
+      <DataType>VARCHAR2(2000)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="152" parent="60" name="CREATION_DATE">
+      <Position>3</Position>
+      <DataType>DATE|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="153" parent="60" name="EDIT_DATE">
+      <Position>4</Position>
+      <DataType>DATE|0</DataType>
+    </column>
+    <column id="154" parent="60" name="USER_ID">
+      <Position>5</Position>
+      <DataType>NUMBER(*)|0</DataType>
+    </column>
+    <index id="155" parent="60" name="MESSAGE_PRIMARY_KEY">
+      <ObjectId>107761</ObjectId>
+      <CreatedTimestamp>2018-07-31.00:50:35</CreatedTimestamp>
+      <ModifiedTimestamp>2018-07-31.00:50:35</ModifiedTimestamp>
+      <TablespaceName>SYSTEM</TablespaceName>
+      <ColNames>MESSAGE_ID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="156" parent="60" name="MESSAGE_PRIMARY_KEY">
+      <ModifiedTimestamp>2018-07-31.00:50:35</ModifiedTimestamp>
+      <ColNames>MESSAGE_ID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>MESSAGE_PRIMARY_KEY</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="157" parent="60" name="FK_MESSAGES_USERS">
+      <ModifiedTimestamp>2018-07-31.00:50:35</ModifiedTimestamp>
+      <ColNames>USER_ID</ColNames>
+      <RefSchemaName>C##MAX</RefSchemaName>
+      <RefTableName>USERS</RefTableName>
+      <RefKeyName>ID_PRIMARY_K</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <argument id="158" parent="61" name="NUM_ID">
+      <DataType>NUMBER|0</DataType>
+    </argument>
+    <argument id="159" parent="62" name="ACCOUNTID">
+      <DataType>NUMBER|0</DataType>
+    </argument>
+    <argument id="160" parent="62" name="TRANSACTIONSUM">
+      <DataType>NUMBER|0</DataType>
+    </argument>
+    <argument id="161" parent="63" name="ACCOUNTID">
+      <DataType>NUMBER|0</DataType>
+    </argument>
+    <argument id="162" parent="63" name="SUBACCOUNTINDEX">
+      <DataType>NUMBER|0</DataType>
+    </argument>
+    <argument id="163" parent="63" name="RESETSUM">
+      <DataType>NUMBER|0</DataType>
+    </argument>
   </database-model>
 </dataSource>

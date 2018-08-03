@@ -20,6 +20,7 @@ import org.springframework.validation.BindingResult;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
 
 import javax.validation.Valid;
@@ -56,9 +57,8 @@ public class HomeController {
     }
 
     @RequestMapping(value = "/createUser",method = RequestMethod.POST)
-    String createNewUserPostHandler(@Valid UsersEntity usersEntity, BindingResult bindingResult,Model model)
+    String createNewUserPostHandler(@Valid UsersEntity usersEntity, BindingResult bindingResult,Boolean privacyIndicator,Model model)
     {
-        System.out.println(usersEntity.getUserId());
         //сперва проверяем на правильность ввода
         if(bindingResult.hasErrors())
         {
@@ -68,7 +68,7 @@ public class HomeController {
         if(usersEntity.getUserId()==0)
         {
             //проверяем пользователя в БД по имени
-            if(userTableInterract.getUsersEntityFromDbByUsername(usersEntity.getUsername())|| userTableInterract.getUsersEntityFromDbByEmail(usersEntity.getEmail()))
+            if(privacyIndicator==null||userTableInterract.getUsersEntityFromDbByUsername(usersEntity.getUsername())|| userTableInterract.getUsersEntityFromDbByEmail(usersEntity.getEmail()))
             {
                 if(userTableInterract.getUsersEntityFromDbByUsername(usersEntity.getUsername()))
                 {
@@ -77,6 +77,10 @@ public class HomeController {
                 if(userTableInterract.getUsersEntityFromDbByEmail(usersEntity.getEmail()))
                 {
                     model.addAttribute("emailErrorMessage","Аккаунт с такой почтой уже зарегистрирован");
+                }
+                if(privacyIndicator==null)
+                {
+                    model.addAttribute("privacyError","Примите условия пользовательского соглашения");
                 }
                 return "createNewUser";
             }
@@ -89,6 +93,7 @@ public class HomeController {
         }
         else {
             UsersEntity tempEntity=userTableInterract.getUsersFromDbByUserId(usersEntity.getUserId());
+            usersEntity.setUsername(tempEntity.getUsername());
 
             if(userTableInterract.getUsersEntityFromDbByEmail(usersEntity.getEmail())&!(tempEntity.getEmail().equals(usersEntity.getEmail())))
             {
@@ -96,10 +101,10 @@ public class HomeController {
                 return "createNewUser";
             }
 
+
             userTableInterract.updateUserInformatin(usersEntity);
             return "redirect:/j_spring_security_logout";
 
-           //
         }
 
     }
@@ -107,5 +112,10 @@ public class HomeController {
     String aboutUsPageGeter(Model model)
     {
         return "aboutUsPage";
+    }
+    @RequestMapping(value = "/BRGZPrivacy",method = RequestMethod.GET)
+    String privacyBRGZGet(Model model)
+    {
+        return "BRGZPrivacy";
     }
 }

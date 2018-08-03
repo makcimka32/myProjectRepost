@@ -2,6 +2,7 @@
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="C" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="security" uri="http://www.springframework.org/security/tags" %>
 <%--
   Created by IntelliJ IDEA.
   User: Максим
@@ -42,12 +43,14 @@
                         <sf:input path="phoneNumber" cssClass="form-control " id="phoneNumber" placeholder="8-920-888-88-88"/>
                         <sf:errors path="phoneNumber" cssClass="small text-danger"/>
                     </div>
-                    <div>
-                        <label for="username" class="control-label">Логин:</label>
-                        <sf:input path="username" cssClass="form-control" id="username" placeholder="GavrikovMaks"/>
-                        <sf:errors path="username" cssClass="small text-danger"/>
-                        <C:if test="${usernameErrorMessage!=null}"><p class="small text-danger">${usernameErrorMessage}</p></C:if>
-                    </div>
+                    <security:authorize access="isAnonymous()">
+                        <div>
+                            <label for="username" class="control-label">Логин:</label>
+                            <sf:input path="username" cssClass="form-control" id="username" placeholder="GavrikovMaks"/>
+                            <sf:errors path="username" cssClass="small text-danger"/>
+                            <C:if test="${usernameErrorMessage!=null}"><p class="small text-danger">${usernameErrorMessage}</p></C:if>
+                        </div>
+                    </security:authorize>
                     <div>
                         <label for="password" class="control-label">Пароль:</label>
                         <sf:password path="password" cssClass="form-control" id="password"/>
@@ -63,6 +66,13 @@
                         <label class="control-label" for="emailNewsletter">Подписаться на новости:</label>
                         <sf:checkbox path="emailNewsletter" id="emailNewsletter"/>
                     </div>
+                    <security:authorize access="isAnonymous()">
+                        <div>
+                            <C:if test="${privacyError!=null}"><p class="small text-danger">${privacyError}</p></C:if>
+                            <label class="control-label" for="emailNewsletter">Я принимаю <a href="/BRGZPrivacy" target="_blank">пользовательское соглашение</a>:</label>
+                            <input type="checkbox" name="privacyIndicator">
+                        </div>
+                    </security:authorize>
                 </div>
                 <input type="submit" class="btn btn-success" value="Сохранить">
             </sf:form>

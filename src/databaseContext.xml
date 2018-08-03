@@ -35,6 +35,9 @@
     <bean class="Database.DatabaseInterracts.RequestsTableInterract">
         <constructor-arg ref="sessionFactory"/>
     </bean>
+    <bean class="Database.DatabaseInterracts.UserMessagesTableInterract">
+        <constructor-arg ref="sessionFactory"/>
+    </bean>
 
 
 </beans>

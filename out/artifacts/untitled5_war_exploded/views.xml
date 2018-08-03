@@ -52,4 +52,7 @@
     <definition name="aboutUsPage" extends="mainTemplateWithoutSide">
         <put-attribute name="content" value="/Views/aboutUsPage.jsp"/>
     </definition>
+    <definition name="BRGZPrivacy" extends="mainTemplateWithoutSide">
+        <put-attribute name="content" value="/Views/BRGZPrivacy.jsp"/>
+    </definition>
 </tiles-definitions>

@@ -91,19 +91,21 @@
                     </div>
                 </div>
             </c:forEach>
-            <div class="row justify-content-center text-center mt-2">
-                <div class="nav nav-pills">
-                    <a class="nav-link  m-1" id="firstPage" style="background-color: #b94964;color: black;" href="#">Первая</a>
-                    <a class="nav-link  m-1" id="prevPage" style="background-color: #b94964;color: black;" href="#">Предыдущая</a>
-                    <a class="nav-link  m-1" id="pageNumber1" style="background-color: #b94964;color: black;" href="#">1</a>
-                    <a class="nav-link  m-1" id="pageNumber2" style="background-color: #b94964;color: black;" href="#">2</a>
-                    <a class="nav-link  m-1" id="pageNumber3" style="background-color: #b94964;color: black;" href="#">3</a>
-                    <a class="nav-link  m-1" id="pageNumber4" style="background-color: #b94964;color: black;" href="#">4</a>
-                    <a class="nav-link  m-1" id="pageNumber5" style="background-color: #b94964;color: black;" href="#">5</a>
-                    <a class="nav-link  m-1" id="nextPage" style="background-color: #b94964;color: black;" href="#">Следующая</a>
-                    <a class="nav-link  m-1" id="lastPage" style="background-color: #b94964;color: black;" href="/privateOffice?username=<security:authentication property="principal.username"/>&pageNumber=${endPageNumber}">Последняя</a>
+            <c:if test="${!empty(listRequests)}">
+                <div class="row justify-content-center text-center mt-2">
+                    <div class="nav nav-pills">
+                        <a class="nav-link  m-1" id="firstPage" style="background-color: #b94964;color: black;" href="#">Первая</a>
+                        <a class="nav-link  m-1" id="prevPage" style="background-color: #b94964;color: black;" href="#">Предыдущая</a>
+                        <a class="nav-link  m-1" id="pageNumber1" style="background-color: #b94964;color: black;" href="#">1</a>
+                        <a class="nav-link  m-1" id="pageNumber2" style="background-color: #b94964;color: black;" href="#">2</a>
+                        <a class="nav-link  m-1" id="pageNumber3" style="background-color: #b94964;color: black;" href="#">3</a>
+                        <a class="nav-link  m-1" id="pageNumber4" style="background-color: #b94964;color: black;" href="#">4</a>
+                        <a class="nav-link  m-1" id="pageNumber5" style="background-color: #b94964;color: black;" href="#">5</a>
+                        <a class="nav-link  m-1" id="nextPage" style="background-color: #b94964;color: black;" href="#">Следующая</a>
+                        <a class="nav-link  m-1" id="lastPage" style="background-color: #b94964;color: black;" href="/privateOffice?username=<security:authentication property="principal.username"/>&pageNumber=${endPageNumber}">Последняя</a>
+                    </div>
                 </div>
-            </div>
+            </c:if>
         </div>
     </div>
 </div>

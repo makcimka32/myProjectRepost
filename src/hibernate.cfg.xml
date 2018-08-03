@@ -11,6 +11,7 @@
     <property name="show_sql">true</property>
       <mapping class="Database.Entities.UsersEntity"/>
       <mapping class="Database.Entities.RequestsEntity"/>
+      <mapping class="Database.Entities.UserMessagesEntity"/>
       <!-- <property name="connection.username"/> -->
     <!-- <property name="connection.password"/> -->
 
