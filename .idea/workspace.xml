@@ -7,33 +7,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b190476f-33c1-46d9-9074-898e9e43bb66" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Database/DatabaseInterracts/UserMessagesTableInterract.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Views/BRGZPrivacy.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/c1523106-09ca-4e82-affa-9a4ee1ac42f5/_metadata_/metadata" afterPath="$PROJECT_DIR$/.idea/dataSources/c1523106-09ca-4e82-affa-9a4ee1ac42f5/_metadata_/metadata" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/c1523106-09ca-4e82-affa-9a4ee1ac42f5/_metadata_/metadata.keystream" afterPath="$PROJECT_DIR$/.idea/dataSources/c1523106-09ca-4e82-affa-9a4ee1ac42f5/_metadata_/metadata.keystream" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/c1523106-09ca-4e82-affa-9a4ee1ac42f5/_metadata_/metadata.keystream.len" afterPath="$PROJECT_DIR$/.idea/dataSources/c1523106-09ca-4e82-affa-9a4ee1ac42f5/_metadata_/metadata.keystream.len" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/c1523106-09ca-4e82-affa-9a4ee1ac42f5/_metadata_/metadata.len" afterPath="$PROJECT_DIR$/.idea/dataSources/c1523106-09ca-4e82-affa-9a4ee1ac42f5/_metadata_/metadata.len" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/c1523106-09ca-4e82-affa-9a4ee1ac42f5/_metadata_/metadata.values.at" afterPath="$PROJECT_DIR$/.idea/dataSources/c1523106-09ca-4e82-affa-9a4ee1ac42f5/_metadata_/metadata.values.at" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/c1523106-09ca-4e82-affa-9a4ee1ac42f5/_metadata_/metadata_i" afterPath="$PROJECT_DIR$/.idea/dataSources/c1523106-09ca-4e82-affa-9a4ee1ac42f5/_metadata_/metadata_i" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/WEB-INF/classes/mvc/HomeController.class" afterPath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/WEB-INF/classes/mvc/HomeController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled5/mvc/HomeController.class" afterPath="$PROJECT_DIR$/out/production/untitled5/mvc/HomeController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/c1523106-09ca-4e82-affa-9a4ee1ac42f5.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/c1523106-09ca-4e82-affa-9a4ee1ac42f5.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/WEB-INF/classes/Database/DatabaseInterracts/UserTableInterract.class" afterPath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/WEB-INF/classes/Database/DatabaseInterracts/UserTableInterract.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/WEB-INF/classes/mvc/RequestController.class" afterPath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/WEB-INF/classes/mvc/RequestController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/WEB-INF/classes/mvc/RequestsDashboardController.class" afterPath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/WEB-INF/classes/mvc/RequestsDashboardController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/WEB-INF/classes/mvc/privateOfficeController.class" afterPath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/WEB-INF/classes/mvc/privateOfficeController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled5/Database/DatabaseInterracts/UserTableInterract.class" afterPath="$PROJECT_DIR$/out/production/untitled5/Database/DatabaseInterracts/UserTableInterract.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled5/mvc/RequestController.class" afterPath="$PROJECT_DIR$/out/production/untitled5/mvc/RequestController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled5/mvc/RequestsDashboardController.class" afterPath="$PROJECT_DIR$/out/production/untitled5/mvc/RequestsDashboardController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled5/mvc/privateOfficeController.class" afterPath="$PROJECT_DIR$/out/production/untitled5/mvc/privateOfficeController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/Views/allRequstsInSystemPage.jsp" afterPath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/Views/allRequstsInSystemPage.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/Views/createNewUser.jsp" afterPath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/Views/createNewUser.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/Views/privateOffice/PrivateOfficeOwnRequests.jsp" afterPath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/Views/privateOffice/PrivateOfficeOwnRequests.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/WEB-INF/classes/databaseContext.xml" afterPath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/WEB-INF/classes/databaseContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/WEB-INF/classes/hibernate.cfg.xml" afterPath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/WEB-INF/classes/hibernate.cfg.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/views.xml" afterPath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/views.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled5/databaseContext.xml" afterPath="$PROJECT_DIR$/out/production/untitled5/databaseContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled5/hibernate.cfg.xml" afterPath="$PROJECT_DIR$/out/production/untitled5/hibernate.cfg.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/databaseContext.xml" afterPath="$PROJECT_DIR$/src/databaseContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/hibernate.cfg.xml" afterPath="$PROJECT_DIR$/src/hibernate.cfg.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mvc/HomeController.java" afterPath="$PROJECT_DIR$/src/mvc/HomeController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/Views/allRequstsInSystemPage.jsp" afterPath="$PROJECT_DIR$/web/Views/allRequstsInSystemPage.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/Views/createNewUser.jsp" afterPath="$PROJECT_DIR$/web/Views/createNewUser.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/Views/privateOffice/PrivateOfficeOwnRequests.jsp" afterPath="$PROJECT_DIR$/web/Views/privateOffice/PrivateOfficeOwnRequests.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/views.xml" afterPath="$PROJECT_DIR$/web/views.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/Views/BRGZPrivacy.jsp" afterPath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/Views/BRGZPrivacy.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/Views/createNewRequest.jsp" afterPath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/Views/createNewRequest.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/WEB-INF/spring-dispatcher-security.xml" afterPath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/WEB-INF/spring-dispatcher-security.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Database/DatabaseInterracts/UserTableInterract.java" afterPath="$PROJECT_DIR$/src/Database/DatabaseInterracts/UserTableInterract.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mvc/RequestController.java" afterPath="$PROJECT_DIR$/src/mvc/RequestController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mvc/RequestsDashboardController.java" afterPath="$PROJECT_DIR$/src/mvc/RequestsDashboardController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mvc/privateOfficeController.java" afterPath="$PROJECT_DIR$/src/mvc/privateOfficeController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/Views/BRGZPrivacy.jsp" afterPath="$PROJECT_DIR$/web/Views/BRGZPrivacy.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/Views/createNewRequest.jsp" afterPath="$PROJECT_DIR$/web/Views/createNewRequest.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/spring-dispatcher-security.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/spring-dispatcher-security.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -89,66 +81,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="HomeController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/mvc/HomeController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1377">
-              <caret line="118" column="27" lean-forward="false" selection-start-line="118" selection-start-column="16" selection-end-line="118" selection-end-column="27" />
-              <folding>
-                <element signature="method#createNewUser#0;class#HomeController#0" expanded="false" />
-                <element signature="e#4245#4246#0" expanded="true" />
-                <element signature="e#4281#4282#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="21" lean-forward="false" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/views.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="918">
-              <caret line="54" column="33" lean-forward="false" selection-start-line="54" selection-start-column="33" selection-end-line="54" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BRGZPrivacy.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BRGZPrivacy.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/Views/BRGZPrivacy.jsp">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1105">
+              <caret line="65" column="23" lean-forward="false" selection-start-line="65" selection-start-column="23" selection-end-line="65" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="spring-dispatcher-security.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/spring-dispatcher-security.xml">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="357">
-              <caret line="21" column="7" lean-forward="false" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="createNewUser.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/Views/createNewUser.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1207">
-              <caret line="71" column="127" lean-forward="false" selection-start-line="71" selection-start-column="127" selection-end-line="71" selection-end-column="127" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/Views/home.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-              <folding />
+              <caret line="21" column="61" lean-forward="false" selection-start-line="21" selection-start-column="61" selection-end-line="21" selection-end-column="61" />
+              <folding>
+                <marker date="1533669882168" expanded="true" signature="1966:2026" ph="select USERN... USERS" />
+                <marker date="1533669882168" expanded="true" signature="2090:2138" ph="SELECT USERN... USERS" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -156,18 +107,8 @@
       <file leaf-file-name="allRequstsInSystemPage.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/Views/allRequstsInSystemPage.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1088">
-              <caret line="64" column="4" lean-forward="false" selection-start-line="64" selection-start-column="4" selection-end-line="64" selection-end-column="45" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PrivateOfficeOwnRequests.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/Views/privateOffice/PrivateOfficeOwnRequests.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1564">
-              <caret line="92" column="24" lean-forward="false" selection-start-line="92" selection-start-column="24" selection-end-line="92" selection-end-column="24" />
+            <state relative-caret-position="969">
+              <caret line="57" column="119" lean-forward="false" selection-start-line="57" selection-start-column="106" selection-end-line="57" selection-end-column="119" />
               <folding />
             </state>
           </provider>
@@ -177,8 +118,71 @@
         <entry file="file://$PROJECT_DIR$/web/Views/createNewRequest.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1275">
-              <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+              <caret line="75" column="121" lean-forward="false" selection-start-line="75" selection-start-column="121" selection-end-line="75" selection-end-column="121" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RequestController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/mvc/RequestController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1921">
+              <caret line="142" column="69" lean-forward="false" selection-start-line="142" selection-start-column="69" selection-end-line="142" selection-end-column="69" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserTableInterract.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Database/DatabaseInterracts/UserTableInterract.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="56" column="28" lean-forward="false" selection-start-line="56" selection-start-column="28" selection-end-line="56" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RequestsDashboardController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/mvc/RequestsDashboardController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1547">
+              <caret line="107" column="49" lean-forward="false" selection-start-line="107" selection-start-column="49" selection-end-line="107" selection-end-column="49" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="showRequestInfo.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/Views/showRequestInfo.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1989">
+              <caret line="117" column="48" lean-forward="false" selection-start-line="117" selection-start-column="48" selection-end-line="117" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RequestsTableInterract.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Database/DatabaseInterracts/RequestsTableInterract.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1615">
+              <caret line="110" column="32" lean-forward="false" selection-start-line="110" selection-start-column="32" selection-end-line="110" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="privateOfficeController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/mvc/privateOfficeController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1972">
+              <caret line="149" column="9" lean-forward="false" selection-start-line="149" selection-start-column="9" selection-end-line="149" selection-end-column="9" />
+              <folding>
+                <element signature="method#privateOfficeController#0;class#privateOfficeController#0" expanded="false" />
+                <element signature="method#showFilesOnPage2#0;class#privateOfficeController#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -228,8 +232,6 @@
         <option value="$PROJECT_DIR$/web/Views/changeUserPasswordPage.jsp" />
         <option value="$PROJECT_DIR$/src/UserDetailsService.java" />
         <option value="$PROJECT_DIR$/src/Database/UserDetailsService.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/spring-dispatcher-security.xml" />
-        <option value="$PROJECT_DIR$/src/Database/DatabaseInterracts/UserTableInterract.java" />
         <option value="$PROJECT_DIR$/web/Views/TilesTemplates/main-template.jsp" />
         <option value="$PROJECT_DIR$/src/Database/Entities/UsersEntity.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
@@ -240,17 +242,13 @@
         <option value="$PROJECT_DIR$/web/Views/Authentification/login.jsp" />
         <option value="$PROJECT_DIR$/src/Database/Entities/RequestsEntity.java" />
         <option value="$PROJECT_DIR$/web/Views/errorMessageToConsumer.jsp" />
-        <option value="$PROJECT_DIR$/web/Views/createNewRequest.jsp" />
-        <option value="$PROJECT_DIR$/src/mvc/RequestController.java" />
         <option value="$PROJECT_DIR$/web/Views/home.jsp" />
         <option value="$PROJECT_DIR$/web/Views/TilesTemplates/main-template-withoudSide.jsp" />
         <option value="$PROJECT_DIR$/web/Views/showRequestInfo.jsp" />
         <option value="$PROJECT_DIR$/web/Views/aboutUsPage.jsp" />
         <option value="$PROJECT_DIR$/web/Views/TilesTemplates/top-template.jsp" />
-        <option value="$PROJECT_DIR$/src/mvc/RequestsDashboardController.java" />
         <option value="$PROJECT_DIR$/web/resources/javascripts/menuItemOrganization.js" />
         <option value="$PROJECT_DIR$/web/resources/javascripts/allRequestsInSystemMenu.js" />
-        <option value="$PROJECT_DIR$/src/mvc/privateOfficeController.java" />
         <option value="$PROJECT_DIR$/src/Database/DatabaseInterracts/RequestsTableInterract.java" />
         <option value="$PROJECT_DIR$/src/Database/Entities/UserMessagesEntity.java" />
         <option value="$PROJECT_DIR$/src/Database/DatabaseInterracts/UserMessagesTableInterract.java" />
@@ -260,6 +258,12 @@
         <option value="$PROJECT_DIR$/web/Views/createNewUser.jsp" />
         <option value="$PROJECT_DIR$/src/mvc/HomeController.java" />
         <option value="$PROJECT_DIR$/web/views.xml" />
+        <option value="$PROJECT_DIR$/web/Views/createNewRequest.jsp" />
+        <option value="$PROJECT_DIR$/src/mvc/RequestsDashboardController.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/spring-dispatcher-security.xml" />
+        <option value="$PROJECT_DIR$/src/Database/DatabaseInterracts/UserTableInterract.java" />
+        <option value="$PROJECT_DIR$/src/mvc/privateOfficeController.java" />
+        <option value="$PROJECT_DIR$/src/mvc/RequestController.java" />
         <option value="$PROJECT_DIR$/web/Views/BRGZPrivacy.jsp" />
       </list>
     </option>
@@ -288,10 +292,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="146" />
-    <option name="y" value="156" />
-    <option name="width" value="1616" />
-    <option name="height" value="916" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -308,6 +312,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -325,6 +331,13 @@
               <item name="untitled5" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Database" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="untitled5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="untitled5" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Database" type="462c0819:PsiDirectoryNode" />
+              <item name="DatabaseInterracts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="untitled5" type="b2602c69:ProjectViewProjectNode" />
@@ -361,6 +374,13 @@
               <item name="untitled5" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="Views" type="462c0819:PsiDirectoryNode" />
+              <item name="privateOffice" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="untitled5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="untitled5" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="Views" type="462c0819:PsiDirectoryNode" />
               <item name="TilesTemplates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -374,9 +394,7 @@
         </subPane>
       </pane>
       <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -628,12 +646,19 @@
       <workItem from="1532985922159" duration="1765000" />
       <workItem from="1533027057414" duration="2966000" />
       <workItem from="1533113693263" duration="20031000" />
-      <workItem from="1533284943501" duration="5000" />
+      <workItem from="1533284943501" duration="598000" />
+      <workItem from="1533486108479" duration="1782000" />
+      <workItem from="1533632381858" duration="8532000" />
+      <workItem from="1533677333231" duration="3364000" />
+      <workItem from="1533758959436" duration="6275000" />
+      <workItem from="1533822556275" duration="930000" />
+      <workItem from="1533835626104" duration="5702000" />
+      <workItem from="1534275403256" duration="825000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="614321000" />
+    <option name="totallyTimeSpent" value="642324000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -646,14 +671,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4086162" sideWeight="0.5025" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15625" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0125" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -664,12 +690,12 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4090909" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40803382" sideWeight="0.4975" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3734375" sideWeight="0.096194506" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3734375" sideWeight="0.9038055" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2609375" sideWeight="0.17230444" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2609375" sideWeight="0.82769555" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -753,7 +779,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="32" />
+      <option name="time" value="33" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1181,13 +1207,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/Views/showRequestInfo.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1989">
-          <caret line="117" column="48" lean-forward="false" selection-start-line="117" selection-start-column="48" selection-end-line="117" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/Views/TilesTemplates/top-template.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
@@ -1257,13 +1276,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Database/DatabaseInterracts/RequestsTableInterract.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1615">
-          <caret line="110" column="32" lean-forward="false" selection-start-line="110" selection-start-column="32" selection-end-line="110" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Database/DatabaseInterracts/UserMessagesTableInterract.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -1276,17 +1288,6 @@
         <state relative-caret-position="646">
           <caret line="38" column="47" lean-forward="false" selection-start-line="38" selection-start-column="47" selection-end-line="38" selection-end-column="47" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/spring-dispatcher-security.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="41" lean-forward="false" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
-          <folding>
-            <marker date="1531487934000" expanded="true" signature="1294:1354" ph="select USERN... USERS" />
-            <marker date="1531487934000" expanded="true" signature="1418:1466" ph="SELECT USERN... USERS" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1306,14 +1307,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/mvc/RequestsDashboardController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1308">
-          <caret line="30" column="16" lean-forward="false" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/mvc/AutentificationController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -1322,57 +1315,6 @@
             <element signature="method#showForgetPasswordPageHandler#0;class#AutentificationController#0" expanded="false" />
             <element signature="method#sendMessageToEmail#0;class#AutentificationController#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mvc/RequestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1294">
-          <caret line="41" column="14" lean-forward="false" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Database/DatabaseInterracts/UserTableInterract.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="78" column="23" lean-forward="false" selection-start-line="78" selection-start-column="23" selection-end-line="78" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mvc/privateOfficeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="164" column="0" lean-forward="false" selection-start-line="164" selection-start-column="0" selection-end-line="164" selection-end-column="0" />
-          <folding>
-            <element signature="method#privateOfficeController#0;class#privateOfficeController#0" expanded="false" />
-            <element signature="method#privateOfficeAccess#0;class#privateOfficeController#0" expanded="false" />
-            <element signature="method#showFilesOnPage2#0;class#privateOfficeController#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/Views/allRequstsInSystemPage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1088">
-          <caret line="64" column="4" lean-forward="false" selection-start-line="64" selection-start-column="4" selection-end-line="64" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/Views/privateOffice/PrivateOfficeOwnRequests.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1564">
-          <caret line="92" column="24" lean-forward="false" selection-start-line="92" selection-start-column="24" selection-end-line="92" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/Views/createNewUser.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1207">
-          <caret line="71" column="127" lean-forward="false" selection-start-line="71" selection-start-column="127" selection-end-line="71" selection-end-column="127" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1394,12 +1336,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/mvc/HomeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1377">
+        <state relative-caret-position="0">
           <caret line="118" column="27" lean-forward="false" selection-start-line="118" selection-start-column="16" selection-end-line="118" selection-end-column="27" />
           <folding>
             <element signature="method#createNewUser#0;class#HomeController#0" expanded="false" />
-            <element signature="e#4245#4246#0" expanded="true" />
-            <element signature="e#4281#4282#0" expanded="true" />
+            <element signature="e#4245#4246#0" expanded="false" />
+            <element signature="e#4281#4282#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1412,18 +1354,104 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/Views/privateOffice/PrivateOfficeOwnRequests.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1904">
+          <caret line="112" column="9" lean-forward="false" selection-start-line="112" selection-start-column="9" selection-end-line="112" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Views/createNewUser.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="71" column="127" lean-forward="false" selection-start-line="71" selection-start-column="127" selection-end-line="71" selection-end-column="127" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/spring-dispatcher-security.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="61" lean-forward="false" selection-start-line="21" selection-start-column="61" selection-end-line="21" selection-end-column="61" />
+          <folding>
+            <marker date="1533669882168" expanded="true" signature="1966:2026" ph="select USERN... USERS" />
+            <marker date="1533669882168" expanded="true" signature="2090:2138" ph="SELECT USERN... USERS" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Views/allRequstsInSystemPage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="969">
+          <caret line="57" column="119" lean-forward="false" selection-start-line="57" selection-start-column="106" selection-end-line="57" selection-end-column="119" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/Views/createNewRequest.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1275">
-          <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+          <caret line="75" column="121" lean-forward="false" selection-start-line="75" selection-start-column="121" selection-end-line="75" selection-end-column="121" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Views/showRequestInfo.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1989">
+          <caret line="117" column="48" lean-forward="false" selection-start-line="117" selection-start-column="48" selection-end-line="117" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Database/DatabaseInterracts/RequestsTableInterract.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1615">
+          <caret line="110" column="32" lean-forward="false" selection-start-line="110" selection-start-column="32" selection-end-line="110" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mvc/privateOfficeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1972">
+          <caret line="149" column="9" lean-forward="false" selection-start-line="149" selection-start-column="9" selection-end-line="149" selection-end-column="9" />
+          <folding>
+            <element signature="method#privateOfficeController#0;class#privateOfficeController#0" expanded="false" />
+            <element signature="method#showFilesOnPage2#0;class#privateOfficeController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mvc/RequestsDashboardController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1547">
+          <caret line="107" column="49" lean-forward="false" selection-start-line="107" selection-start-column="49" selection-end-line="107" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mvc/RequestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1921">
+          <caret line="142" column="69" lean-forward="false" selection-start-line="142" selection-start-column="69" selection-end-line="142" selection-end-column="69" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/Views/BRGZPrivacy.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="7" lean-forward="false" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+        <state relative-caret-position="1105">
+          <caret line="65" column="23" lean-forward="false" selection-start-line="65" selection-start-column="23" selection-end-line="65" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Database/DatabaseInterracts/UserTableInterract.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="56" column="28" lean-forward="false" selection-start-line="56" selection-start-column="28" selection-end-line="56" selection-end-column="28" />
           <folding />
         </state>
       </provider>

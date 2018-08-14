@@ -6,13 +6,21 @@
                http://www.springframework.org/schema/security
               http://www.springframework.org/schema/security/spring-security-3.2.xsd">
     <!-- Здесь располагаются элементы без префикса security: -->
-
+    <global-method-security pre-post-annotations="enabled"/>
     <http auto-config="true" use-expressions="true">
 
         <form-login login-page="/login"
                     default-target-url="/"
                     authentication-failure-url="/login?login_error=t"  />
         <intercept-url pattern="/createNewRequest" access="isAuthenticated()"/>
+        <intercept-url pattern="/privateOffice" access="isAuthenticated()"/>
+        <intercept-url pattern="/allRequestInSystem" access="hasAnyRole('ROLE_WORKER_USER')"/>
+        <intercept-url pattern="/rejectRequest" access="hasAnyRole('ROLE_WORKER_USER')"/>
+        <intercept-url pattern="/executeRequest" access="hasAnyRole('ROLE_WORKER_USER')"/>
+        <intercept-url pattern="/handleRequest" access="hasAnyRole('ROLE_WORKER_USER')"/>
+        <intercept-url pattern="/performRequest" access="hasAnyRole('ROLE_WORKER_USER')"/>
+        <intercept-url pattern="/requestDetail" access="isAuthenticated()"/>
+
         <remember-me key="brgzKey" token-validity-seconds="2419200"  />
     </http>
 

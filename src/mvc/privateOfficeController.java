@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.io.*;
 import java.nio.file.*;
+import java.security.Principal;
 import java.util.Base64;
 
 import java.util.*;
@@ -32,11 +33,14 @@ public class privateOfficeController {
     }
 
     @RequestMapping(value = "/privateOffice",method = RequestMethod.GET)
-    String privateOfficeAccess(@RequestParam(value="username",required = true) String username,@RequestParam(value = "pageNumber",defaultValue = "0") long pageNumber, Model model)
+    String privateOfficeAccess(@RequestParam(value="username",required = true) String username,@RequestParam(value = "pageNumber",defaultValue = "0") long pageNumber, Model model,Principal principal)
     {
 
         UsersEntity usersEntity=userTableInterract.getUsersFromDbByUsername(username);
-
+        if(!usersEntity.getUsername().equals(principal.getName()))
+        {
+            return "home";
+        }
         if(usersEntity.getRole().equals("ROLE_DEFAULT_USER"))
         {
             //Получаем все заявки из БД
@@ -137,9 +141,13 @@ public class privateOfficeController {
 
 
     @RequestMapping(value = "/privateOfficeInfo",method = RequestMethod.GET)
-    String privateOfficeInfo(@RequestParam(value="username") String username, Model model)
+    String privateOfficeInfo(@RequestParam(value="username") String username, Model model, Principal principal)
     {
         UsersEntity usersEntity=userTableInterract.getUsersFromDbByUsername(username);
+        if(!usersEntity.getUsername().equals(principal.getName()))
+        {
+            return "home";
+        }
         model.addAttribute("usersEntity",usersEntity);
         return "userInformation";
     }

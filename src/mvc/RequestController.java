@@ -4,6 +4,8 @@ import Database.DatabaseInterracts.RequestsTableInterract;
 import Database.DatabaseInterracts.UserTableInterract;
 import Database.Entities.RequestsEntity;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -23,6 +25,7 @@ import java.io.IOException;
 import java.lang.reflect.Array;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.security.Principal;
 import java.sql.Date;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -128,9 +131,14 @@ public class RequestController {
     }
 
     @RequestMapping(value = "/requestDetail")
-    String showDetailsOfRequest(@RequestParam(value = "requestId") Long id,Model model)
+    String showDetailsOfRequest(@RequestParam(value = "requestId") Long id, Model model, Principal principal)
     {
         RequestsEntity requestsEntity=requestsTableInterract.getRequestsByRequestId(id);
+
+        if(!requestsEntity.getUsersEntity().getUsername().equals(principal.getName())&& !userTableInterract.getUsersEntityFromDbWithWorkerRole().contains(userTableInterract.getUsersFromDbByUsername(principal.getName())))
+        {
+            return "home";
+        }
         model.addAttribute("requestEntity",requestsEntity);
         File file=new File("C:\\BRGZ\\"+requestsEntity.getUsersEntity().getUsername()+"\\"+requestsEntity.getRequestId()+"\\");
         String [] fileNames=file.list();

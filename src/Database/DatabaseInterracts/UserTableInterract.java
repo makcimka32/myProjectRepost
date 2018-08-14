@@ -9,6 +9,8 @@ import org.hibernate.query.Query;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
+
 @Transactional(propagation = Propagation.SUPPORTS)
 public class UserTableInterract {
     SessionFactory sessionFactory;
@@ -35,6 +37,15 @@ public class UserTableInterract {
         insertQuery.executeUpdate();
 
 
+
+    }
+    //Получаем все записи с ролью сотрудников
+    @Transactional(propagation = Propagation.REQUIRED,readOnly = true)
+    public List<UsersEntity> getUsersEntityFromDbWithWorkerRole()
+    {
+        Query query=sessionFactory.getCurrentSession().createQuery(" from UsersEntity where role=:roleWorker " );
+        query.setParameter("roleWorker","ROLE_WORKER_USER");
+        return query.list();
 
     }
     @Transactional(propagation = Propagation.REQUIRED,readOnly = true)

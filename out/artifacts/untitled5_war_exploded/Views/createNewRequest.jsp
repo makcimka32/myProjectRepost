@@ -73,7 +73,7 @@
                     <input type="file" class="form-control-file" multiple name="files" id="imagesFromUser"><br/>
                 </div>
                 <sf:button type="submit" class="btn btn-success" value="Подтвердить" >Сохранить</sf:button>
-
+                <p class="mt-4 alert alert-warning"><strong>Сохраняя заявку вы даете согласие на обработку персональных данных</strong></p>
                 <input type="hidden" name="username" value="<security:authentication property="principal.username" />">
             </sf:form>
         <!--</div>-->
