@@ -7,27 +7,178 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b190476f-33c1-46d9-9074-898e9e43bb66" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/WEB-INF/classes/Database/DatabaseInterracts/UserTableInterract.class" afterPath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/WEB-INF/classes/Database/DatabaseInterracts/UserTableInterract.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/WEB-INF/classes/mvc/RequestController.class" afterPath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/WEB-INF/classes/mvc/RequestController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/WEB-INF/classes/mvc/RequestsDashboardController.class" afterPath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/WEB-INF/classes/mvc/RequestsDashboardController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/WEB-INF/classes/mvc/privateOfficeController.class" afterPath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/WEB-INF/classes/mvc/privateOfficeController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled5/Database/DatabaseInterracts/UserTableInterract.class" afterPath="$PROJECT_DIR$/out/production/untitled5/Database/DatabaseInterracts/UserTableInterract.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled5/mvc/RequestController.class" afterPath="$PROJECT_DIR$/out/production/untitled5/mvc/RequestController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled5/mvc/RequestsDashboardController.class" afterPath="$PROJECT_DIR$/out/production/untitled5/mvc/RequestsDashboardController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled5/mvc/privateOfficeController.class" afterPath="$PROJECT_DIR$/out/production/untitled5/mvc/privateOfficeController.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Hibernate_5_2_16_5_2_16.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Spring_4_3_16_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Spring_MVC_4_3_16_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Spring_Security_3_2_5.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/antlr-2.7.7.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/aopalliance-1.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/aspectjweaver-1.8.9.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/classmate-1.3.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/commons-beanutils-1.9.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/commons-collections-3.2.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/commons-digester-2.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/commons-fileupload-1.3.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/commons-io-2.6.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/commons-logging-1.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/dom4j-1.6.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/hibernate-commons-annotations-5.0.1.Final.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/hibernate-core-5.2.16.Final.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/hibernate-jpa-2.1-api-1.0.0.Final.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/hibernate-validator-4.2.0.Final.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jandex-2.0.3.Final.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jasperreports-6.5.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/javassist-3.22.0-GA.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/javax.activation-1.1.0.v201105071233.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jaxb-api-2.2.11.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jboss-logging-3.3.1.Final.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jboss-transaction-api_1.2_spec-1.0.1.Final.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jsp-api-2.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jstl-1.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/mail-1.4.7.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/servlet-api-2.5.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/slf4j-api-1.8.0-beta1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/spring-aop-4.3.16.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/spring-aspects-4.3.16.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/spring-beans-4.3.16.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/spring-context-4.3.16.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/spring-context-support-4.3.16.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/spring-core-4.3.16.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/spring-expression-4.3.16.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/spring-instrument-4.3.16.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/spring-instrument-tomcat-4.3.16.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/spring-jdbc-4.3.16.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/spring-jms-4.3.16.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/spring-messaging-4.3.16.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/spring-orm-4.3.16.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/spring-oxm-4.3.16.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/spring-security-acl-3.2.5.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/spring-security-aspects-3.2.5.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/spring-security-cas-3.2.5.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/spring-security-config-3.2.5.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/spring-security-core-3.2.5.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/spring-security-crypto-3.2.5.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/spring-security-ldap-3.2.5.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/spring-security-openid-3.2.5.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/spring-security-remoting-3.2.5.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/spring-security-taglibs-3.2.5.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/spring-security-web-3.2.5.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/spring-test-4.3.16.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/spring-tx-4.3.16.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/spring-web-4.3.16.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/spring-webmvc-4.3.16.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/spring-webmvc-portlet-4.3.16.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/spring-websocket-4.3.16.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/tiles-3.0.8/FREEMARKER-LICENSE.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/tiles-3.0.8/JAVASSIST-LICENSE.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/tiles-3.0.8/LICENSE.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/tiles-3.0.8/NOTICE.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/tiles-3.0.8/OGNL-LICENSE.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/tiles-3.0.8/SLF4J-LICENSE.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/tiles-3.0.8/lib/commons-beanutils-1.8.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/tiles-3.0.8/lib/commons-digester-2.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/tiles-3.0.8/lib/jcl-over-slf4j-1.7.6.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/tiles-3.0.8/lib/optional/aopalliance-1.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/tiles-3.0.8/lib/optional/commons-collections-3.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/tiles-3.0.8/lib/optional/commons-lang-2.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/tiles-3.0.8/lib/optional/compiler-0.8.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/tiles-3.0.8/lib/optional/freemarker-2.3.15.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/tiles-3.0.8/lib/optional/guava-12.0.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/tiles-3.0.8/lib/optional/javassist-3.7.ga.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/tiles-3.0.8/lib/optional/jsr305-1.3.9.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/tiles-3.0.8/lib/optional/mvel2-2.0.11.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/tiles-3.0.8/lib/optional/ognl-2.7.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/tiles-3.0.8/lib/optional/oro-2.0.8.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/tiles-3.0.8/lib/optional/spring-aop-3.2.0.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/tiles-3.0.8/lib/optional/spring-beans-3.2.0.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/tiles-3.0.8/lib/optional/spring-context-3.2.0.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/tiles-3.0.8/lib/optional/spring-core-3.2.0.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/tiles-3.0.8/lib/optional/spring-expression-3.2.0.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/tiles-3.0.8/lib/optional/spring-web-3.2.0.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/tiles-3.0.8/lib/optional/velocity-1.6.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/tiles-3.0.8/lib/optional/velocity-tools-2.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/tiles-3.0.8/lib/slf4j-api-1.7.6.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/tiles-3.0.8/tiles-api-3.0.8.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/tiles-3.0.8/tiles-autotag-core-runtime-1.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/tiles-3.0.8/tiles-compat-3.0.8.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/tiles-3.0.8/tiles-core-3.0.8.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/tiles-3.0.8/tiles-el-3.0.8.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/tiles-3.0.8/tiles-extras-3.0.8.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/tiles-3.0.8/tiles-freemarker-3.0.8.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/tiles-3.0.8/tiles-jsp-3.0.8.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/tiles-3.0.8/tiles-mvel-3.0.8.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/tiles-3.0.8/tiles-ognl-3.0.8.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/tiles-3.0.8/tiles-request-api-1.0.7.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/tiles-3.0.8/tiles-request-freemarker-1.0.7.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/tiles-3.0.8/tiles-request-jsp-1.0.7.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/tiles-3.0.8/tiles-request-mustache-1.0.7.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/tiles-3.0.8/tiles-request-servlet-1.0.7.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/tiles-3.0.8/tiles-request-servlet-wildcard-1.0.7.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/tiles-3.0.8/tiles-request-velocity-1.0.7.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/tiles-3.0.8/tiles-servlet-3.0.8.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/tiles-3.0.8/tiles-template-3.0.8.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/tiles-3.0.8/tiles-velocity-3.0.8.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/validation-api-2.0.1.Final.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/WEB-INF/classes/databaseContext.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/WEB-INF/classes/hibernate.cfg.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/WEB-INF/lib/commons-collections-3.2.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/WEB-INF/lib/jsp-api-2.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/WEB-INF/lib/servlet-api-2.5.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/WEB-INF/lib/spring-oxm-4.3.16.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/WEB-INF/lib/spring-test-4.3.16.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/untitled5/Database/DatabaseInterracts/RequestsTableInterract.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/untitled5/Database/DatabaseInterracts/UserMessagesTableInterract.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/untitled5/Database/DatabaseInterracts/UserTableInterract.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/untitled5/Database/EmailInterracts/Sender$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/untitled5/Database/EmailInterracts/Sender.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/untitled5/Database/Entities/RequestsEntity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/untitled5/Database/Entities/UserMessagesEntity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/untitled5/Database/Entities/UsersEntity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/untitled5/Database/UserDetailsService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/untitled5/databaseContext.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/untitled5/hibernate.cfg.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/untitled5/mvc/AutentificationController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/untitled5/mvc/HomeController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/untitled5/mvc/RequestController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/untitled5/mvc/RequestsDashboardController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/untitled5/mvc/privateOfficeController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Database/DatabaseInterracts/RequestsTableInterract.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Database/DatabaseInterracts/UserMessagesTableInterract.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Database/DatabaseInterracts/UserTableInterract.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Database/EmailInterracts/Sender.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Database/Entities/RequestsEntity.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Database/Entities/UserMessagesEntity.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Database/Entities/UsersEntity.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Database/UserDetailsService.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/hibernate.cfg.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/mvc/AutentificationController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/mvc/HomeController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/mvc/RequestController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/mvc/RequestsDashboardController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/mvc/privateOfficeController.java" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/databaseContext.xml" afterPath="$PROJECT_DIR$/web/databaseContext.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/WEB-INF/classes/Database/DatabaseInterracts/RequestsTableInterract.class" afterPath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/WEB-INF/classes/Database/DatabaseInterracts/RequestsTableInterract.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/WEB-INF/lib/tiles-api-3.0.8.jar" afterPath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/WEB-INF/lib/tiles-api-3.0.8.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/WEB-INF/lib/tiles-compat-3.0.8.jar" afterPath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/WEB-INF/lib/tiles-compat-3.0.8.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/WEB-INF/lib/tiles-core-3.0.8.jar" afterPath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/WEB-INF/lib/tiles-core-3.0.8.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/WEB-INF/lib/tiles-el-3.0.8.jar" afterPath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/WEB-INF/lib/tiles-el-3.0.8.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/WEB-INF/lib/tiles-extras-3.0.8.jar" afterPath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/WEB-INF/lib/tiles-extras-3.0.8.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/WEB-INF/lib/tiles-freemarker-3.0.8.jar" afterPath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/WEB-INF/lib/tiles-freemarker-3.0.8.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/WEB-INF/lib/tiles-jsp-3.0.8.jar" afterPath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/WEB-INF/lib/tiles-jsp-3.0.8.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/WEB-INF/lib/tiles-mvel-3.0.8.jar" afterPath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/WEB-INF/lib/tiles-mvel-3.0.8.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/WEB-INF/lib/tiles-ognl-3.0.8.jar" afterPath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/WEB-INF/lib/tiles-ognl-3.0.8.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/WEB-INF/lib/tiles-servlet-3.0.8.jar" afterPath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/WEB-INF/lib/tiles-servlet-3.0.8.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/WEB-INF/lib/tiles-template-3.0.8.jar" afterPath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/WEB-INF/lib/tiles-template-3.0.8.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/WEB-INF/lib/tiles-velocity-3.0.8.jar" afterPath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/WEB-INF/lib/tiles-velocity-3.0.8.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/untitled5_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/untitled5_war_exploded.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/Views/BRGZPrivacy.jsp" afterPath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/Views/BRGZPrivacy.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/Views/createNewRequest.jsp" afterPath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/Views/createNewRequest.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/WEB-INF/spring-dispatcher-security.xml" afterPath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/WEB-INF/spring-dispatcher-security.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Database/DatabaseInterracts/UserTableInterract.java" afterPath="$PROJECT_DIR$/src/Database/DatabaseInterracts/UserTableInterract.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mvc/RequestController.java" afterPath="$PROJECT_DIR$/src/mvc/RequestController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mvc/RequestsDashboardController.java" afterPath="$PROJECT_DIR$/src/mvc/RequestsDashboardController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mvc/privateOfficeController.java" afterPath="$PROJECT_DIR$/src/mvc/privateOfficeController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/Views/BRGZPrivacy.jsp" afterPath="$PROJECT_DIR$/web/Views/BRGZPrivacy.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/Views/createNewRequest.jsp" afterPath="$PROJECT_DIR$/web/Views/createNewRequest.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/spring-dispatcher-security.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/spring-dispatcher-security.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/out/artifacts/untitled5_war_exploded/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/untitled5.iml" afterPath="$PROJECT_DIR$/untitled5.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -81,11 +232,53 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BRGZPrivacy.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/Views/BRGZPrivacy.jsp">
+      <file leaf-file-name="UserTableInterract.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Database/DatabaseInterracts/UserTableInterract.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1105">
-              <caret line="65" column="23" lean-forward="false" selection-start-line="65" selection-start-column="23" selection-end-line="65" selection-end-column="23" />
+            <state relative-caret-position="-61">
+              <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="databaseContext.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/databaseContext.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="43" lean-forward="false" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserDetailsService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Database/UserDetailsService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="11" column="64" lean-forward="false" selection-start-line="11" selection-start-column="64" selection-end-line="11" selection-end-column="64" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RequestsDashboardController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/mvc/RequestsDashboardController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="194">
+              <caret line="37" column="71" lean-forward="false" selection-start-line="37" selection-start-column="71" selection-end-line="37" selection-end-column="71" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1290">
+              <caret line="327" column="25" lean-forward="false" selection-start-line="327" selection-start-column="25" selection-end-line="327" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -94,8 +287,8 @@
       <file leaf-file-name="spring-dispatcher-security.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/spring-dispatcher-security.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="61" lean-forward="false" selection-start-line="21" selection-start-column="61" selection-end-line="21" selection-end-column="61" />
+            <state relative-caret-position="261">
+              <caret line="35" column="71" lean-forward="false" selection-start-line="35" selection-start-column="71" selection-end-line="35" selection-end-column="71" />
               <folding>
                 <marker date="1533669882168" expanded="true" signature="1966:2026" ph="select USERN... USERS" />
                 <marker date="1533669882168" expanded="true" signature="2090:2138" ph="SELECT USERN... USERS" />
@@ -104,85 +297,42 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="allRequstsInSystemPage.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/Views/allRequstsInSystemPage.jsp">
+      <file leaf-file-name="views.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/views.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="969">
-              <caret line="57" column="119" lean-forward="false" selection-start-line="57" selection-start-column="106" selection-end-line="57" selection-end-column="119" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="createNewRequest.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/Views/createNewRequest.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1275">
-              <caret line="75" column="121" lean-forward="false" selection-start-line="75" selection-start-column="121" selection-end-line="75" selection-end-column="121" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RequestController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/mvc/RequestController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1921">
-              <caret line="142" column="69" lean-forward="false" selection-start-line="142" selection-start-column="69" selection-end-line="142" selection-end-column="69" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserTableInterract.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Database/DatabaseInterracts/UserTableInterract.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="56" column="28" lean-forward="false" selection-start-line="56" selection-start-column="28" selection-end-line="56" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RequestsDashboardController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/mvc/RequestsDashboardController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1547">
-              <caret line="107" column="49" lean-forward="false" selection-start-line="107" selection-start-column="49" selection-end-line="107" selection-end-column="49" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="showRequestInfo.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/Views/showRequestInfo.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1989">
-              <caret line="117" column="48" lean-forward="false" selection-start-line="117" selection-start-column="48" selection-end-line="117" selection-end-column="48" />
+            <state relative-caret-position="498">
+              <caret line="54" column="33" lean-forward="false" selection-start-line="54" selection-start-column="33" selection-end-line="54" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="RequestsTableInterract.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Database/DatabaseInterracts/RequestsTableInterract.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Database/DatabaseInterracts/RequestsTableInterract.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1615">
-              <caret line="110" column="32" lean-forward="false" selection-start-line="110" selection-start-column="32" selection-end-line="110" selection-end-column="32" />
+            <state relative-caret-position="102">
+              <caret line="9" column="62" lean-forward="false" selection-start-line="9" selection-start-column="62" selection-end-line="9" selection-end-column="62" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="privateOfficeController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/mvc/privateOfficeController.java">
+      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1972">
-              <caret line="149" column="9" lean-forward="false" selection-start-line="149" selection-start-column="9" selection-end-line="149" selection-end-column="9" />
-              <folding>
-                <element signature="method#privateOfficeController#0;class#privateOfficeController#0" expanded="false" />
-                <element signature="method#showFilesOnPage2#0;class#privateOfficeController#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="220">
+              <caret line="36" column="41" lean-forward="false" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UsersEntity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Database/Entities/UsersEntity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -202,6 +352,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>Role</find>
+      <find>javax</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -215,9 +366,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/HomeController.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/home.jsp" />
-        <option value="$PROJECT_DIR$/src/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/web/WEB-INF/dispatcher-security.xml" />
         <option value="$PROJECT_DIR$/web/Views/Authentification/resetPasswordByUser.jsp" />
         <option value="$PROJECT_DIR$/src/Database/EmailInterracts/Sender.java" />
@@ -234,7 +382,6 @@
         <option value="$PROJECT_DIR$/src/Database/UserDetailsService.java" />
         <option value="$PROJECT_DIR$/web/Views/TilesTemplates/main-template.jsp" />
         <option value="$PROJECT_DIR$/src/Database/Entities/UsersEntity.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/mvc/AutentificationController.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml" />
         <option value="$PROJECT_DIR$/web/Views/showUserInfo.jsp" />
@@ -265,6 +412,11 @@
         <option value="$PROJECT_DIR$/src/mvc/privateOfficeController.java" />
         <option value="$PROJECT_DIR$/src/mvc/RequestController.java" />
         <option value="$PROJECT_DIR$/web/Views/BRGZPrivacy.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/Database/DatabaseInterracts/UserTableInterract.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Database/DatabaseInterracts/RequestsTableInterract.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Database/UserDetailsService.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -312,8 +464,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -330,58 +482,19 @@
               <item name="untitled5" type="b2602c69:ProjectViewProjectNode" />
               <item name="untitled5" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Database" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="untitled5" type="b2602c69:ProjectViewProjectNode" />
               <item name="untitled5" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Database" type="462c0819:PsiDirectoryNode" />
-              <item name="DatabaseInterracts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="untitled5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="untitled5" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="mvc" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="untitled5" type="b2602c69:ProjectViewProjectNode" />
               <item name="untitled5" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="untitled5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="untitled5" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="untitled5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="untitled5" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="untitled5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="untitled5" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="Views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="untitled5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="untitled5" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="Views" type="462c0819:PsiDirectoryNode" />
-              <item name="privateOffice" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="untitled5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="untitled5" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="Views" type="462c0819:PsiDirectoryNode" />
-              <item name="TilesTemplates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="untitled5" type="b2602c69:ProjectViewProjectNode" />
@@ -393,7 +506,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -402,13 +515,13 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="Oracle" />
-    <property name="last_opened_file_path" value="D:/test1/myProjectRepost-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/ojdbc8.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="project.structure.side.proportion" value="0.37816593" />
+    <property name="settings.editor.selected.configurable" value="project.validation" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -422,10 +535,11 @@
       <recent name="Database" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Максим\Desktop\untitled5\web" />
+      <recent name="C:\Users\Максим\Desktop\untitled5\src\main\java" />
+      <recent name="C:\Users\Максим\Desktop\untitled5\src" />
+      <recent name="C:\Users\Максим\Desktop\untitled5\web\WEB-INF" />
       <recent name="C:\Users\Максим\IdeaProjects\untitled5\web\resources\images\worktTypes" />
-      <recent name="C:\Users\Максим\IdeaProjects\untitled5\web\resources\images" />
-      <recent name="C:\Users\Максим\IdeaProjects\untitled5\web\Views" />
-      <recent name="C:\Users\Максим\IdeaProjects\untitled5\web" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -654,11 +768,13 @@
       <workItem from="1533822556275" duration="930000" />
       <workItem from="1533835626104" duration="5702000" />
       <workItem from="1534275403256" duration="825000" />
+      <workItem from="1534286768295" duration="651000" />
+      <workItem from="1534323853006" duration="10376000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="642324000" />
+    <option name="totallyTimeSpent" value="659250000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -671,7 +787,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4086162" sideWeight="0.5025" order="0" side_tool="true" content_ui="tabs" />
@@ -686,21 +801,21 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="simpleUML" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32875264" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40803382" sideWeight="0.4975" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40803382" sideWeight="0.4975" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2609375" sideWeight="0.17230444" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2609375" sideWeight="0.82769555" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2609375" sideWeight="0.19464286" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2609375" sideWeight="0.80535716" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32875264" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -788,181 +903,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk-9.0.4/lib/src.zip!/java.base/java/lang/annotation/Annotation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="43" column="17" lean-forward="false" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://SPRING/mappedClass=mvc.AutentificationController">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>SPRING</ID>
-          <OriginalElement>mappedClass=mvc.AutentificationController</OriginalElement>
-          <nodes>
-            <node x="0.0" y="672.0">module=untitled5;fileset=web application context;bean_class=org.springframework.transaction.interceptor.TransactionInterceptor;tag=tx:annotation-driven;offset=1999</node>
-            <node x="617.5" y="0.0">module=untitled5;fileset=web application context;bean_class=oracle.jdbc.pool.OracleDataSource;bean_name=dataSource</node>
-            <node x="385.25" y="167.0">module=untitled5;fileset=web application context;bean_class=org.springframework.orm.hibernate5.LocalSessionFactoryBean;bean_name=sessionFactory</node>
-            <node x="551.6138888888888" y="312.0">module=untitled5;fileset=web application context;bean_class=org.springframework.orm.hibernate5.HibernateTransactionManager;bean_name=transactionManager</node>
-            <node x="416.2255555555556" y="323.0">module=untitled5;fileset=web application context;bean_class=Database.DatabaseInterracts.UserTableInterract;bean_name=interractUsers</node>
-            <node x="158.10055555555562" y="323.0">module=untitled5;fileset=web application context;bean_class=Database.DatabaseInterracts.RequestsTableInterract;tag=bean;offset=2174</node>
-            <node x="889.25" y="200.0">module=untitled5;fileset=web application context;bean_class=org.springframework.security.authentication.AuthenticationManager;tag=authentication-manager;offset=1133</node>
-            <node x="582.0" y="820.0">module=untitled5;fileset=web application context;bean_class=org.springframework.security.web.FilterChainProxy;tag=http;offset=581</node>
-            <node x="675.25" y="200.0">module=untitled5;fileset=web application context;bean_class=org.springframework.security.authentication.AuthenticationProvider;tag=authentication-provider;offset=1166</node>
-            <node x="746.5" y="323.0">module=untitled5;fileset=web application context;bean_class=org.springframework.security.provisioning.JdbcUserDetailsManager;bean_name=userService</node>
-            <node x="678.0" y="746.0">module=untitled5;fileset=web application context;bean_class=org.springframework.security.web.authentication.RememberMeServices;tag=remember-me;offset=876</node>
-            <node x="559.0" y="576.0">module=untitled5;fileset=web dispatcher servlet context;bean_class=org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter;tag=mvc:annotation-driven;offset=637</node>
-            <node x="374.2255555555556" y="502.0">module=untitled5;fileset=web dispatcher servlet context;bean_name=(mvc) [Component]</node>
-            <node x="350.0" y="423.0">module=untitled5;bean_class=mvc.privateOfficeController;bean_name=privateOfficeController</node>
-            <node x="705.0" y="423.0">module=untitled5;bean_class=mvc.HomeController;bean_name=homeController</node>
-            <node x="206.0" y="423.0">module=untitled5;bean_class=mvc.RequestController;bean_name=requestController</node>
-            <node x="523.0" y="423.0">module=untitled5;bean_class=mvc.AutentificationController;bean_name=autentificationController</node>
-            <node x="0.0" y="423.0">module=untitled5;bean_class=mvc.RequestsDashboardController;bean_name=requestsDashboardController</node>
-            <node x="422.0" y="672.0">module=untitled5;fileset=web dispatcher servlet context;bean_class=org.springframework.web.servlet.resource.ResourceHttpRequestHandler;tag=mvc:resources;offset=666</node>
-            <node x="172.0" y="746.0">module=untitled5;fileset=web dispatcher servlet context;bean_class=org.springframework.web.servlet.view.tiles3.TilesViewResolver;tag=bean;offset=785</node>
-            <node x="0.0" y="576.0">module=untitled5;fileset=web dispatcher servlet context;bean_class=org.springframework.web.servlet.view.tiles3.TilesConfigurer;tag=bean;offset=867</node>
-            <node x="342.0" y="746.0">module=untitled5;fileset=web dispatcher servlet context;bean_class=org.springframework.web.multipart.commons.CommonsMultipartResolver;bean_name=multipartResolver</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="module=untitled5;fileset=web application context;bean_class=Database.DatabaseInterracts.RequestsTableInterract;tag=bean;offset=2174" target="module=untitled5;fileset=web application context;bean_class=org.springframework.orm.hibernate5.LocalSessionFactoryBean;bean_name=sessionFactory">
-              <point x="0.0" y="-14.5" />
-              <point x="234.10055555555562" y="287.0" />
-              <point x="411.75" y="287.0" />
-              <point x="-53.0" y="47.5" />
-            </edge>
-            <edge source="module=untitled5;bean_class=mvc.RequestController;bean_name=requestController" target="module=untitled5;fileset=web application context;bean_class=Database.DatabaseInterracts.RequestsTableInterract;tag=bean;offset=2174">
-              <point x="-31.0" y="-14.5" />
-              <point x="237.0" y="383.0" />
-              <point x="234.10055555555562" y="383.0" />
-              <point x="0.0" y="14.5" />
-            </edge>
-            <edge source="module=untitled5;bean_class=mvc.privateOfficeController;bean_name=privateOfficeController" target="module=untitled5;fileset=web application context;bean_class=Database.DatabaseInterracts.RequestsTableInterract;tag=bean;offset=2174">
-              <point x="-38.25" y="-14.5" />
-              <point x="388.25" y="383.0" />
-              <point x="284.76722222222224" y="383.0" />
-              <point x="50.66666666666663" y="14.5" />
-            </edge>
-            <edge source="module=untitled5;fileset=web dispatcher servlet context;bean_name=(mvc) [Component]" target="module=untitled5;bean_class=mvc.RequestController;bean_name=requestController">
-              <point x="-27.600000000000023" y="-14.5" />
-              <point x="415.6255555555556" y="472.0" />
-              <point x="268.0" y="472.0" />
-              <point x="0.0" y="14.5" />
-            </edge>
-            <edge source="module=untitled5;fileset=web application context;bean_class=org.springframework.security.authentication.AuthenticationManager;tag=authentication-manager;offset=1133" target="module=untitled5;fileset=web application context;bean_class=oracle.jdbc.pool.OracleDataSource;bean_name=dataSource">
-              <point x="0.0" y="-14.5" />
-              <point x="969.75" y="137.0" />
-              <point x="746.125" y="137.0" />
-              <point x="55.125" y="58.5" />
-            </edge>
-            <edge source="module=untitled5;fileset=web dispatcher servlet context;bean_name=(mvc) [Component]" target="module=untitled5;bean_class=mvc.RequestsDashboardController;bean_name=requestsDashboardController">
-              <point x="-55.19999999999999" y="-14.5" />
-              <point x="388.02555555555557" y="482.0" />
-              <point x="93.0" y="482.0" />
-              <point x="0.0" y="14.5" />
-            </edge>
-            <edge source="module=untitled5;bean_class=mvc.AutentificationController;bean_name=autentificationController" target="module=untitled5;fileset=web application context;bean_class=Database.DatabaseInterracts.UserTableInterract;bean_name=interractUsers">
-              <point x="0.0" y="-14.5" />
-              <point x="604.0" y="403.0" />
-              <point x="489.02555555555557" y="403.0" />
-              <point x="20.799999999999955" y="14.5" />
-            </edge>
-            <edge source="module=untitled5;fileset=web dispatcher servlet context;bean_name=(mvc) [Component]" target="module=untitled5;bean_class=mvc.HomeController;bean_name=homeController">
-              <point x="55.19999999999999" y="-14.5" />
-              <point x="498.42555555555555" y="482.0" />
-              <point x="763.0" y="482.0" />
-              <point x="0.0" y="14.5" />
-            </edge>
-            <edge source="module=untitled5;bean_class=mvc.RequestsDashboardController;bean_name=requestsDashboardController" target="module=untitled5;fileset=web application context;bean_class=Database.DatabaseInterracts.RequestsTableInterract;tag=bean;offset=2174">
-              <point x="-46.5" y="-14.5" />
-              <point x="46.5" y="383.0" />
-              <point x="183.433888888889" y="383.0" />
-              <point x="-50.66666666666666" y="14.5" />
-            </edge>
-            <edge source="module=untitled5;fileset=web application context;bean_class=Database.DatabaseInterracts.UserTableInterract;bean_name=interractUsers" target="module=untitled5;fileset=web application context;bean_class=org.springframework.orm.hibernate5.LocalSessionFactoryBean;bean_name=sessionFactory">
-              <point x="0.0" y="-14.5" />
-              <point x="468.2255555555556" y="287.0" />
-              <point x="464.75" y="287.0" />
-              <point x="0.0" y="47.5" />
-            </edge>
-            <edge source="module=untitled5;bean_class=mvc.privateOfficeController;bean_name=privateOfficeController" target="module=untitled5;fileset=web application context;bean_class=Database.DatabaseInterracts.UserTableInterract;bean_name=interractUsers">
-              <point x="38.25" y="-14.5" />
-              <point x="464.75" y="403.0" />
-              <point x="468.2255555555556" y="403.0" />
-              <point x="0.0" y="14.5" />
-            </edge>
-            <edge source="module=untitled5;bean_class=mvc.HomeController;bean_name=homeController" target="module=untitled5;fileset=web application context;bean_class=Database.DatabaseInterracts.UserTableInterract;bean_name=interractUsers">
-              <point x="-29.0" y="-14.5" />
-              <point x="734.0" y="393.0" />
-              <point x="509.8255555555556" y="393.0" />
-              <point x="41.599999999999966" y="14.5" />
-            </edge>
-            <edge source="module=untitled5;fileset=web application context;bean_class=org.springframework.security.authentication.AuthenticationProvider;tag=authentication-provider;offset=1166" target="module=untitled5;fileset=web application context;bean_class=oracle.jdbc.pool.OracleDataSource;bean_name=dataSource">
-              <point x="0.0" y="-14.5" />
-              <point x="772.25" y="147.0" />
-              <point x="709.375" y="147.0" />
-              <point x="18.375" y="58.5" />
-            </edge>
-            <edge source="module=untitled5;bean_class=mvc.RequestsDashboardController;bean_name=requestsDashboardController" target="module=untitled5;fileset=web application context;bean_class=Database.DatabaseInterracts.UserTableInterract;bean_name=interractUsers">
-              <point x="46.5" y="-14.5" />
-              <point x="139.5" y="393.0" />
-              <point x="426.6255555555556" y="393.0" />
-              <point x="-41.60000000000002" y="14.5" />
-            </edge>
-            <edge source="module=untitled5;bean_class=mvc.RequestController;bean_name=requestController" target="module=untitled5;fileset=web application context;bean_class=Database.DatabaseInterracts.UserTableInterract;bean_name=interractUsers">
-              <point x="31.0" y="-14.5" />
-              <point x="299.0" y="403.0" />
-              <point x="447.4255555555556" y="403.0" />
-              <point x="-20.80000000000001" y="14.5" />
-            </edge>
-            <edge source="module=untitled5;fileset=web application context;bean_class=org.springframework.security.provisioning.JdbcUserDetailsManager;bean_name=userService" target="module=untitled5;fileset=web application context;bean_class=oracle.jdbc.pool.OracleDataSource;bean_name=dataSource">
-              <point x="0.0" y="-14.5" />
-              <point x="609.75" y="147.0" />
-              <point x="672.625" y="147.0" />
-              <point x="-18.375" y="58.5" />
-            </edge>
-            <edge source="module=untitled5;bean_class=mvc.HomeController;bean_name=homeController" target="module=untitled5;fileset=web application context;bean_class=org.springframework.security.provisioning.JdbcUserDetailsManager;bean_name=userService">
-              <point x="29.0" y="-14.5" />
-              <point x="0.0" y="14.5" />
-            </edge>
-            <edge source="module=untitled5;fileset=web dispatcher servlet context;bean_name=(mvc) [Component]" target="module=untitled5;bean_class=mvc.privateOfficeController;bean_name=privateOfficeController">
-              <point x="0.0" y="-14.5" />
-              <point x="443.2255555555556" y="482.0" />
-              <point x="426.5" y="482.0" />
-              <point x="0.0" y="14.5" />
-            </edge>
-            <edge source="module=untitled5;fileset=web application context;bean_class=org.springframework.orm.hibernate5.HibernateTransactionManager;bean_name=transactionManager" target="module=untitled5;fileset=web application context;bean_class=org.springframework.orm.hibernate5.LocalSessionFactoryBean;bean_name=sessionFactory">
-              <point x="0.0" y="-25.5" />
-              <point x="620.6138888888888" y="287.0" />
-              <point x="517.75" y="287.0" />
-              <point x="53.0" y="47.5" />
-            </edge>
-            <edge source="module=untitled5;fileset=web dispatcher servlet context;bean_name=(mvc) [Component]" target="module=untitled5;bean_class=mvc.AutentificationController;bean_name=autentificationController">
-              <point x="27.600000000000023" y="-14.5" />
-              <point x="470.82555555555564" y="472.0" />
-              <point x="604.0" y="472.0" />
-              <point x="0.0" y="14.5" />
-            </edge>
-            <edge source="module=untitled5;fileset=web application context;bean_class=org.springframework.orm.hibernate5.LocalSessionFactoryBean;bean_name=sessionFactory" target="module=untitled5;fileset=web application context;bean_class=oracle.jdbc.pool.OracleDataSource;bean_name=dataSource">
-              <point x="0.0" y="-47.5" />
-              <point x="464.75" y="137.0" />
-              <point x="635.875" y="137.0" />
-              <point x="-55.125" y="58.5" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="0.45569620253164556" x="58.0" y="517.0" />
-          <SelectedNodes>
-            <node>module=untitled5;fileset=web application context;bean_class=org.springframework.transaction.interceptor.TransactionInterceptor;tag=tx:annotation-driven;offset=1999</node>
-          </SelectedNodes>
-          <Categories>
-            <Category>Local context</Category>
-            <Category>Properties</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-        </state>
-      </provider>
-    </entry>
     <entry file="uml://JAVA/Database.DatabaseInterracts.RequestsTableInterract">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
@@ -985,7 +925,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Database/EmailInterracts/Sender.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Database/EmailInterracts/Sender.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="409">
           <caret line="42" column="34" lean-forward="false" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
@@ -1148,7 +1088,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/hibernate.cfg.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/hibernate.cfg.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" column="26" lean-forward="false" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
@@ -1211,7 +1151,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
           <caret line="32" column="74" lean-forward="false" selection-start-line="32" selection-start-column="74" selection-end-line="32" selection-end-column="74" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1228,13 +1167,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="748">
           <caret line="44" column="14" lean-forward="false" selection-start-line="44" selection-start-column="14" selection-end-line="44" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/untitled5.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="-816">
           <caret line="0" column="38" lean-forward="false" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
         </state>
       </provider>
@@ -1243,51 +1181,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2941">
           <caret line="173" column="0" lean-forward="false" selection-start-line="173" selection-start-column="0" selection-end-line="173" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Database/UserDetailsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Database/Entities/RequestsEntity.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Database/Entities/RequestsEntity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-187">
           <caret line="41" column="4" lean-forward="false" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Database/Entities/UsersEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Database/Entities/UserMessagesEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="61" column="26" lean-forward="false" selection-start-line="61" selection-start-column="26" selection-end-line="61" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Database/DatabaseInterracts/UserMessagesTableInterract.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="43" lean-forward="false" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/databaseContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="38" column="47" lean-forward="false" selection-start-line="38" selection-start-column="47" selection-end-line="38" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1303,13 +1203,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="185">
           <caret line="42" column="39" lean-forward="false" selection-start-line="42" selection-start-column="39" selection-end-line="42" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/mvc/AutentificationController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/mvc/AutentificationController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
+        <state relative-caret-position="136">
           <caret line="20" column="14" lean-forward="false" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
           <folding>
             <element signature="method#showForgetPasswordPageHandler#0;class#AutentificationController#0" expanded="false" />
@@ -1322,19 +1221,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="21" lean-forward="false" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mvc/HomeController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/mvc/HomeController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="118" column="27" lean-forward="false" selection-start-line="118" selection-start-column="16" selection-end-line="118" selection-end-column="27" />
@@ -1346,19 +1236,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/views.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="54" column="33" lean-forward="false" selection-start-line="54" selection-start-column="33" selection-end-line="54" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/Views/privateOffice/PrivateOfficeOwnRequests.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1904">
           <caret line="112" column="9" lean-forward="false" selection-start-line="112" selection-start-column="9" selection-end-line="112" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1366,18 +1247,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="575">
           <caret line="71" column="127" lean-forward="false" selection-start-line="71" selection-start-column="127" selection-end-line="71" selection-end-column="127" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/spring-dispatcher-security.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="61" lean-forward="false" selection-start-line="21" selection-start-column="61" selection-end-line="21" selection-end-column="61" />
-          <folding>
-            <marker date="1533669882168" expanded="true" signature="1966:2026" ph="select USERN... USERS" />
-            <marker date="1533669882168" expanded="true" signature="2090:2138" ph="SELECT USERN... USERS" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1385,7 +1254,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="969">
           <caret line="57" column="119" lean-forward="false" selection-start-line="57" selection-start-column="106" selection-end-line="57" selection-end-column="119" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1393,7 +1261,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1275">
           <caret line="75" column="121" lean-forward="false" selection-start-line="75" selection-start-column="121" selection-end-line="75" selection-end-column="121" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1401,38 +1268,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1989">
           <caret line="117" column="48" lean-forward="false" selection-start-line="117" selection-start-column="48" selection-end-line="117" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Database/DatabaseInterracts/RequestsTableInterract.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1615">
-          <caret line="110" column="32" lean-forward="false" selection-start-line="110" selection-start-column="32" selection-end-line="110" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mvc/privateOfficeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1972">
-          <caret line="149" column="9" lean-forward="false" selection-start-line="149" selection-start-column="9" selection-end-line="149" selection-end-column="9" />
-          <folding>
-            <element signature="method#privateOfficeController#0;class#privateOfficeController#0" expanded="false" />
-            <element signature="method#showFilesOnPage2#0;class#privateOfficeController#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mvc/RequestsDashboardController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1547">
-          <caret line="107" column="49" lean-forward="false" selection-start-line="107" selection-start-column="49" selection-end-line="107" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mvc/RequestController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/mvc/RequestController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1921">
           <caret line="142" column="69" lean-forward="false" selection-start-line="142" selection-start-column="69" selection-end-line="142" selection-end-column="69" />
@@ -1448,10 +1287,114 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Database/DatabaseInterracts/UserTableInterract.java">
+    <entry file="file://$PROJECT_DIR$/src/BRGZ.iml" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/mvc/privateOfficeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="56" column="28" lean-forward="false" selection-start-line="56" selection-start-column="28" selection-end-line="56" selection-end-column="28" />
+        <state relative-caret-position="1819">
+          <caret line="128" column="36" lean-forward="false" selection-start-line="128" selection-start-column="36" selection-end-line="128" selection-end-column="36" />
+          <folding>
+            <element signature="method#privateOfficeController#0;class#privateOfficeController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Database/Entities/UserMessagesEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="1" lean-forward="false" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Database/DatabaseInterracts/UserMessagesTableInterract.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Database/Entities/UsersEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Database/DatabaseInterracts/RequestsTableInterract.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="62" lean-forward="false" selection-start-line="9" selection-start-column="62" selection-end-line="9" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Database/DatabaseInterracts/UserTableInterract.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-61">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Database/UserDetailsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="11" column="64" lean-forward="false" selection-start-line="11" selection-start-column="64" selection-end-line="11" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/databaseContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="43" lean-forward="false" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/spring-dispatcher-security.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="35" column="71" lean-forward="false" selection-start-line="35" selection-start-column="71" selection-end-line="35" selection-end-column="71" />
+          <folding>
+            <marker date="1533669882168" expanded="true" signature="1966:2026" ph="select USERN... USERS" />
+            <marker date="1533669882168" expanded="true" signature="2090:2138" ph="SELECT USERN... USERS" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/views.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="498">
+          <caret line="54" column="33" lean-forward="false" selection-start-line="54" selection-start-column="33" selection-end-line="54" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="36" column="41" lean-forward="false" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/mvc/RequestsDashboardController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="37" column="71" lean-forward="false" selection-start-line="37" selection-start-column="71" selection-end-line="37" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1290">
+          <caret line="327" column="25" lean-forward="false" selection-start-line="327" selection-start-column="25" selection-end-line="327" selection-end-column="25" />
           <folding />
         </state>
       </provider>
@@ -1466,7 +1409,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.37816593" />
                 <option value="0.5" />
               </list>
             </option>
@@ -1475,11 +1418,11 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>Spring (untitled5)|Spring</last-edited>
+          <last-edited>Hibernate (untitled5)|Hibernate</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.37816593" />
               </list>
             </option>
           </splitter-proportions>
@@ -1490,7 +1433,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.37816593" />
               </list>
             </option>
           </splitter-proportions>
@@ -1502,7 +1445,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.37816593" />
               </list>
             </option>
           </splitter-proportions>
@@ -1514,7 +1457,8 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.37816593" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -1522,11 +1466,11 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Spring Security-3.2.5</last-edited>
+          <last-edited>Maven: com.lowagie:itext:2.1.7.js6</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.37816593" />
               </list>
             </option>
           </splitter-proportions>
