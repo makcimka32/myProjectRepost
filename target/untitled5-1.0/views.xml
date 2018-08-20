@@ -55,4 +55,7 @@
     <definition name="BRGZPrivacy" extends="mainTemplateWithoutSide">
         <put-attribute name="content" value="/Views/BRGZPrivacy.jsp"/>
     </definition>
+    <definition name="messageCreationPage" extends="mainTemplateWithoutSide">
+        <put-attribute name="content" value="/Views/messageCreationPage.jsp"/>
+    </definition>
 </tiles-definitions>

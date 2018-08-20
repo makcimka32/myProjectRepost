@@ -11,6 +11,11 @@
     <title>Title</title>
 </head>
 <body>
-Я изменился
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-12">Блок с картинкой для указания процесса выполнения заказа</div>
+        <div class="col-12">Блок с новостными сообщениями компании</div>
+    </div>
+</div>
 </body>
 </html>

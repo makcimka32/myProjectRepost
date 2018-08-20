@@ -30,9 +30,11 @@
             <h4 class="text-right text-white">Добро пожаловать <security:authentication property="principal.username"/>!</h4>
 
             <div class="nav nav-pills  justify-content-end">
+                <security:authorize access="hasRole('ROLE_WORKER_USER')">
+                    <a class="nav-link active m-2" style="background-color: #b94964" href="/createNewMessage">Создать новость</a>
+                </security:authorize>
                 <security:authorize access="hasRole('ROLE_DEFAULT_USER')">
                     <a class="nav-link  active m-2" style="background-color: #b94964" href="/createNewRequest">Создать заказ</a>
-
                 </security:authorize>
                 <security:authorize  access="hasRole('ROLE_WORKER_USER')">
                     <a class="nav-link redColor active m-2" style="background-color: #b94964" href="/allRequestInSystem">Заявки в системе</a>

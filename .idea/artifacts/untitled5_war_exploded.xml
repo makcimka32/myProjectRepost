@@ -144,7 +144,7 @@
           <element id="library" level="project" name="Maven: org.apache.tiles:tiles-servlet:3.0.8" />
           <element id="library" level="project" name="Maven: org.apache.tiles:tiles-template:3.0.8" />
           <element id="library" level="project" name="Maven: org.apache.tiles:tiles-velocity:3.0.8" />
-          <element id="library" level="project" name="ojdbc8" />
+          <element id="library" level="module" name="Maven: ojdbc8:ojdbc8:8.0" module-name="untitled5" />
         </element>
       </element>
       <element id="directory" name="META-INF">
