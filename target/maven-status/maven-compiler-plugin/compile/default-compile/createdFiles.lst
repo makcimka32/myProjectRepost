@@ -1,0 +1,14 @@
+mvc\AutentificationController.class
+Database\UserDetailsService.class
+Database\Entities\UsersEntity.class
+Database\DatabaseInterracts\RequestsTableInterract.class
+Database\Entities\UserMessagesEntity.class
+Database\DatabaseInterracts\UserMessagesTableInterract.class
+Database\EmailInterracts\Sender$1.class
+Database\DatabaseInterracts\UserTableInterract.class
+Database\EmailInterracts\Sender.class
+mvc\RequestController.class
+mvc\privateOfficeController.class
+Database\Entities\RequestsEntity.class
+mvc\HomeController.class
+mvc\RequestsDashboardController.class
