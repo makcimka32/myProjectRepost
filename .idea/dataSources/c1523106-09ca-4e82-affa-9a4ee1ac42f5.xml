@@ -4,9 +4,9 @@
     <root id="1"/>
     <schema id="2" parent="1" name="C##MAX">
       <ObjectId>103</ObjectId>
-      <IntrospectionTimestamp>2018-07-31.00:51:12</IntrospectionTimestamp>
+      <IntrospectionTimestamp>2018-08-22.00:34:43</IntrospectionTimestamp>
       <CreatedTimestamp>2018-02-27.16:44:13</CreatedTimestamp>
-      <ModifiedTimestamp>2018-07-31.00:50:35</ModifiedTimestamp>
+      <ModifiedTimestamp>2018-08-22.00:34:31</ModifiedTimestamp>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -267,7 +267,7 @@
     <table id="60" parent="2" name="USER_MESSAGES">
       <ObjectId>107759</ObjectId>
       <CreatedTimestamp>2018-07-31.00:50:35</CreatedTimestamp>
-      <ModifiedTimestamp>2018-07-31.00:50:35</ModifiedTimestamp>
+      <ModifiedTimestamp>2018-08-22.00:34:31</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
     <routine id="61" parent="2" name="CREATENEWACCOUNT">
@@ -821,7 +821,12 @@
       <Position>5</Position>
       <DataType>NUMBER(*)|0</DataType>
     </column>
-    <index id="155" parent="60" name="MESSAGE_PRIMARY_KEY">
+    <column id="155" parent="60" name="TITLE_MESSAGE">
+      <Position>6</Position>
+      <DataType>VARCHAR2(100)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="156" parent="60" name="MESSAGE_PRIMARY_KEY">
       <ObjectId>107761</ObjectId>
       <CreatedTimestamp>2018-07-31.00:50:35</CreatedTimestamp>
       <ModifiedTimestamp>2018-07-31.00:50:35</ModifiedTimestamp>
@@ -829,14 +834,14 @@
       <ColNames>MESSAGE_ID</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="156" parent="60" name="MESSAGE_PRIMARY_KEY">
+    <key id="157" parent="60" name="MESSAGE_PRIMARY_KEY">
       <ModifiedTimestamp>2018-07-31.00:50:35</ModifiedTimestamp>
       <ColNames>MESSAGE_ID</ColNames>
       <InitiallyDeferred>1</InitiallyDeferred>
       <UnderlyingIndexName>MESSAGE_PRIMARY_KEY</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="157" parent="60" name="FK_MESSAGES_USERS">
+    <foreign-key id="158" parent="60" name="FK_MESSAGES_USERS">
       <ModifiedTimestamp>2018-07-31.00:50:35</ModifiedTimestamp>
       <ColNames>USER_ID</ColNames>
       <RefSchemaName>C##MAX</RefSchemaName>
@@ -844,22 +849,22 @@
       <RefKeyName>ID_PRIMARY_K</RefKeyName>
       <OnDelete>restrict</OnDelete>
     </foreign-key>
-    <argument id="158" parent="61" name="NUM_ID">
+    <argument id="159" parent="61" name="NUM_ID">
       <DataType>NUMBER|0</DataType>
     </argument>
-    <argument id="159" parent="62" name="ACCOUNTID">
+    <argument id="160" parent="62" name="ACCOUNTID">
       <DataType>NUMBER|0</DataType>
     </argument>
-    <argument id="160" parent="62" name="TRANSACTIONSUM">
+    <argument id="161" parent="62" name="TRANSACTIONSUM">
       <DataType>NUMBER|0</DataType>
     </argument>
-    <argument id="161" parent="63" name="ACCOUNTID">
+    <argument id="162" parent="63" name="ACCOUNTID">
       <DataType>NUMBER|0</DataType>
     </argument>
-    <argument id="162" parent="63" name="SUBACCOUNTINDEX">
+    <argument id="163" parent="63" name="SUBACCOUNTINDEX">
       <DataType>NUMBER|0</DataType>
     </argument>
-    <argument id="163" parent="63" name="RESETSUM">
+    <argument id="164" parent="63" name="RESETSUM">
       <DataType>NUMBER|0</DataType>
     </argument>
   </database-model>

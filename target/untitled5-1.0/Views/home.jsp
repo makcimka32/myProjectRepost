@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: Максим
@@ -14,7 +15,11 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-12">Блок с картинкой для указания процесса выполнения заказа</div>
-        <div class="col-12">Блок с новостными сообщениями компании</div>
+        <div class="col-12">
+            <c:forEach var="message" items="${userMessagesEntities}">
+             <c:out value="${message.titleMessage}"/>
+            </c:forEach>
+        </div>
     </div>
 </div>
 </body>

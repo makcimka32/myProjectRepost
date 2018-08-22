@@ -1,6 +1,8 @@
 package mvc;
 
+import Database.DatabaseInterracts.UserMessagesTableInterract;
 import Database.DatabaseInterracts.UserTableInterract;
+import Database.Entities.UserMessagesEntity;
 import Database.Entities.UsersEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -24,12 +26,14 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 
 import javax.validation.Valid;
+import java.util.ArrayList;
+import java.util.List;
 
 
 @Controller
 public class HomeController {
     UserTableInterract userTableInterract;
-
+    UserMessagesTableInterract userMessagesTableInterract;
 
     @Autowired
     UserDetailsService userDetailsService;
@@ -37,13 +41,17 @@ public class HomeController {
     UserDetailsManager userDetailsManager;
 
     @Autowired
-    HomeController(UserTableInterract userTableInterract)
+    HomeController(UserTableInterract userTableInterract, UserMessagesTableInterract userMessagesTableInterract)
     {
         this.userTableInterract=userTableInterract;
+        this.userMessagesTableInterract=userMessagesTableInterract;
     }
     @RequestMapping({"/","home"})
-    String test()
+    String test(@RequestParam(value = "pageNumber",defaultValue = "0") long pageNumber,Model model)
     {
+        List<UserMessagesEntity> userMessagesEntities=  userMessagesTableInterract.getAllMessagesFromDb();
+        model.addAttribute("userMessagesEntities",userMessagesEntities);
+
         return "home";
     }
 

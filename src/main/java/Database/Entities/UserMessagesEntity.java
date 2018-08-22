@@ -1,18 +1,23 @@
 package Database.Entities;
 
 import javax.persistence.*;
+import javax.validation.constraints.Size;
+import java.sql.Date;
 import java.sql.Time;
 import java.util.Objects;
 
 @Entity
-@Table(name = "USER_MESSAGES", schema = "C##MAX", catalog = "")
+@Table(name = "USER_MESSAGES", schema = "C##MAX")
 public class UserMessagesEntity {
     private long messageId;
+    @Size(min = 1,max=2000,message = "Сообщение должно состоять от 1 до 2000 символов ")
     private String textMessage;
-    private Time creationDate;
-    private Time editDate;
+    private Date creationDate;
+    private Date editDate;
 
     private UsersEntity usersEntity;
+    @Size(min=1,max=100,message = "Заголовок должен состоять от 1 до 100 символов")
+    private String titleMessage;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -37,21 +42,21 @@ public class UserMessagesEntity {
 
     @Basic
     @Column(name = "CREATION_DATE", nullable = false)
-    public Time getCreationDate() {
+    public Date getCreationDate() {
         return creationDate;
     }
 
-    public void setCreationDate(Time creationDate) {
+    public void setCreationDate(Date creationDate) {
         this.creationDate = creationDate;
     }
 
     @Basic
     @Column(name = "EDIT_DATE", nullable = true)
-    public Time getEditDate() {
+    public Date getEditDate() {
         return editDate;
     }
 
-    public void setEditDate(Time editDate) {
+    public void setEditDate(Date editDate) {
         this.editDate = editDate;
     }
 
@@ -70,6 +75,7 @@ public class UserMessagesEntity {
     public int hashCode() {
         return Objects.hash(messageId, textMessage, creationDate, editDate);
     }
+
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "USER_ID")
     public UsersEntity getUsersEntity() {
@@ -78,5 +84,15 @@ public class UserMessagesEntity {
 
     public void setUsersEntity(UsersEntity usersEntity) {
         this.usersEntity = usersEntity;
+    }
+
+    @Basic
+    @Column(name = "TITLE_MESSAGE", nullable = false, length = 100)
+    public String getTitleMessage() {
+        return titleMessage;
+    }
+
+    public void setTitleMessage(String titleMessage) {
+        this.titleMessage = titleMessage;
     }
 }
