@@ -37,4 +37,30 @@ public class UserMessagesTableInterract {
         Query query=sessionFactory.getCurrentSession().createQuery("from UserMessagesEntity order by id desc ");
         return query.list();
     }
+    @Transactional(propagation = Propagation.REQUIRED,readOnly = false)
+    public void deleteMessage(Long messageId)
+    {
+        Query query=sessionFactory.getCurrentSession().createQuery("delete from UserMessagesEntity where messageId=:tempId");
+        query.setParameter("tempId",messageId);
+        query.executeUpdate();
+    }
+    @Transactional(propagation = Propagation.REQUIRED,readOnly = true)
+    public UserMessagesEntity getUserMessageFromDb(Long messageId)
+    {
+        Query query=sessionFactory.getCurrentSession().createQuery("from UserMessagesEntity where messageId=:tempId");
+        query.setParameter("tempId",messageId);
+        return (UserMessagesEntity) query.uniqueResult();
+    }
+    @Transactional(propagation = Propagation.REQUIRED,readOnly = false)
+    public void updateUserMessageIntoDb(UserMessagesEntity userMessagesEntity)
+    {
+        Query query=sessionFactory.getCurrentSession().createQuery("update UserMessagesEntity set editDate=:tempEditDate,textMessage=:tempTextMessage," +
+                "titleMessage=:tempTitleMessage,usersEntity=:tempUserEntity where messageId=:tempMessageId");
+        query.setParameter("tempEditDate",userMessagesEntity.getEditDate());
+        query.setParameter("tempTextMessage",userMessagesEntity.getTextMessage());
+        query.setParameter("tempTitleMessage",userMessagesEntity.getTitleMessage());
+        query.setParameter("tempUserEntity",userMessagesEntity.getUsersEntity());
+        query.setParameter("tempMessageId",userMessagesEntity.getMessageId());
+        query.executeUpdate();
+    }
 }
