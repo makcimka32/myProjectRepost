@@ -46,11 +46,37 @@ public class HomeController {
         this.userTableInterract=userTableInterract;
         this.userMessagesTableInterract=userMessagesTableInterract;
     }
-    @RequestMapping({"/","home"})
+    @RequestMapping({"/"})
     String test(@RequestParam(value = "pageNumber",defaultValue = "0") long pageNumber,Model model)
     {
         List<UserMessagesEntity> userMessagesEntities=  userMessagesTableInterract.getAllMessagesFromDb();
-        model.addAttribute("userMessagesEntities",userMessagesEntities);
+        int messagesCount=userMessagesEntities.size();
+
+        ArrayList<UserMessagesEntity> messagiesEntitesForView=new ArrayList<>();
+        //добавляем в коллекцию необходимый десяток новостей
+        for(int i=0;i<10;i++)
+        {
+            try{
+                messagiesEntitesForView.add(userMessagesEntities.get((int)(10*pageNumber+i)));
+            }
+            catch (IndexOutOfBoundsException e)
+            {
+                break;
+            }
+        }
+        //заполняем последнюю страницу
+        int endPageNumber=(int)pageNumber;
+        int currentMessages=(int)(messagesCount-10*(pageNumber+1));
+        while (currentMessages>0) {
+            currentMessages-=10;
+            endPageNumber+=1;
+        }
+
+
+        model.addAttribute("messagesCount",messagesCount);
+        model.addAttribute("pageNumber",pageNumber);
+        model.addAttribute("endPageNumber",endPageNumber);
+        model.addAttribute("userMessagesEntities",messagiesEntitesForView);
 
         return "home";
     }

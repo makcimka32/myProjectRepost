@@ -56,7 +56,7 @@ public class UserMessagesController {
             userMessagesTableInterract.updateUserMessageIntoDb(userMessagesEntity);
         }
 
-        return  "redirect:/home";
+        return  "redirect:/";
     }
 
     @RequestMapping(value = "/deleteNews",method = RequestMethod.POST)
@@ -64,7 +64,7 @@ public class UserMessagesController {
     {
         userMessagesTableInterract.deleteMessage(messageId);
 
-        return "redirect:home";
+        return "redirect:/";
     }
     @RequestMapping(value = "/editNews",method = RequestMethod.GET)
     String editMessage(@RequestParam Long messageId,Model model)

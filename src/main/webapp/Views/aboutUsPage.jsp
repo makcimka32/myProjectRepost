@@ -52,34 +52,6 @@
             </div>
         </div>
         <div class="col-md-12 justify-content-center">
-            <h2 class="text-center">Виды работ</h2>
-            <div class="row justify-content-center">
-                <div class="col rounded border border-secondary m-2" style="background-color: white">
-                    <img src="/resources/images/worktTypes/inwentaryzacje_powykonawcze_obiektow_budowlanych-1024x683.jpg" class="img-thumbnail rounded m-auto m-2 img-fluid">
-                    <div class="text-left">
-                        Межевание земельных участков различных категорий земель разрешенного использования и разработка межевых планов по заявкам юридических и физических лиц для целей их постановки на кадастровый учет
-                    </div>
-                </div>
-                <div class="col rounded border border-secondary m-2" style="background-color: white">
-                    <img src="/resources/images/worktTypes/РазработкаПроектовМежевания.jpg" class="img-thumbnail rounded m-auto m-2 img-fluid ">
-                    <div class="text-left">
-                        Разработка проектов межевания и межевых планов на выделение земель сельскохозяйственного назначения, включая и земельные доли
-                    </div>
-                </div>
-                <div class="col rounded border border-secondary m-2" style="background-color: white">
-                    <img src="/resources/images/worktTypes/Технический%20план.jpg" class="img-thumbnail rounded m-auto m-2 img-fluid">
-                    <div class="text-left">
-                        Подготовка и оформление технических планов на жилые и производственные здания, сооружения, объекты незавершённого строительства с целью постановки их на кадастровый учет
-                    </div>
-                </div>
-                <div class="col rounded border border-secondary m-2" style="background-color: white">
-                    <img src="/resources/images/worktTypes/Топографо-графич.jpg" class="img-thumbnail rounded m-auto m-2 img-fluid">
-                    <div class="text-left">
-                        Вынос в натуру границ земельных участков, топографо-геодезические работы
-                    </div>
-                </div>
-            </div>
-
         </div>
         <div class="col-12">
             <h2 class="text-center">Наши партнеры</h2>
@@ -118,6 +90,12 @@
                     <img class="img-thumbnail rounded m-2 myImg" src="/resources/images/ourSertificates/Свидетельство%20СРО%20Пеньков%20А%20В-001.jpg">
                     <img class="img-thumbnail rounded m-2 myImg" src="/resources/images/ourSertificates/Квал.%20Аттестат%20КИ%20Пеньков.jpg">
                 </div>
+                <div class="col-md-3">
+                    <img class="img-thumbnail rounded m-2 myImg" src="/resources/images/ourSertificates/Лицензия1.jpg">
+                </div>
+                <div class="col-md-3">
+                    <img class="img-thumbnail rounded m-2 myImg" src="/resources/images/ourSertificates/Лицензия2.jpg">
+                </div>
             </div>
 
 
@@ -132,11 +110,8 @@
         </div>
 
         <div id="myModal" class="modal">
-
-
             <!-- Modal Content (The Image) -->
             <img class="modal-content" id="img01">
-
             <!-- Modal Caption (Image Text) -->
             <div id="caption"></div>
         </div>

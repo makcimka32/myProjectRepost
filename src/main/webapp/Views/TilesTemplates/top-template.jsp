@@ -47,7 +47,6 @@
         <security:authorize access="isAnonymous()">
             <div class="nav nav-pills justify-content-end ">
                 <a class="nav-link  active m-2 redColor"  style="background-color: #b94964" href="/createUser?new"><param name="new" value="">Создать нового пользователя</a>
-
                 <a class="nav-link  active m-2 redColor"  style="background-color: #b94964" href="/aboutUs">О нас</a>
                 <a class="redColor nav-link  active m-2" style="background-color: #b94964"  href="/login">Войти</a>
             </div>
