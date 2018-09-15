@@ -14,6 +14,11 @@ import org.springframework.web.bind.annotation.RequestParam;
 import javax.validation.Valid;
 import java.security.Principal;
 import java.sql.Date;
+import java.sql.Time;
+import java.sql.Timestamp;
+import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.Calendar;
 
 
 @Controller
@@ -43,15 +48,15 @@ public class UserMessagesController {
         //Если новая новость
         if(userMessagesEntity.getMessageId()==0)
         {
-            userMessagesEntity.setCreationDate(new Date(System.currentTimeMillis()));
-            userMessagesEntity.setEditDate(new Date(System.currentTimeMillis()));
+            userMessagesEntity.setCreationDate(new Timestamp(System.currentTimeMillis()));
+            userMessagesEntity.setEditDate(new Timestamp(System.currentTimeMillis()));
 
             userMessagesEntity.setUsersEntity(userTableInterract.getUsersFromDbByUsername(principal.getName()));
             userMessagesTableInterract.saveMessageInDb(userMessagesEntity);
         }
         //Если новость после редактирования
         else {
-            userMessagesEntity.setEditDate(new Date(System.currentTimeMillis()));
+            userMessagesEntity.setEditDate(new Timestamp(System.currentTimeMillis()));
             userMessagesEntity.setUsersEntity(userTableInterract.getUsersFromDbByUsername(principal.getName()));
             userMessagesTableInterract.updateUserMessageIntoDb(userMessagesEntity);
         }
@@ -71,5 +76,17 @@ public class UserMessagesController {
     {
         model.addAttribute ("userMessagesEntity", userMessagesTableInterract.getUserMessageFromDb(messageId));
         return "messageCreationPage";
+    }
+    @RequestMapping(value = "/news",method = RequestMethod.GET)
+    String showNewsInfo(@RequestParam Long messageId,Model model)
+    {
+        UserMessagesEntity userMessagesEntity=userMessagesTableInterract.getUserMessageFromDb(messageId);
+        ArrayList<UserMessagesEntity> userMessagesEntities=userMessagesTableInterract.getLastThreeNews();
+
+        System.out.println(userMessagesEntity.getEditDate());
+        model.addAttribute("userMessagesEntities",userMessagesEntities);
+        model.addAttribute("mainNews",userMessagesEntity);
+
+        return "showNews";
     }
 }

@@ -10,10 +10,12 @@
 <html>
 <head>
     <title>БрянскГипроЗем</title>
-
+    <!--Шрифт---->
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Vollkorn" rel="stylesheet">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-
+    <!--Шрифты и иконки-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
@@ -28,10 +30,31 @@
     <style>
         body{
             font-family:Georgia,Arial;
-        }
-        body{
+            font-family: 'Vollkorn', serif;
+            font-family: 'Fira Sans', sans-serif;
+
             min-height: 100%;
             background-color: aliceblue;
+        }
+        .myLinkButton{
+            display: block;
+            border: 3px solid #b94964 ;
+            border-radius: 8px;
+            padding: 7px;
+            background-color: aliceblue;
+            color: #b94964;
+            text-align: center;
+        }
+        .myLinkButton:hover{
+            background-color: #b94964;
+            color: white;
+            text-decoration: none;
+        }
+        .myLinkButton:active{
+
+
+            transform: translateY(2px);
+
         }
         .top{
             z-index: 1;
@@ -57,6 +80,26 @@
     </style>
 <!--подключаем для изображений стили-->
     <style>
+        .mainPageCard{
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            background-color: aliceblue;
+        }
+        .mainPageCard:hover{
+            background-color: white;
+        }
+
+        .card{
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            background-color: white;
+        }
+        .card:hover
+        {
+            background-color: cornsilk;
+        }
+        .news:hover{
+            cursor: pointer;
+        }
+
         .myImg {
             border-radius: 5px;
             cursor: pointer;
@@ -147,8 +190,14 @@
 </div>
 <div class="container-fluid content">
     <tiles:insertAttribute name="content"/>
-</div>
 
+</div>
+<div id="myModal" class="modal">
+    <!-- Modal Content (The Image) -->
+    <img class="modal-content" id="img01">
+    <!-- Modal Caption (Image Text) -->
+    <div id="caption"></div>
+</div>
 <div class="container-fluid  footer ">
             <tiles:insertAttribute name="bottom"/>
 </div>
@@ -189,6 +238,7 @@
         })
     })
 
+    $('[data-toggle="tooltip"]').tooltip();
 
 </script>
 

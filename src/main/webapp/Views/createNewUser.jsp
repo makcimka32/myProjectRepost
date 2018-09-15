@@ -43,7 +43,7 @@
                         <sf:input path="phoneNumber" cssClass="form-control " id="phoneNumber" placeholder="8-920-888-88-88"/>
                         <sf:errors path="phoneNumber" cssClass="small text-danger"/>
                     </div>
-                    <security:authorize access="isAnonymous()">
+                    <security:authorize  access="isAnonymous()">
                         <div>
                             <label for="username" class="control-label">Логин:</label>
                             <sf:input path="username" cssClass="form-control" id="username" placeholder="GavrikovMaks"/>

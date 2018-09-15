@@ -81,7 +81,7 @@ public class RequestsDashboardController {
         if(bindingResult.hasErrors())
         {   model.addAttribute("requestEntity",requestsEntity);
             model.addAttribute("errorSize","Сообщение должно состоять от 0 до 200 знаков");
-            System.out.println(bindingResult);
+
             return "errorMessage";
         }
 

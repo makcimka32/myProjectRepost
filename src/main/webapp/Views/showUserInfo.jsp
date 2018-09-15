@@ -20,13 +20,13 @@
             <div class="nav nav-pills justify-content-center">
                 <div class="row  justify-content-center">
                     <div class="col-lg-8">
-                        <a class="nav-link text-center  active m-1" style="background-color: #b94964" href="/privateOffice?username=<security:authentication property='principal.username'/>">Мои заявки</a>
+                        <a class="myLinkButton m-1"  href="/privateOffice?username=<security:authentication property='principal.username'/>">Мои заявки</a>
                     </div>
                     <div class="col-lg-8">
-                        <a class="nav-link text-center  active m-1" style="background-color: #b94964" href="/privateOfficeInfo?username=<security:authentication property='principal.username'/>">Личные данные</a>
+                        <a class="myLinkButton m-1"  href="/privateOfficeInfo?username=<security:authentication property='principal.username'/>">Личные данные</a>
                     </div>
                     <div class="col-lg-8">
-                        <a class="nav-link text-center  active m-1" style="background-color: #b94964" href="/">Вернуться</a>
+                        <a class="myLinkButton m-1"  href="/">Вернуться</a>
                     </div>
                 </div>
             </div>

@@ -4,6 +4,7 @@ import Database.DatabaseInterracts.UserMessagesTableInterract;
 import Database.DatabaseInterracts.UserTableInterract;
 import Database.Entities.UserMessagesEntity;
 import Database.Entities.UsersEntity;
+import org.bouncycastle.math.raw.Mod;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
@@ -89,6 +90,42 @@ public class HomeController {
 
         return "createNewUser";
     }
+    @RequestMapping(value = "/createAdminUser",params = "new",method = RequestMethod.GET)
+    String createNewAdminUser(Model model)
+    {
+        UsersEntity usersEntity=new UsersEntity();
+        model.addAttribute("usersEntity",usersEntity);
+        return "createNewAdminUser";
+    }
+
+    @RequestMapping(value = "/createAdminUser",method = RequestMethod.POST)
+    String createAdminUserPost(@Valid UsersEntity usersEntity,BindingResult bindingResult,Model model)
+    {
+        if(bindingResult.hasErrors())
+        {
+            return "createNewAdminUser";
+        }
+        //проверяем пользователя в БД по имени
+        if(userTableInterract.getUsersEntityFromDbByUsername(usersEntity.getUsername())|| userTableInterract.getUsersEntityFromDbByEmail(usersEntity.getEmail()))
+        {
+            if(userTableInterract.getUsersEntityFromDbByUsername(usersEntity.getUsername()))
+            {
+                model.addAttribute("usernameErrorMessage","Пользователь с таким именем уже присутствует в системе");
+            }
+            if(userTableInterract.getUsersEntityFromDbByEmail(usersEntity.getEmail()))
+            {
+                model.addAttribute("emailErrorMessage","Аккаунт с такой почтой уже зарегистрирован");
+            }
+
+            return "createNewAdminUser";
+        }
+
+        usersEntity.setRole("ROLE_WORKER_USER");
+        usersEntity.setEnabled(true);
+        userTableInterract.addUserToDb(usersEntity);
+
+        return "redirect:/";
+    }
 
     @RequestMapping(value = "/createUser",method = RequestMethod.POST)
     String createNewUserPostHandler(@Valid UsersEntity usersEntity, BindingResult bindingResult,Boolean privacyIndicator,Model model)
@@ -96,7 +133,6 @@ public class HomeController {
         //сперва проверяем на правильность ввода
         if(bindingResult.hasErrors())
         {
-            System.out.println(bindingResult);
             return "createNewUser";
         }
         if(usersEntity.getUserId()==0)
@@ -123,7 +159,7 @@ public class HomeController {
             usersEntity.setEnabled(true);
 
             userTableInterract.addUserToDb(usersEntity);
-            return "home";
+            return "redirect:/";
         }
         else {
             UsersEntity tempEntity=userTableInterract.getUsersFromDbByUserId(usersEntity.getUserId());

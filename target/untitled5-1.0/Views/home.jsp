@@ -17,7 +17,50 @@
             pointer-events: none;
             cursor: default;
         }
+
+        /* The dots/bullets/indicators */
+        .dot {
+            cursor: pointer;
+            height: 20px;
+            width: 20px;
+            margin: 4px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 1.6s ease;
+        }
+
+       .activeDot, .dot:hover {
+            background-color: #717171;
+        }
+
+        /* Next & previous buttons */
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            padding: 16px;
+            color: white;
+            transition: 1s ease;
+            border-radius: 0 3px 3px 0;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            right: 16px;
+        }
+        .prev{
+            left: 16px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover, .next:hover {
+            background-color: rgba(0,0,0,0.8);
+        }
+
     </style>
+
+
 </head>
 <body>
 <div class="container">
@@ -25,7 +68,7 @@
         <div class="col-12 text-center">
             <h1 class="text-center display-4"><small>Оформить заявку просто</small></h1>
             <h3 class="text-center lead">При оформлении заявки через сайт скидка 5%</h3>
-            <div class="row justify-content-center">
+       <%--     <div class="row justify-content-center">
                 <div class="col-md-8 ">
                     <ul class="text-justify list-group">
                         <li class="list-group-item list-group-item-primary">1.Пройти процесс регистрации в системе</li>
@@ -34,16 +77,59 @@
                         <li class="list-group-item list-group-item-primary">4.Получить уведомление об окончании работ и забрать результаты работы на почте или в офисе</li>
                     </ul>
                 </div>
+            </div>--%>
+            <div class="row justify-content-center ">
+                <div class="col-md-3 mainPageCard m-2" data-toggle="tooltip" data-placement="bottom"  title="Чтобы зарегистрироваться необходимо нажать на кнопку 'Создать нового пользователя'">
+                    <div class="row justify-content-center">
+                        <div class="col-12">
+                            <strong>Зарегистрируйся</strong>
+                        </div>
+                        <div class="col-12">
+                            <i class="far fa-address-card fa-4x "></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mainPageCard m-2"  data-toggle="tooltip" data-placement="bottom"  title="После оформления заявки на электронную почту будет выслано письмо с информацией о заявке и реквизитами об оплате">
+                    <div class="row justify-content-center">
+                        <div class="col-12">
+                            <strong>Оформи заявку в личном кабинете</strong>
+                        </div>
+                        <div class="col-12">
+                            <i class="fas fa-pen-square fa-4x "></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mainPageCard m-2">
+                    <div class="row justify-content-center">
+                        <div class="col-12">
+                            <strong>Оплати заявку</strong>
+                        </div>
+                        <div class="col-12">
+                            <i class="far fa-credit-card fa-4x "></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mainPageCard m-2" data-toggle="tooltip" data-placement="bottom"  title="По окончанию всех работ на электронную почту будет выслано письмо с информацией о проделанной работе. Результаты можно забрать непосредственно в офисе">
+                    <div class="row justify-content-center">
+                        <div class="col-12">
+                           <strong>По окончанию работ, на почтовый ящик придёт уведомление</strong>
+                        </div>
+                        <div class="col-12">
+                            <i class="far fa-envelope fa-4x"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
             <hr>
         </div>
+
         <div class="col-12 text-center">
             <h1 class="text-center display-4"><small>Почему мы?</small></h1>
             <div class="row justify-content-center">
-                <div class="col-12 rounded border border-secondary m-2" style="background-color: white">
+                <div class="col-12 m-2">
                     <h3 class="text-center"><strong>Низкие цены</strong></h3>
                     <div class="row justify-content-center">
-                        <div class="col-md-3 m-auto">
+                        <div class="col-md-3 m-auto card">
                             <h4 class="text-center">Межевание земельных участков</h4>
                             <img src="/resources/images/worktTypes/inwentaryzacje_powykonawcze_obiektow_budowlanych-1024x683.jpg" class="img-thumbnail rounded m-auto m-2 img-fluid">
                             <div class="text-left">
@@ -52,7 +138,7 @@
                                 <strong>Цена:7000 рублей</strong>
                             </div>
                         </div>
-                        <div class="col-md-3 m-auto">
+                        <div class="col-md-3 m-auto card">
                             <h4 class="text-center">Разработка проектов межевания</h4>
                             <img src="/resources/images/worktTypes/РазработкаПроектовМежевания.jpg" class="img-thumbnail rounded m-auto m-2 img-fluid ">
                             <div class="text-left">
@@ -61,7 +147,7 @@
                                 <strong>Цена:1000 рублей за 1 гектар </strong>
                             </div>
                         </div>
-                        <div class="col-md-3 m-auto">
+                        <div class="col-md-3 m-auto card">
                             <h4 class="text-center">Подготовка и оформление технических планов</h4>
                             <img src="/resources/images/worktTypes/Технический%20план.jpg" class="img-thumbnail rounded m-auto m-2 img-fluid">
                             <div class="text-left">
@@ -70,7 +156,7 @@
                                 <strong>Цена:5000 рублей</strong>
                             </div>
                         </div>
-                        <div class="col-md-3 m-auto">
+                        <div class="col-md-2 m-auto card">
                             <h4 class="text-center">Вынос границ</h4>
                             <img src="/resources/images/worktTypes/Топографо-графич.jpg" class="img-thumbnail rounded m-auto m-2 img-fluid">
                             <div class="text-left">
@@ -84,31 +170,46 @@
 
             </div>
             <div class="row justify-content-center">
-                <div class="col rounded border border-secondary m-2" style="background-color: white">
+                <div class="col m-1">
                     <h3><strong>Наши специалисты и оборудование</strong></h3>
-                    <div class="text-justify">
-                        Штат сотрудников составляют высококвалифицированные специалисты,прошедшие аттестацию кадастрового инженера.Все выполняемые работы производятся при помощи высокотехнологичного оборудовани
+                    <div class="card">
+                        <div class="text-left m-2">
+                            Штат сотрудников составляют высококвалифицированные специалисты,прошедшие аттестацию кадастрового инженера.Наш коллектив - это команда высококвалифицированных специалистов с высшим и средне-техническим образованием (инженеров и техников-землеустроителей, инженеров городского и земельного кадастра) с большим стажем геодезических и землеустроительных работ.
+                            Мы делаем ставку на современные технологии в области инженерных изысканий и землеустройства.
+                            Парк геодезических приборов укомплектован электронными тахеометрами Sokkia, Nikon; системами спутниковой навигации (GPS) ProMark-3, трассоискателями Metrotech..
+                        </div>
                     </div>
                 </div>
-                <div class="col rounded border border-secondary m-2" style="background-color: white">
+                <div class="col m-1 m-auto">
+                    <h3><strong>Быстрые сроки</strong></h3>
+                    <div class="card">
+                        <div class="text-left m-2">
+                            Все работы выполняются в кратчайшие сроки.За долгое время существования наша компания выполнила тысячи землеустроительных проектов и отлично зарекомандовала себя на рынке. Уделяемое пристальное внимание к качеству выполненных работ по оформлению земли согласно требованиям нормативно-технических документов и законодательства РФ, позволяет гарантировать высокое качество работ.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12  m-1 m-auto " >
                     <h3><strong>Наши партнеры</strong></h3>
-                    <div class="text-justify">
-                        Среди наших партнеров:
-                        Управление Федерального агентства кадастра объектов недвижимости по Брянской области.
-                        ОАО «Магистральные нефтепроводы «Дружба»
-                        Управление имущественных отношений Брянской и Курской области.
-                        ОАО «Брянскэнерго»
-                        Упрдор Москва-Харьков
-                        ОАО«Связьстрой-1»
-                        ООО "Газпром Трансгаз Москва" и др.
+                        <img src="/resources/images/Partners/GazpromTrans.jpg" class="img-fluid mySlideImage" style="width:100%">
+
+                        <img src="/resources/images/Partners/Транснефть.jpg" class="img-fluid mySlideImage" style="width: 100%;display: none">
+
+                        <img src="/resources/images/Partners/ГосРегистр.jpg" class="img-fluid mySlideImage" style="width: 100%;display: none">
+
+                        <img src="/resources/images/Partners/БрянскЭнерго.jpg" class="img-fluid mySlideImage" style="width: 100%; display: none;">
+                        <a class="prev" onclick="showPrev()">&#10094;</a>
+
+                        <a class="next" onclick="showNext()">&#10095;</a>
+
+
+                    <div class="text-center m-2">
+                        <span class="dot activeDot" onclick="show(0)"></span>
+                        <span class="dot" onclick="show(1)"></span>
+                        <span class="dot" onclick="show(2)"></span>
+                        <span class="dot" onclick="show(3)"></span>
                     </div>
                 </div>
-                <div class="col rounded border border-secondary m-2" style="background-color: white">
-                    <h3><strong>Сроки и отзывы</strong></h3>
-                    <div class="text-justify">
-                        Все работы выполняются в кратчайшие сроки.За долгое время существования наша компания выполнила тысячи землеустроительных проектов и отлично зарекомандовала себя на рынке.
-                    </div>
-                </div>
+
             </div>
             <hr>
         </div>
@@ -117,11 +218,10 @@
             <div class="row">
                 <c:forEach var="message" items="${userMessagesEntities}">
                     <div class="col-md-6">
-                        <div class="card rounded border-secondary text-left m-2">
-                            <h2 class="text-center ">${message.titleMessage}</h2>
+                        <div class="card text-left m-2 news" onclick="window.location=('/news?messageId=${message.messageId}')">
+                            <p class="m-2 text-left " style="font-size: 14pt;"><strong>${message.titleMessage}</strong></p>
                             <p class="mx-2" style="color:darkgray">Автор:${message.usersEntity.secondName} ${message.usersEntity.firstName} <br/>
                                 Дата редактирования:${message.editDate}</p>
-                            <p class="mx-2 text-justify">${message.textMessage}</p>
                             <security:authorize access="hasRole('ROLE_WORKER_USER')">
                                 <div class="row">
                                     <div class="col-md-6 text-center">
@@ -141,15 +241,15 @@
             <c:if test="${!empty(userMessagesEntities)}">
                 <div class="row mt-2 justify-content-center">
                     <div class="nav nav-pills">
-                        <a class="nav-link  m-1" id="firstPage" style="background-color: #b94964;color: black;" href="#">Первая</a>
-                        <a class="nav-link  m-1" id="prevPage" style="background-color: #b94964;color: black;" href="#">Предыдущая</a>
-                        <a class="nav-link  m-1" id="pageNumber1" style="background-color: #b94964;color: black;" href="#">1</a>
-                        <a class="nav-link  m-1" id="pageNumber2" style="background-color: #b94964;color: black;" href="#">2</a>
-                        <a class="nav-link  m-1" id="pageNumber3" style="background-color: #b94964;color: black;" href="#">3</a>
-                        <a class="nav-link  m-1" id="pageNumber4" style="background-color: #b94964;color: black;" href="#">4</a>
-                        <a class="nav-link  m-1" id="pageNumber5" style="background-color: #b94964;color: black;" href="#">5</a>
-                        <a class="nav-link  m-1" id="nextPage" style="background-color: #b94964;color: black;" href="#">Следующая</a>
-                        <a class="nav-link  m-1" id="lastPage" style="background-color: #b94964;color: black;" href="/allRequestInSystem?pageNumber=${endPageNumber}">Последняя</a>
+                        <a class="myLinkButton  m-1" id="firstPage"  href="#">Первая</a>
+                        <a class="myLinkButton  m-1" id="prevPage"  href="#">Предыдущая</a>
+                        <a class="myLinkButton m-1" id="pageNumber1"  href="#">1</a>
+                        <a class="myLinkButton  m-1" id="pageNumber2"  href="#">2</a>
+                        <a class="myLinkButton  m-1" id="pageNumber3"  href="#">3</a>
+                        <a class="myLinkButton m-1" id="pageNumber4"  href="#">4</a>
+                        <a class="myLinkButton m-1" id="pageNumber5"  href="#">5</a>
+                        <a class="myLinkButton  m-1" id="nextPage" href="#">Следующая</a>
+                        <a class="myLinkButton  m-1" id="lastPage"  href="/allRequestInSystem?pageNumber=${endPageNumber}">Последняя</a>
                     </div>
                 </div>
             </c:if>
@@ -164,6 +264,7 @@
             $('#firstPage').addClass('inactiveLink disabled');
             $('#prevPage').addClass('inactiveLink disabled');
             $('#pageNumber1').css('color','white');
+            $('#pageNumber1').css('backgroundColor','#b94964');
             $('#pageNumber1').prop('href','/');
             var differenceBetweenPages=${endPageNumber}-${pageNumber};
             switch (differenceBetweenPages)
@@ -218,6 +319,7 @@
             $('#prevPage').prop('href','/?pageNumber=${pageNumber-1}');
             $('#pageNumber1').prop('href','/?pageNumber=${pageNumber-1}')
             $('#pageNumber2').css('color','white');
+            $('#pageNumber2').css('backgroundColor','#b94964');
             $('#pageNumber2').prop('href','/?pageNumber=${pageNumber}');
             var differenceBetweenPages=${endPageNumber}-${pageNumber};
             switch (differenceBetweenPages)
@@ -263,6 +365,7 @@
             {
                 case 0:
                     $('#pageNumber1').css('color','white');
+                    $('#pageNumber1').css('backgroundColor','#b94964');
                     $('#pageNumber1').prop('href','/?pageNumber=${endPageNumber}');
                     $('#pageNumber2').remove();
                     $('#pageNumber3').remove();
@@ -274,6 +377,7 @@
                 case 1:
                     $('#pageNumber1').prop('href','/?pageNumber=${endPageNumber-1}');
                     $('#pageNumber2').css('color','white');
+                    $('#pageNumber2').css('backgroundColor','#b94964');
                     $('#pageNumber2').prop('href','/?pageNumber=${endPageNumber}');
                     $('#pageNumber3').remove();
                     $('#pageNumber4').remove();
@@ -283,6 +387,7 @@
                     $('#pageNumber1').prop('href','/?pageNumber=${endPageNumber-2}');
                     $('#pageNumber2').prop('href','/?pageNumber=${endPageNumber-1}');
                     $('#pageNumber3').css('color','white');
+                    $('#pageNumber3').css('backgroundColor','#b94964');
                     $('#pageNumber3').prop('href','/?pageNumber=${endPageNumber}');
                     $('#pageNumber4').remove();
                     $('#pageNumber5').remove();
@@ -292,6 +397,7 @@
                     $('#pageNumber2').prop('href','/?pageNumber=${endPageNumber-2}');
                     $('#pageNumber3').prop('href','/?pageNumber=${endPageNumber-1}');
                     $('#pageNumber4').css('color','white');
+                    $('#pageNumber4').css('backgroundColor','#b94964');
                     $('#pageNumber4').prop('href','/?pageNumber=${endPageNumber}');
                     $('#pageNumber5').remove();
                     break;
@@ -305,6 +411,7 @@
                     $('#pageNumber4').prop('href','/?pageNumber=${endPageNumber-1}');
                     $('#pageNumber4').prop('innerHTML','${endPageNumber}');
                     $('#pageNumber5').css('color','white');
+                    $('#pageNumber5').css('backgroundColor','#b94964');
                     $('#pageNumber5').prop('href','/?pageNumber=${endPageNumber}');
                     $('#pageNumber5').prop('innerHTML','${endPageNumber+1}');
                     break;
@@ -325,6 +432,7 @@
                 $('#pageNumber2').prop('href','/?pageNumber=${pageNumber-1}');
                 $('#pageNumber3').prop('href','/?pageNumber=${pageNumber}');
                 $('#pageNumber3').css('color','white');
+                $('#pageNumber3').css('backgroundColor','#b94964');
                 $('#pageNumber4').prop('href','/?pageNumber=${pageNumber+1}');
                 $('#pageNumber5').remove();
             }
@@ -339,6 +447,7 @@
                 $('#pageNumber4').prop('href','/?pageNumber=${pageNumber}');
                 $('#pageNumber4').prop('innerHTML','${pageNumber+1}');
                 $('#pageNumber4').css('color','white');
+                $('#pageNumber4').css('backgroundColor','#b94964');
                 $('#pageNumber5').prop('href','/?pageNumber=${pageNumber+1}');
                 $('#pageNumber5').prop('innerHTML','${pageNumber+2}');
             }
@@ -351,6 +460,7 @@
             $('#lastPage').prop('href','/?pageNumber=${endPageNumber}');
             $('#nextPage').prop('href','/?pageNumber=${pageNumber+1}');
             $('#pageNumber3').css('color','white');
+            $('#pageNumber3').css('backgroundColor','#b94964');
             $('#pageNumber3').prop('innerHTML','${pageNumber+1}');
             $('#pageNumber3').prop('href','/?pageNumber=${pageNumber}');
             $('#pageNumber2').prop('innerHTML','${pageNumber}');
@@ -365,5 +475,50 @@
 
     })
 </script>
+<!--Карусель-->
+    <script>
+        var slideIndex = 0;
+        function showNext() {
+            show(++slideIndex)
+        }
+        function showPrev() {
+            show(--slideIndex)
+            
+        }
+        function show(imageNumber) {
+
+            slideIndex=imageNumber;
+            var images=$('.mySlideImage');
+            if(imageNumber>=images.length)
+            {
+                slideIndex=0;
+            }
+            else if(imageNumber<0)
+            {
+                slideIndex=images.length-1;
+            }
+            else {
+                slideIndex=imageNumber;
+            }
+
+            for( i=0; i<images.length;i++)
+            {
+                images[i].style.display="none";
+            }
+            images[slideIndex].style.display="block";
+            var dots=$(".dot");
+            //добавляем цвет кнопкам
+            for(i=0;i<dots.length;i++)
+            {
+
+                 dots.eq(i).removeClass("activeDot");
+
+            }
+            dots.eq(slideIndex).addClass("activeDot");
+        }
+
+
+</script>
+
 </body>
 </html>

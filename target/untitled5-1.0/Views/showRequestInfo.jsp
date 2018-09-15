@@ -22,13 +22,13 @@
             <div class="nav nav-pills justify-content-center">
                 <div class="row  justify-content-center">
                     <div class="col-lg-8">
-                        <a class="nav-link text-center  active m-1" style="background-color: #b94964" href="/privateOffice?username=<security:authentication property='principal.username'/>">Мои заявки</a>
+                        <a class="myLinkButton m-1"  href="/privateOffice?username=<security:authentication property='principal.username'/>">Мои заявки</a>
                     </div>
                     <div class="col-lg-8">
-                        <a class="nav-link text-center  active m-1" style="background-color: #b94964" href="/privateOfficeInfo?username=<security:authentication property='principal.username'/>">Личные данные</a>
+                        <a class="myLinkButton m-1"  href="/privateOfficeInfo?username=<security:authentication property='principal.username'/>">Личные данные</a>
                     </div>
                     <div class="col-lg-8">
-                        <a class="nav-link text-center  active m-1" style="background-color: #b94964" href="/">Вернуться</a>
+                        <a class="myLinkButton m-1"  href="/">Вернуться</a>
                     </div>
                 </div>
             </div>
@@ -65,25 +65,25 @@
                         <input type="hidden" value="${requestEntity.requestId}" name="id">
                         <input type="submit" class="btn btn-success" value="Редактировать">
                     </c:if>
-                    <div class="nav nav-pills  justify-content-center">
+                    <div class="nav  justify-content-center">
                         <security:authorize access="hasRole('ROLE_WORKER_USER')">
                             <c:if test="${requestEntity.workStatus=='В обработке'}">
-                                <a class="nav-link  active m-1" style="background-color: #b94964" href="/rejectRequest?requestId=${requestEntity.requestId}">Отклонить</a>
-                                <a class="nav-link  active m-1" style="background-color: #b94964" href="/executeRequest/${requestEntity.requestId}?username=<security:authentication property="principal.username"/>">Исполнять</a>
+                                <a class="myLinkButton m-1"  href="/rejectRequest?requestId=${requestEntity.requestId}">Отклонить</a>
+                                <a class="myLinkButton m-1"  href="/executeRequest/${requestEntity.requestId}?username=<security:authentication property="principal.username"/>">Исполнять</a>
                             </c:if>
                             <c:if test="${requestEntity.workStatus=='Отклонена'}">
-                                <a class="nav-link  active m-1" style="background-color: #b94964" href="/handleRequest/${requestEntity.requestId}?username=<security:authentication property="principal.username"/>">Обработать</a>
+                                <a class="myLinkButton m-1"  href="/handleRequest/${requestEntity.requestId}?username=<security:authentication property="principal.username"/>">Обработать</a>
                             </c:if>
                             <security:authentication property="principal.username"  var="tempUsername"/>
                             <c:if test="${requestEntity.workStatus=='Исполняется'&& requestEntity.worker==tempUsername}">
-                                <a class="nav-link  active m-1" style="background-color: #b94964" href="/rejectRequest?requestId=${requestEntity.requestId}">Отклонить</a>
-                                <a  class="nav-link  active m-1" style="background-color: #b94964" href="/handleRequest/${requestEntity.requestId}?username=<security:authentication property="principal.username"/>">Обработать</a>
-                                <a class="nav-link  active m-1" style="background-color: #b94964" href="/performRequest/${requestEntity.requestId}?username=<security:authentication property="principal.username"/>">Выполнить</a>
+                                <a class="myLinkButton m-1"  href="/rejectRequest?requestId=${requestEntity.requestId}">Отклонить</a>
+                                <a  class="myLinkButton m-1" href="/handleRequest/${requestEntity.requestId}?username=<security:authentication property="principal.username"/>">Обработать</a>
+                                <a class="myLinkButton m-1" href="/performRequest/${requestEntity.requestId}?username=<security:authentication property="principal.username"/>">Выполнить</a>
                             </c:if>
                             <c:if test="${requestEntity.workStatus=='Выполнена'&& requestEntity.worker==tempUsername}">
-                                <a class="nav-link  active m-1" style="background-color: #b94964" href="/rejectRequest?requestId=${requestEntity.requestId}">Отклонить</a>
-                                <a class="nav-link  active m-1" style="background-color: #b94964" href="/handleRequest/${requestEntity.requestId}?username=<security:authentication property="principal.username"/>">Обработать</a>
-                                <a class="nav-link  active m-1" style="background-color: #b94964" href="/executeRequest/${requestEntity.requestId}?username=<security:authentication property="principal.username"/>">Исполнять</a>
+                                <a class="myLinkButton m-1"  href="/rejectRequest?requestId=${requestEntity.requestId}">Отклонить</a>
+                                <a class="myLinkButton m-1"  href="/handleRequest/${requestEntity.requestId}?username=<security:authentication property="principal.username"/>">Обработать</a>
+                                <a class="myLinkButton m-1" href="/executeRequest/${requestEntity.requestId}?username=<security:authentication property="principal.username"/>">Исполнять</a>
                             </c:if>
                         </security:authorize>
                     </div>
@@ -98,30 +98,19 @@
                                         <img  class="rounded img-fluid m-1 myImg " src="/images/${requestEntity.usersEntity.username}/${requestEntity.requestId}/${item}" alt="${item}"/>
 
                                         <c:if test="${requestEntity.usersEntity.username==tempusername}">
-                                            <div class="nav nav-pills  justify-content-center">
+                                            <div class="nav   justify-content-center">
                                                 <!--<a class="nav-link  active m-1 delImage" style="background-color: #b94964" href="/deleteImage?imageName=${item}&username=<security:authentication property="principal.username"/>&requestId=${requestEntity.requestId}">Удалить</a>-->
-                                                <a class="nav-link  active m-1 " onclick="function exec() {
+                                                <a class="myLinkButton m-1 " onclick="function exec() {
                                                         $.get('/deleteImage?imageName=${item}&username=<security:authentication property="principal.username"/>&requestId=${requestEntity.requestId}')};
-                                                        exec(); document.getElementById('${item}').remove(); " style="background-color: #b94964" href="#" return false;>Удалить</a>
+                                                        exec(); document.getElementById('${item}').remove(); " href="#" return false;>Удалить</a>
                                             </div>
                                         </c:if>
-
-
                                     </div>
-
                                 </c:forEach>
                             </div>
                         </div>
                     </div>
                 </sf:form>
-                <!-- The Modal -->
-                <div id="myModal" class="modal">
-                    <!-- Modal Content (The Image) -->
-                    <img class="modal-content" id="img01">
-
-                    <!-- Modal Caption (Image Text) -->
-                    <div id="caption"></div>
-                </div>
 
 
             </div>

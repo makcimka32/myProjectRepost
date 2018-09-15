@@ -26,7 +26,7 @@
     <div class="row">
         <c:forEach var="request" items="${requestsEntities}">
             <div class="col-md-6 col-lg-4">
-                <div class="card m-2 text-left  rounded border-secondary ">
+                <div class="card m-2 text-left ">
                     <sf:form action="/" cssClass="m-1">
                         <h3 class="card-title text-center"> Id заявки:${request.requestId}</h3>
                         <c:out value="Тип заявки:${request.requestType}"/><br/>
@@ -36,26 +36,26 @@
                         <c:if test="${request.worker!=null}">
                             <c:out value="Исполнитель:${request.worker}"/><br/>
                         </c:if>
-                        <div class="nav nav-pills  justify-content-center">
+                        <div class="nav  justify-content-center">
                             <c:if test="${request.workStatus=='В обработке'}">
-                                <a class="nav-link  active m-1" style="background-color: #b94964" href="/rejectRequest?requestId=${request.requestId}">Отклонить</a>
-                                <a class="nav-link  active m-1" style="background-color: #b94964" href="/executeRequest/${request.requestId}?username=<security:authentication property="principal.username"/>">Исполнять</a>
+                                <a class="myLinkButton m-1" href="/rejectRequest?requestId=${request.requestId}">Отклонить</a>
+                                <a class="myLinkButton m-1"  href="/executeRequest/${request.requestId}?username=<security:authentication property="principal.username"/>">Исполнять</a>
                             </c:if>
                             <c:if test="${request.workStatus=='Отклонена'}">
-                                <a class="nav-link  active m-1" style="background-color: #b94964" href="/handleRequest/${request.requestId}?username=<security:authentication property="principal.username"/>">Обработать</a>
+                                <a class="myLinkButton m-1" href="/handleRequest/${request.requestId}?username=<security:authentication property="principal.username"/>">Обработать</a>
                             </c:if>
                             <security:authentication property="principal.username"  var="tempUsername"/>
                             <c:if test="${request.workStatus=='Исполняется'&& request.worker==tempUsername}">
-                                <a class="nav-link  active m-1" style="background-color: #b94964"  href="/rejectRequest?requestId=${request.requestId}">Отклонить</a>
-                                <a class="nav-link  active m-1" style="background-color: #b94964" href="/handleRequest/${request.requestId}?username=<security:authentication property="principal.username"/>">Обработать</a>
-                                <a class="nav-link  active m-1" style="background-color: #b94964" href="/performRequest/${request.requestId}?username=<security:authentication property="principal.username"/>">Выполнить</a>
+                                <a class="myLinkButton m-1"  href="/rejectRequest?requestId=${request.requestId}">Отклонить</a>
+                                <a class="myLinkButton m-1"  href="/handleRequest/${request.requestId}?username=<security:authentication property="principal.username"/>">Обработать</a>
+                                <a class="myLinkButton m-1"  href="/performRequest/${request.requestId}?username=<security:authentication property="principal.username"/>">Выполнить</a>
                             </c:if>
                             <c:if test="${request.workStatus=='Выполнена'&& request.worker==tempUsername}">
-                                <a class="nav-link  active m-1" style="background-color: #b94964" href="/rejectRequest?requestId=${request.requestId}">Отклонить</a>
-                                <a class="nav-link  active m-1" style="background-color: #b94964" href="/handleRequest/${request.requestId}?username=<security:authentication property="principal.username"/>">Обработать</a>
-                                <a class="nav-link  active m-1" style="background-color: #b94964" href="/executeRequest/${request.requestId}?username=<security:authentication property="principal.username"/>">Исполнять</a>
+                                <a class="myLinkButton m-1" href="/rejectRequest?requestId=${request.requestId}">Отклонить</a>
+                                <a class="myLinkButton m-1" href="/handleRequest/${request.requestId}?username=<security:authentication property="principal.username"/>">Обработать</a>
+                                <a class="myLinkButton m-1"  href="/executeRequest/${request.requestId}?username=<security:authentication property="principal.username"/>">Исполнять</a>
                             </c:if>
-                            <br/><a class="nav-link  active m-1" style="background-color: #b94964" href="/requestDetail?requestId=${request.requestId}">См.Детали</a>
+                            <br/><a class="myLinkButton m-1"  href="/requestDetail?requestId=${request.requestId}">См.Детали</a>
                         </div>
                     </sf:form>
                 </div>
@@ -65,15 +65,15 @@
     <c:if test="${!empty(requestsEntities)}">
         <div class="row mt-2 justify-content-center">
             <div class="nav nav-pills">
-                <a class="nav-link  m-1" id="firstPage" style="background-color: #b94964;color: black;" href="#">Первая</a>
-                <a class="nav-link  m-1" id="prevPage" style="background-color: #b94964;color: black;" href="#">Предыдущая</a>
-                <a class="nav-link  m-1" id="pageNumber1" style="background-color: #b94964;color: black;" href="#">1</a>
-                <a class="nav-link  m-1" id="pageNumber2" style="background-color: #b94964;color: black;" href="#">2</a>
-                <a class="nav-link  m-1" id="pageNumber3" style="background-color: #b94964;color: black;" href="#">3</a>
-                <a class="nav-link  m-1" id="pageNumber4" style="background-color: #b94964;color: black;" href="#">4</a>
-                <a class="nav-link  m-1" id="pageNumber5" style="background-color: #b94964;color: black;" href="#">5</a>
-                <a class="nav-link  m-1" id="nextPage" style="background-color: #b94964;color: black;" href="#">Следующая</a>
-                <a class="nav-link  m-1" id="lastPage" style="background-color: #b94964;color: black;" href="/allRequestInSystem?pageNumber=${endPageNumber}">Последняя</a>
+                <a class="myLinkButton  m-1" id="firstPage"  href="#">Первая</a>
+                <a class="myLinkButton m-1" id="prevPage"  href="#">Предыдущая</a>
+                <a class="myLinkButton m-1" id="pageNumber1"  href="#">1</a>
+                <a class="myLinkButton m-1" id="pageNumber2" href="#">2</a>
+                <a class="myLinkButton  m-1" id="pageNumber3"  href="#">3</a>
+                <a class="myLinkButton  m-1" id="pageNumber4"  href="#">4</a>
+                <a class="myLinkButton  m-1" id="pageNumber5"  href="#">5</a>
+                <a class="myLinkButton  m-1" id="nextPage"  href="#">Следующая</a>
+                <a class="myLinkButton  m-1" id="lastPage"  href="/allRequestInSystem?pageNumber=${endPageNumber}">Последняя</a>
             </div>
         </div>
     </c:if>
@@ -86,6 +86,7 @@
             $('#firstPage').addClass('inactiveLink disabled');
             $('#prevPage').addClass('inactiveLink disabled');
             $('#pageNumber1').css('color','white');
+            $('#pageNumber1').css('backgroundColor','#b94964');
             $('#pageNumber1').prop('href','/allRequestInSystem');
             var differenceBetweenPages=${endPageNumber}-${pageNumber};
             switch (differenceBetweenPages)
@@ -140,6 +141,7 @@
             $('#prevPage').prop('href','/allRequestInSystem?pageNumber=${pageNumber-1}');
             $('#pageNumber1').prop('href','/allRequestInSystem?pageNumber=${pageNumber-1}')
             $('#pageNumber2').css('color','white');
+            $('#pageNumber2').css('backgroundColor','#b94964');
             $('#pageNumber2').prop('href','/allRequestInSystem?pageNumber=${pageNumber}');
             var differenceBetweenPages=${endPageNumber}-${pageNumber};
             switch (differenceBetweenPages)
@@ -185,6 +187,7 @@
             {
                 case 0:
                     $('#pageNumber1').css('color','white');
+                    $('#pageNumber1').css('backgroundColor','#b94964');
                     $('#pageNumber1').prop('href','/allRequestInSystem?pageNumber=${endPageNumber}');
                     $('#pageNumber2').remove();
                     $('#pageNumber3').remove();
@@ -196,6 +199,7 @@
                 case 1:
                     $('#pageNumber1').prop('href','/allRequestInSystem?pageNumber=${endPageNumber-1}');
                     $('#pageNumber2').css('color','white');
+                    $('#pageNumber2').css('backgroundColor','#b94964');
                     $('#pageNumber2').prop('href','/allRequestInSystem?pageNumber=${endPageNumber}');
                     $('#pageNumber3').remove();
                     $('#pageNumber4').remove();
@@ -205,6 +209,7 @@
                     $('#pageNumber1').prop('href','/allRequestInSystem?pageNumber=${endPageNumber-2}');
                     $('#pageNumber2').prop('href','/allRequestInSystem?pageNumber=${endPageNumber-1}');
                     $('#pageNumber3').css('color','white');
+                    $('#pageNumber3').css('backgroundColor','#b94964');
                     $('#pageNumber3').prop('href','/allRequestInSystem?pageNumber=${endPageNumber}');
                     $('#pageNumber4').remove();
                     $('#pageNumber5').remove();
@@ -214,6 +219,7 @@
                     $('#pageNumber2').prop('href','/allRequestInSystem?pageNumber=${endPageNumber-2}');
                     $('#pageNumber3').prop('href','/allRequestInSystem?pageNumber=${endPageNumber-1}');
                     $('#pageNumber4').css('color','white');
+                    $('#pageNumber4').css('backgroundColor','#b94964');
                     $('#pageNumber4').prop('href','/allRequestInSystem?pageNumber=${endPageNumber}');
                     $('#pageNumber5').remove();
                     break;
@@ -227,6 +233,7 @@
                     $('#pageNumber4').prop('href','/allRequestInSystem?pageNumber=${endPageNumber-1}');
                     $('#pageNumber4').prop('innerHTML','${endPageNumber}');
                     $('#pageNumber5').css('color','white');
+                    $('#pageNumber5').css('backgroundColor','#b94964');
                     $('#pageNumber5').prop('href','/allRequestInSystem?pageNumber=${endPageNumber}');
                     $('#pageNumber5').prop('innerHTML','${endPageNumber+1}');
                     break;
@@ -247,6 +254,7 @@
                 $('#pageNumber2').prop('href','/allRequestInSystem?pageNumber=${pageNumber-1}');
                 $('#pageNumber3').prop('href','/allRequestInSystem?pageNumber=${pageNumber}');
                 $('#pageNumber3').css('color','white');
+                $('#pageNumber3').css('backgroundColor','#b94964');
                 $('#pageNumber4').prop('href','/allRequestInSystem?pageNumber=${pageNumber+1}');
                 $('#pageNumber5').remove();
             }
@@ -261,6 +269,7 @@
                 $('#pageNumber4').prop('href','/allRequestInSystem?pageNumber=${pageNumber}');
                 $('#pageNumber4').prop('innerHTML','${pageNumber+1}');
                 $('#pageNumber4').css('color','white');
+                $('#pageNumber4').css('backgroundColor','#b94964');
                 $('#pageNumber5').prop('href','/allRequestInSystem?pageNumber=${pageNumber+1}');
                 $('#pageNumber5').prop('innerHTML','${pageNumber+2}');
             }
@@ -273,6 +282,7 @@
             $('#lastPage').prop('href','/allRequestInSystem?pageNumber=${endPageNumber}');
             $('#nextPage').prop('href','/allRequestInSystem?pageNumber=${pageNumber+1}');
             $('#pageNumber3').css('color','white');
+            $('#pageNumber3').css('backgroundColor','#b94964');
             $('#pageNumber3').prop('innerHTML','${pageNumber+1}');
             $('#pageNumber3').prop('href','/allRequestInSystem?pageNumber=${pageNumber}');
             $('#pageNumber2').prop('innerHTML','${pageNumber}');

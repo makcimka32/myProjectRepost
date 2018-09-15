@@ -4,19 +4,21 @@ import javax.persistence.*;
 import javax.validation.constraints.Size;
 import java.sql.Date;
 import java.sql.Time;
+import java.sql.Timestamp;
+import java.time.LocalDateTime;
 import java.util.Objects;
 
 @Entity
 @Table(name = "USER_MESSAGES", schema = "C##MAX")
 public class UserMessagesEntity {
     private long messageId;
-    @Size(min = 1,max=2000,message = "Сообщение должно состоять от 1 до 2000 символов ")
+    @Size(min = 1,max=4000,message = "Сообщение должно состоять от 1 до 4000 символов ")
     private String textMessage;
-    private Date creationDate;
-    private Date editDate;
+    private Timestamp creationDate;
+    private Timestamp editDate;
 
     private UsersEntity usersEntity;
-    @Size(min=1,max=100,message = "Заголовок должен состоять от 1 до 100 символов")
+    @Size(min=1,max=200,message = "Заголовок должен состоять от 1 до 200 символов")
     private String titleMessage;
 
     @Id
@@ -42,21 +44,21 @@ public class UserMessagesEntity {
 
     @Basic
     @Column(name = "CREATION_DATE", nullable = false)
-    public Date getCreationDate() {
+    public Timestamp getCreationDate() {
         return creationDate;
     }
 
-    public void setCreationDate(Date creationDate) {
+    public void setCreationDate(Timestamp creationDate) {
         this.creationDate = creationDate;
     }
 
     @Basic
     @Column(name = "EDIT_DATE", nullable = true)
-    public Date getEditDate() {
+    public Timestamp getEditDate() {
         return editDate;
     }
 
-    public void setEditDate(Date editDate) {
+    public void setEditDate(Timestamp editDate) {
         this.editDate = editDate;
     }
 

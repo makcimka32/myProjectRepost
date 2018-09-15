@@ -71,6 +71,7 @@
                 </div>
                 <div>
                     <input type="file" class="form-control-file" multiple name="files" id="imagesFromUser"><br/>
+                    <p class="mt-1 alert alert-warning"><strong>Файлы должны быть в формате png, jpeg.Все сканы должны быть цветными</strong></p>
                 </div>
                 <sf:button type="submit" class="btn btn-success" value="Подтвердить" >Сохранить</sf:button>
                 <p class="mt-4 alert alert-warning"><strong>Сохраняя заявку вы даете согласие на обработку персональных данных</strong></p>

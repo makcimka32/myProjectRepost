@@ -8,6 +8,7 @@ import org.hibernate.query.Query;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class UserMessagesTableInterract {
@@ -62,5 +63,12 @@ public class UserMessagesTableInterract {
         query.setParameter("tempUserEntity",userMessagesEntity.getUsersEntity());
         query.setParameter("tempMessageId",userMessagesEntity.getMessageId());
         query.executeUpdate();
+    }
+    @Transactional(propagation = Propagation.REQUIRED,readOnly = true)
+    public ArrayList<UserMessagesEntity> getLastThreeNews()
+    {
+        Query query=sessionFactory.getCurrentSession().createQuery("from UserMessagesEntity  order by messageId desc");
+        query.setMaxResults(6);
+        return (ArrayList<UserMessagesEntity>) query.list();
     }
 }

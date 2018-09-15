@@ -7,6 +7,7 @@ import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 import java.sql.Date;
 import java.sql.Time;
+import java.sql.Timestamp;
 import java.util.Objects;
 
 @Entity
@@ -25,7 +26,7 @@ public class RequestsEntity {
     private String snils;
     private String requestType;
     private UsersEntity usersEntity=new UsersEntity();
-    private Date creationDate;
+    private Timestamp creationDate;
     private String workStatus;
     private String worker;
     @Size(min = 0,max = 200,message = "Размер сообщения должен быть до 200 знаков")
@@ -142,11 +143,11 @@ public class RequestsEntity {
 
     @Basic
     @Column(name = "CREATION_DATE",nullable = false)
-    public Date getCreationDate() {
+    public Timestamp getCreationDate() {
         return creationDate;
     }
 
-    public void setCreationDate(Date creationDate) {
+    public void setCreationDate(Timestamp creationDate) {
         this.creationDate = creationDate;
     }
 

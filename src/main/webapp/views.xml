@@ -58,4 +58,10 @@
     <definition name="messageCreationPage" extends="mainTemplateWithoutSide">
         <put-attribute name="content" value="/Views/messageCreationPage.jsp"/>
     </definition>
+    <definition name="showNews" extends="mainTemplateWithoutSide">
+        <put-attribute name="content" value="/Views/showMessageInfo.jsp"/>
+    </definition>
+    <definition name="createNewAdminUser" extends="mainTemplateWithoutSide">
+        <put-attribute name="content" value="/Views/adminUserCreationPage.jsp"/>
+    </definition>
 </tiles-definitions>

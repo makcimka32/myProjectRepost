@@ -2,7 +2,9 @@ package mvc;
 
 import Database.DatabaseInterracts.RequestsTableInterract;
 import Database.DatabaseInterracts.UserTableInterract;
+import Database.EmailInterracts.Sender;
 import Database.Entities.RequestsEntity;
+import Database.Entities.UsersEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -27,6 +29,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.security.Principal;
 import java.sql.Date;
+import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -62,9 +65,8 @@ public class RequestController {
         //Проверяем на соответствие формату изображения
         for (int i = 0; i < files.size(); i++) {
             if (files.get(i).isEmpty()) continue;
-
             if (!files.get(i).getContentType().equals("image/jpeg") && !files.get(i).getContentType().equals("image/png")) {
-                model.addAttribute("fileError", "Загружаемые файлы должы быть в формате png или jpg");
+                model.addAttribute("fileError", "Загружаемые файлы должы быть в формате png или jpg или pdf");
                 return "createNewRequestPage";
             }
         }
@@ -74,7 +76,7 @@ public class RequestController {
             //Сохраняем заявку в БД
             // вставляем в заявку,кто создал ее
             requestsEntity.setUsersEntity(userTableInterract.getUsersFromDbByUsername(username));
-            requestsEntity.setCreationDate(new Date(System.currentTimeMillis()));
+            requestsEntity.setCreationDate(new Timestamp(System.currentTimeMillis()));
             requestsEntity.setWorkStatus("В обработке");
             long idRequest = requestsTableInterract.saveRequestInDb(requestsEntity);
 
@@ -86,14 +88,17 @@ public class RequestController {
             }
             //сохраняем файлы в файловой системе
             saveFilesInDirectory(files, username, idRequest);
-
-            return "home";
+            //Почтовая рассылка
+            requestsEntity=requestsTableInterract.getRequestsByRequestId(idRequest);
+            sendMailToAllWorkers(requestsEntity,"В систему поступила новая заявка с id:"+requestsEntity.getRequestId(),"В систему поступила заявка с Id:"+requestsEntity.getRequestId()+" со следующим типом работ:"+requestsEntity.getRequestType()+"\nАвтор заявки:"+requestsEntity.getUsersEntity().getUsername()+"\nДата создания:"+requestsEntity.getCreationDate()+"\nС уважением,БрянскГипроЗем");
+            return "redirect:/";
         } else {
             requestsEntity.setUsersEntity(userTableInterract.getUsersFromDbByUsername(username));
-            requestsEntity.setCreationDate(new Date(System.currentTimeMillis()));
+            requestsEntity.setCreationDate(new Timestamp(System.currentTimeMillis()));
             long idRequest = requestsTableInterract.updateRequestFromRequest(requestsEntity);
 
-            List<RequestsEntity> list = requestsTableInterract.getRequestsByusername(username);
+
+            requestsEntity=requestsTableInterract.getRequestsByRequestId(idRequest);
 
             //создаем папку данного пользователя с заказами сперва проверяя имеется ли таковая в системе
             File file = new File("C:\\BRGZ\\" + username + "\\" + idRequest+"\\");
@@ -108,7 +113,8 @@ public class RequestController {
                 saveFilesInDirectory(files, username, idRequest);
             }
 
-
+            //Отправляем письмо исполнителю
+            sendMailToWorker(requestsEntity,"Заявка с Id:"+requestsEntity.getRequestId()+" имзенена","Заявка с Id:"+requestsEntity.getRequestId()+" имзенена\nОзнакомтесь с изменениями в личном кабинете или на доске заявок\nС уважением,БрянскГипроЗем");
 
             return "redirect:/privateOffice?username="+username;
         }
@@ -128,6 +134,23 @@ public class RequestController {
             }
 
         }
+    }
+
+    void sendMailToAllWorkers(RequestsEntity requestsEntity,String messageTitle,String messageText)
+    {
+        Sender sender=new Sender("makcimka32@gmail.com","maks198919");
+        ArrayList<UsersEntity> usersEntityArrayList = (ArrayList<UsersEntity>) userTableInterract.getUsersEntityFromDbWithWorkerRole();
+
+        for (UsersEntity tempUser: usersEntityArrayList
+             ) {
+            sender.send(messageTitle,messageText,tempUser.getEmail());
+        }
+    }
+    void sendMailToWorker(RequestsEntity requestsEntity,String messageTitle,String messageText)
+    {
+        Sender sender=new Sender("makcimka32@gmail.com","maks198919");
+        UsersEntity usersEntity=userTableInterract.getUsersFromDbByUsername(requestsEntity.getWorker());
+        sender.send(messageTitle,messageText,usersEntity.getEmail());
     }
 
     @RequestMapping(value = "/requestDetail")

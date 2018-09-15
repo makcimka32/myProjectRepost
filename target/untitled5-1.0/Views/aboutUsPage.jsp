@@ -108,14 +108,6 @@
                 </div>
             </div>
         </div>
-
-        <div id="myModal" class="modal">
-            <!-- Modal Content (The Image) -->
-            <img class="modal-content" id="img01">
-            <!-- Modal Caption (Image Text) -->
-            <div id="caption"></div>
-        </div>
-
     </div>
 </div>
 
