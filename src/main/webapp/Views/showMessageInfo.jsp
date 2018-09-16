@@ -39,7 +39,7 @@
         </div>
         <div class="row justify-content-center">
             <c:forEach var="message" items="${userMessagesEntities}">
-                <div class="col-6">
+                <div class="col-md-6">
                     <div class="card text-left m-2 news" onclick="window.location=('/news?messageId=${message.messageId}')">
                         <p class="m-2 text-left " style="font-size: 14pt;"><strong>${message.titleMessage}</strong></p>
                         <p class="mx-2" style="color:darkgray">Автор:${message.usersEntity.secondName} ${message.usersEntity.firstName} <br/>

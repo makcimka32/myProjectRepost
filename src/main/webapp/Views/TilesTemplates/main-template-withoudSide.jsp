@@ -192,13 +192,14 @@
     <tiles:insertAttribute name="content"/>
 
 </div>
+
 <div id="myModal" class="modal">
     <!-- Modal Content (The Image) -->
     <img class="modal-content" id="img01">
     <!-- Modal Caption (Image Text) -->
     <div id="caption"></div>
 </div>
-<div class="container-fluid  footer ">
+<div class="container-fluid footer ">
             <tiles:insertAttribute name="bottom"/>
 </div>
 

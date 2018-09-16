@@ -65,20 +65,10 @@
 <body>
 <div class="container">
     <div class="row justify-content-center">
+        <h2>Оформить заявку просто</h2>
         <div class="col-12 text-center">
-            <h1 class="text-center display-4"><small>Оформить заявку просто</small></h1>
-            <h3 class="text-center lead">При оформлении заявки через сайт скидка 5%</h3>
-       <%--     <div class="row justify-content-center">
-                <div class="col-md-8 ">
-                    <ul class="text-justify list-group">
-                        <li class="list-group-item list-group-item-primary">1.Пройти процесс регистрации в системе</li>
-                        <li class="list-group-item list-group-item-primary">2.Оформить заявку, прикрепив все необходимые документы</li>
-                        <li class="list-group-item list-group-item-primary">3.Оплатить необходимую сумму по полученным на указанную электронную почту реквизитам</li>
-                        <li class="list-group-item list-group-item-primary">4.Получить уведомление об окончании работ и забрать результаты работы на почте или в офисе</li>
-                    </ul>
-                </div>
-            </div>--%>
-            <div class="row justify-content-center ">
+
+            <div class="row justify-content-center">
                 <div class="col-md-3 mainPageCard m-2" data-toggle="tooltip" data-placement="bottom"  title="Чтобы зарегистрироваться необходимо нажать на кнопку 'Создать нового пользователя'">
                     <div class="row justify-content-center">
                         <div class="col-12">
@@ -122,81 +112,75 @@
             </div>
             <hr>
         </div>
-
-        <div class="col-12 text-center">
-            <h1 class="text-center display-4"><small>Почему мы?</small></h1>
-            <div class="row justify-content-center">
-                <div class="col-12 m-2">
-                    <h3 class="text-center"><strong>Низкие цены</strong></h3>
-                    <div class="row justify-content-center">
-                        <div class="col-md-3 m-auto card">
-                            <h4 class="text-center">Межевание земельных участков</h4>
-                            <img src="/resources/images/worktTypes/inwentaryzacje_powykonawcze_obiektow_budowlanych-1024x683.jpg" class="img-thumbnail rounded m-auto m-2 img-fluid">
-                            <div class="text-left">
-                                Межевание земельных участков различных категорий земель разрешенного использования и разработка межевых планов по заявкам юридических и физических лиц для целей их постановки на кадастровый учет
-                                <br/>
-                                <strong>Цена:7000 рублей</strong>
-                            </div>
-                        </div>
-                        <div class="col-md-3 m-auto card">
-                            <h4 class="text-center">Разработка проектов межевания</h4>
-                            <img src="/resources/images/worktTypes/РазработкаПроектовМежевания.jpg" class="img-thumbnail rounded m-auto m-2 img-fluid ">
-                            <div class="text-left">
-                                Разработка проектов межевания и межевых планов на выделение земель сельскохозяйственного назначения, включая и земельные доли
-                                <br/>
-                                <strong>Цена:1000 рублей за 1 гектар </strong>
-                            </div>
-                        </div>
-                        <div class="col-md-3 m-auto card">
-                            <h4 class="text-center">Подготовка и оформление технических планов</h4>
-                            <img src="/resources/images/worktTypes/Технический%20план.jpg" class="img-thumbnail rounded m-auto m-2 img-fluid">
-                            <div class="text-left">
-                                Подготовка и оформление технических планов на жилые и производственные здания, сооружения, объекты незавершённого строительства с целью постановки их на кадастровый учет
-                                <br/>
-                                <strong>Цена:5000 рублей</strong>
-                            </div>
-                        </div>
-                        <div class="col-md-2 m-auto card">
-                            <h4 class="text-center">Вынос границ</h4>
-                            <img src="/resources/images/worktTypes/Топографо-графич.jpg" class="img-thumbnail rounded m-auto m-2 img-fluid">
-                            <div class="text-left">
-                                Вынос в натуру границ земельных участков, топографо-геодезические работы
-                                <br/>
-                                <strong>Цена:1500 рублей за 1 точку</strong>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+        <div class="row justify-content-center m-2">
+            <div class="col-md-3">
+                <p><i class="fas fa-clock fa-2x"></i> Быстрые сроки</p>
             </div>
-            <div class="row justify-content-center">
-                <div class="col m-1">
-                    <h3><strong>Наши специалисты и оборудование</strong></h3>
-                    <div class="card">
-                        <div class="text-left m-2">
-                            Штат сотрудников составляют высококвалифицированные специалисты,прошедшие аттестацию кадастрового инженера.Наш коллектив - это команда высококвалифицированных специалистов с высшим и средне-техническим образованием (инженеров и техников-землеустроителей, инженеров городского и земельного кадастра) с большим стажем геодезических и землеустроительных работ.
-                            Мы делаем ставку на современные технологии в области инженерных изысканий и землеустройства.
-                            Парк геодезических приборов укомплектован электронными тахеометрами Sokkia, Nikon; системами спутниковой навигации (GPS) ProMark-3, трассоискателями Metrotech..
+            <div class="col-md-3">
+                <p><i class="fas fa-user-graduate fa-2x"></i> Квалифицированные специалисты</p>
+            </div>
+            <div class="col-md-3">
+                <p><i class="fas fa-desktop fa-2x"></i> Лицензированное оборудование</p>
+            </div>
+            <div class="col-md-3">
+                <p><i class="fas fa-briefcase fa-2x"></i> Свыше 15 лет стабильной работы</p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12 m-2">
+                <div class="row justify-content-center">
+                    <div class="col-md-3 m-auto card">
+                        <h4 class="text-center">Межевание земельных участков</h4>
+                        <img src="/resources/images/worktTypes/inwentaryzacje_powykonawcze_obiektow_budowlanych-1024x683.jpg" class="img-thumbnail rounded m-auto m-2 img-fluid">
+                        <div class="text-left">
+                            Межевание земельных участков различных категорий земель разрешенного использования и разработка межевых планов по заявкам юридических и физических лиц для целей их постановки на кадастровый учет
+                            <br/>
+                            <strong>Цена:7000 рублей</strong>
+                        </div>
+                    </div>
+                    <div class="col-md-3 m-auto card">
+                        <h4 class="text-center">Разработка проектов межевания</h4>
+                        <img src="/resources/images/worktTypes/РазработкаПроектовМежевания.jpg" class="img-thumbnail rounded m-auto m-2 img-fluid ">
+                        <div class="text-left">
+                            Разработка проектов межевания и межевых планов на выделение земель сельскохозяйственного назначения, включая и земельные доли
+                            <br/>
+                            <strong>Цена:1000 рублей за 1 гектар </strong>
+                        </div>
+                    </div>
+                    <div class="col-md-3 m-auto card">
+                        <h4 class="text-center">Подготовка и оформление технических планов</h4>
+                        <img src="/resources/images/worktTypes/Технический%20план.jpg" class="img-thumbnail rounded m-auto m-2 img-fluid">
+                        <div class="text-left">
+                            Подготовка и оформление технических планов на жилые и производственные здания, сооружения, объекты незавершённого строительства с целью постановки их на кадастровый учет
+                            <br/>
+                            <strong>Цена:5000 рублей</strong>
+                        </div>
+                    </div>
+                    <div class="col-md-2 m-auto card">
+                        <h4 class="text-center">Вынос границ</h4>
+                        <img src="/resources/images/worktTypes/Топографо-графич.jpg" class="img-thumbnail rounded m-auto m-2 img-fluid">
+                        <div class="text-left">
+                            Вынос в натуру границ земельных участков, топографо-геодезические работы
+                            <br/>
+                            <strong>Цена:1500 рублей за 1 точку</strong>
                         </div>
                     </div>
                 </div>
-                <div class="col m-1 m-auto">
-                    <h3><strong>Быстрые сроки</strong></h3>
-                    <div class="card">
-                        <div class="text-left m-2">
-                            Все работы выполняются в кратчайшие сроки.За долгое время существования наша компания выполнила тысячи землеустроительных проектов и отлично зарекомандовала себя на рынке. Уделяемое пристальное внимание к качеству выполненных работ по оформлению земли согласно требованиям нормативно-технических документов и законодательства РФ, позволяет гарантировать высокое качество работ.
-                        </div>
-                    </div>
-                </div>
+                <hr>
+            </div>
+
+        </div>
+
+        <div class="row justify-content-center">
                 <div class="col-12  m-1 m-auto " >
-                    <h3><strong>Наши партнеры</strong></h3>
+                    <h3 class="text-center"><strong>Наши партнеры</strong></h3>
                         <img src="/resources/images/Partners/GazpromTrans.jpg" class="img-fluid mySlideImage" style="width:100%">
 
                         <img src="/resources/images/Partners/Транснефть.jpg" class="img-fluid mySlideImage" style="width: 100%;display: none">
 
                         <img src="/resources/images/Partners/ГосРегистр.jpg" class="img-fluid mySlideImage" style="width: 100%;display: none">
 
-                        <img src="/resources/images/Partners/БрянскЭнерго.jpg" class="img-fluid mySlideImage" style="width: 100%; display: none;">
+                       <img src="/resources/images/Partners/БрянскЭнерго1.jpg" class="img-fluid mySlideImage" style="width: 100%; display: none;">
                         <a class="prev" onclick="showPrev()">&#10094;</a>
 
                         <a class="next" onclick="showNext()">&#10095;</a>
@@ -209,10 +193,9 @@
                         <span class="dot" onclick="show(3)"></span>
                     </div>
                 </div>
-
-            </div>
             <hr>
         </div>
+
         <div class="col-12 justify-content-center">
             <h1 class="text-center display-4"><small>Наши новости</small></h1>
             <div class="row">
@@ -485,6 +468,7 @@
             show(--slideIndex)
             
         }
+
         function show(imageNumber) {
 
             slideIndex=imageNumber;
@@ -516,6 +500,12 @@
             }
             dots.eq(slideIndex).addClass("activeDot");
         }
+        $(function () {
+
+            setInterval (showNext,4000);
+
+
+        })
 
 
 </script>

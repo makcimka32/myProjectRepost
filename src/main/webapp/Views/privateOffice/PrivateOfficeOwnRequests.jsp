@@ -24,22 +24,22 @@
 
 <div class="container-fluid">
     <div class="row">
-        <div class="col-3  justify-content-center position-fixed " >
+        <div class="col-2  justify-content-center position-fixed " >
             <div class="nav nav-pills justify-content-center">
-              <div class="row  justify-content-center">
-                  <div class="col-lg-8">
-                      <a class="myLinkButton m-1"  href="/privateOffice?username=<security:authentication property='principal.username'/>">Мои заявки</a>
+              <div class="row  justify-content-center text-center">
+                  <div class="col-lg-12">
+                      <a class="myLinkButton m-1 mt-2" style="display: inline-block" href="/privateOffice?username=<security:authentication property='principal.username'/>">Мои заявки</a>
                   </div>
-                  <div class="col-lg-8">
-                      <a class="myLinkButton m-1"  href="/privateOfficeInfo?username=<security:authentication property='principal.username'/>">Личные данные</a>
+                  <div class="col-lg-12">
+                      <a class="myLinkButton m-1" style="display: inline-block" href="/privateOfficeInfo?username=<security:authentication property='principal.username'/>">Личные данные</a>
                   </div>
-                  <div class="col-lg-8">
-                      <a class="myLinkButton m-1"  href="/">Вернуться</a>
+                  <div class="col-lg-12">
+                      <a class="myLinkButton m-1"style="display: inline-block"  href="/">Вернуться</a>
                   </div>
               </div>
             </div>
         </div>
-        <div class="col-9 offset-3 ">
+        <div class="col-10 offset-2 ">
             <c:forEach var="request" items="${listRequests}">
                 <%--@elvariable id="requestsEntity" type="Database.Entities.RequestsEntity"--%>
                 <div class="row justify-content-center">
@@ -50,9 +50,8 @@
                             <c:out value="Дата последних изменений: ${request.creationDate}"/><br/>
                             <c:out value="Тип проводимых работ: ${request.requestType}"/><br/>
                             <c:out value="Статус выполнения работы: ${request.workStatus}"/><br/>
-                        <div class="col-2 m-auto">
-                            <a  class="myLinkButton m-1" href="/requestDetail?requestId=${request.requestId}">См.Детали</a>
-                        </div>
+                            <a  class="myLinkButton m-1" style="display:inline-block" href="/requestDetail?requestId=${request.requestId}">Детали</a>
+
                             <div class="row">
                                 <div class="col-12">
                                     <div class="row justify-content-center">

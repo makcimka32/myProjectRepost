@@ -55,7 +55,7 @@
                                 <a class="myLinkButton m-1" href="/handleRequest/${request.requestId}?username=<security:authentication property="principal.username"/>">Обработать</a>
                                 <a class="myLinkButton m-1"  href="/executeRequest/${request.requestId}?username=<security:authentication property="principal.username"/>">Исполнять</a>
                             </c:if>
-                            <br/><a class="myLinkButton m-1"  href="/requestDetail?requestId=${request.requestId}">См.Детали</a>
+                            <br/><a class="myLinkButton m-1"  href="/requestDetail?requestId=${request.requestId}">Детали</a>
                         </div>
                     </sf:form>
                 </div>
