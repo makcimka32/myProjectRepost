@@ -3,6 +3,7 @@ package mvc;
 import Database.DatabaseInterracts.RequestsTableInterract;
 import Database.DatabaseInterracts.UserTableInterract;
 import Database.EmailInterracts.Sender;
+import Database.EmailInterracts.SenderSimpleMailThread;
 import Database.Entities.RequestsEntity;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -92,9 +93,10 @@ public class RequestsDashboardController {
 
         //посылаем сообщение на почту
         Sender sender=new Sender("makcimka32@gmail.com","maks198919");
-
-        sender.send("Ваша заявка с номером:"+requestsEntity.getRequestId()+" переведена в статус 'Отклонена'", "Заявка переведена в статус 'Отклонена' по причине:"+requestsEntity.getMessageToCustomer()+"\n" +
-                "Пожалуйста, отредактируйте вашу заявку в личном кабинете.\nС уважением,БрянскГипроЗем." ,requestsEntity.getUsersEntity().getEmail());
+        SenderSimpleMailThread senderSimpleMailThread=new SenderSimpleMailThread(sender,"Ваша заявка с номером:"+requestsEntity.getRequestId()+" переведена в статус 'Отклонена'","Заявка переведена в статус 'Отклонена' по причине:"+requestsEntity.getMessageToCustomer()+"\n" +
+                "Пожалуйста, отредактируйте вашу заявку в личном кабинете.\nС уважением,БрянскГипроЗем.",requestsEntity.getUsersEntity().getEmail());
+       /* sender.send("Ваша заявка с номером:"+requestsEntity.getRequestId()+" переведена в статус 'Отклонена'", "Заявка переведена в статус 'Отклонена' по причине:"+requestsEntity.getMessageToCustomer()+"\n" +
+                "Пожалуйста, отредактируйте вашу заявку в личном кабинете.\nС уважением,БрянскГипроЗем." ,requestsEntity.getUsersEntity().getEmail());*/
         return "redirect:/allRequestInSystem";
 
     }
@@ -122,9 +124,8 @@ public class RequestsDashboardController {
     {
         requestsTableInterract.updateWorkStatus("Выполнена",requestId,username);
         Sender sender=new Sender("makcimka32@gmail.com","maks198919");
-
-        sender.send("Ваша заявка с номером:"+requestId+" переведена в статус 'Выполнена'", "Заявка переведена в статус 'Выполнена'\n" +
-                "Пожалуйста, явитесь в наш офис за получением документов.\nС уважением,БрянскГипроЗем." ,requestsTableInterract.getRequestsByRequestId(requestId).getUsersEntity().getEmail());
+        SenderSimpleMailThread senderSimpleMailThread=new SenderSimpleMailThread(sender,"Ваша заявка с номером:"+requestId+" переведена в статус 'Выполнена'","Заявка переведена в статус 'Выполнена'\n" +
+                "Пожалуйста, явитесь в наш офис за получением документов.\nС уважением,БрянскГипроЗем.",requestsTableInterract.getRequestsByRequestId(requestId).getUsersEntity().getEmail());
         return "redirect:/allRequestInSystem";
     }
 

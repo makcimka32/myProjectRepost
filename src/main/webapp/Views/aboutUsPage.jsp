@@ -16,29 +16,7 @@
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 
 
-    <script>
 
-        var map;
-
-
-        ymaps.ready(function(){
-            map = new ymaps.Map(document.getElementById('map'), {
-                center: [53.233012, 34.328190],
-                zoom: 17
-            });
-
-            var myPlacemark = new ymaps.Placemark([53.233012, 34.328190], {
-                balloonContentHeader: 'БрянскГипроЗем',
-                balloonContentBody: 'Мы располагаемся здесь',
-                hintContent: 'БрянскГипроЗем'
-            });
-            map.geoObjects.add(myPlacemark);
-        });
-
-
-
-
-    </script>
 </head>
 <body>
 <div class="container">
@@ -71,6 +49,7 @@
                 </div>
             </div>
         </div>
+
         <div class="col-12">
             <h2 class="text-center">Сертификаты</h2>
 
@@ -102,10 +81,10 @@
 
 
         </div>
-        <div class="col-12">
+        <div class="col-12"  >
             <h2 class="text-center">Расположение</h2>
             <div class="row justify-content-center">
-                <div id="map" class=" col-md-8" style="width: 80%;height: 40%">
+                <div id="map" style="width: 60%;height: 400px">
                 </div>
             </div>
         </div>
@@ -113,6 +92,28 @@
 </div>
 
 
+<script>
 
+    var map;
+
+
+    ymaps.ready(function(){
+        map = new ymaps.Map("map", {
+            center: [53.233012, 34.328190],
+            zoom: 17
+        });
+
+        var myPlacemark = new ymaps.Placemark([53.233012, 34.328190], {
+            balloonContentHeader: 'БрянскГипроЗем',
+            balloonContentBody: 'Мы располагаемся здесь',
+            hintContent: 'БрянскГипроЗем'
+        });
+        map.geoObjects.add(myPlacemark);
+    });
+
+
+
+
+</script>
 </body>
 </html>

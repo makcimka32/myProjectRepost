@@ -28,13 +28,13 @@
             <div class="nav nav-pills justify-content-center">
               <div class="row  justify-content-center text-center">
                   <div class="col-lg-12">
-                      <a class="myLinkButton m-1 mt-2" style="display: inline-block" href="/privateOffice?username=<security:authentication property='principal.username'/>">Мои заявки</a>
+                      <a class="myLinkButton m-1 mt-2"  href="/privateOffice?username=<security:authentication property='principal.username'/>">Мои заявки</a>
                   </div>
                   <div class="col-lg-12">
-                      <a class="myLinkButton m-1" style="display: inline-block" href="/privateOfficeInfo?username=<security:authentication property='principal.username'/>">Личные данные</a>
+                      <a class="myLinkButton m-1"  href="/privateOfficeInfo?username=<security:authentication property='principal.username'/>">Личные данные</a>
                   </div>
                   <div class="col-lg-12">
-                      <a class="myLinkButton m-1"style="display: inline-block"  href="/">Вернуться</a>
+                      <a class="myLinkButton m-1" href="/">Вернуться</a>
                   </div>
               </div>
             </div>

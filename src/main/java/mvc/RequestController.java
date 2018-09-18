@@ -3,6 +3,8 @@ package mvc;
 import Database.DatabaseInterracts.RequestsTableInterract;
 import Database.DatabaseInterracts.UserTableInterract;
 import Database.EmailInterracts.Sender;
+import Database.EmailInterracts.SenderAnotherThread;
+import Database.EmailInterracts.SenderSimpleMailThread;
 import Database.Entities.RequestsEntity;
 import Database.Entities.UsersEntity;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -140,16 +142,14 @@ public class RequestController {
     {
         Sender sender=new Sender("makcimka32@gmail.com","maks198919");
         ArrayList<UsersEntity> usersEntityArrayList = (ArrayList<UsersEntity>) userTableInterract.getUsersEntityFromDbWithWorkerRole();
+        SenderAnotherThread senderAnotherThread=new SenderAnotherThread(sender,messageTitle,messageText,usersEntityArrayList);
 
-        for (UsersEntity tempUser: usersEntityArrayList
-             ) {
-            sender.send(messageTitle,messageText,tempUser.getEmail());
-        }
     }
     void sendMailToWorker(RequestsEntity requestsEntity,String messageTitle,String messageText)
     {
         Sender sender=new Sender("makcimka32@gmail.com","maks198919");
         UsersEntity usersEntity=userTableInterract.getUsersFromDbByUsername(requestsEntity.getWorker());
+        SenderSimpleMailThread senderSimpleMailThread=new SenderSimpleMailThread(sender,messageTitle,messageText,usersEntity.getEmail());
         sender.send(messageTitle,messageText,usersEntity.getEmail());
     }
 

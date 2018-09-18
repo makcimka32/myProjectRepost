@@ -36,6 +36,8 @@
             min-height: 100%;
             background-color: aliceblue;
         }
+
+
         .myLinkButton{
             display: block;
             border: 3px solid #b94964 ;
@@ -73,7 +75,6 @@
        .footer
         {
            left: 0;
-            bottom: 0;
             text-align: center;
             background-color: #303161;
         }
@@ -188,21 +189,19 @@
 <div class="container-fluid top">
            <tiles:insertAttribute name="top"/>
 </div>
-<div class="container-fluid content">
+<div class="container-fluid content" >
     <tiles:insertAttribute name="content"/>
 
 </div>
-
+<div class="container-fluid footer ">
+            <tiles:insertAttribute name="bottom"/>
+</div>
 <div id="myModal" class="modal">
     <!-- Modal Content (The Image) -->
     <img class="modal-content" id="img01">
     <!-- Modal Caption (Image Text) -->
     <div id="caption"></div>
 </div>
-<div class="container-fluid footer ">
-            <tiles:insertAttribute name="bottom"/>
-</div>
-
 <script>
     // Get the modal
     var modal = document.getElementById('myModal');
@@ -232,6 +231,13 @@
     $(function () {
         $('.content').css('marginTop',$('.top').height());
         $('.modal').css('marginTop',($('.top').height()));
+
+       if($('.content').height()< screen.height)
+        {
+            console.log("Мы тут");
+            var targetHeight=screen.height*0.9;
+            $('.content').height(targetHeight);
+        }
 
         $(window).resize(function () {
             $('.content').css('marginTop',$('.top').height());

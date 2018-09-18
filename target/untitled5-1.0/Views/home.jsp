@@ -69,7 +69,7 @@
         <div class="col-12 text-center">
 
             <div class="row justify-content-center">
-                <div class="col-md-3 mainPageCard m-2" data-toggle="tooltip" data-placement="bottom"  title="Чтобы зарегистрироваться необходимо нажать на кнопку 'Создать нового пользователя'">
+                <div class="col-md-3 mainPageCard m-2" data-toggle="tooltip" data-placement="bottom"  title="Чтобы зарегистрироваться необходимо нажать на кнопку 'Регистрация'">
                     <div class="row justify-content-center">
                         <div class="col-12">
                             <strong>Зарегистрируйся</strong>

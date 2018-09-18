@@ -2,6 +2,7 @@ package mvc;
 
 import Database.DatabaseInterracts.UserTableInterract;
 import Database.EmailInterracts.Sender;
+import Database.EmailInterracts.SenderSimpleMailThread;
 import Database.Entities.UsersEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -54,8 +55,8 @@ public class AutentificationController {
     private void sendMessageToEmail(String email,UsersEntity usersEntity)
     {
         Sender sender=new Sender("makcimka32@gmail.com","maks198919");
-        sender.send("Восстановление пароля на сайте БрянскГипроЗем","На данный почтовый адрес был произведен запрос о восстановлении пароля на нашем сервисе." +
-                "\nВаш логин:"+usersEntity.getUsername()+"\nВаш пароль:"+usersEntity.getPassword()+"\nДля дальнейшней работы перейдите по ссылке: http://localhost:8080/login"
-                ,email);
+        SenderSimpleMailThread senderSimpleMailThread=new SenderSimpleMailThread(sender,"Восстановление пароля на сайте БрянскГипроЗем","На данный почтовый адрес был произведен запрос о восстановлении пароля на нашем сервисе." +
+                "\nВаш логин:"+usersEntity.getUsername()+"\nВаш пароль:"+usersEntity.getPassword()+"\nДля дальнейшней работы перейдите по ссылке: http://localhost:8080/login",email);
+
     }
 }

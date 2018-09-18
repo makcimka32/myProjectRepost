@@ -16,23 +16,23 @@
 <body>
 <div class="container-fluid">
     <div class="row">
-        <div class="col-3  justify-content-center position-fixed ">
+        <div class="col-2  justify-content-center position-fixed ">
             <div class="nav nav-pills justify-content-center">
                 <div class="row  justify-content-center">
-                    <div class="col-lg-8">
+                    <div class="col-lg-12">
                         <a class="myLinkButton m-1"  href="/privateOffice?username=<security:authentication property='principal.username'/>">Мои заявки</a>
                     </div>
-                    <div class="col-lg-8">
+                    <div class="col-lg-12">
                         <a class="myLinkButton m-1"  href="/privateOfficeInfo?username=<security:authentication property='principal.username'/>">Личные данные</a>
                     </div>
-                    <div class="col-lg-8">
+                    <div class="col-lg-12">
                         <a class="myLinkButton m-1"  href="/">Вернуться</a>
                     </div>
                 </div>
             </div>
 
         </div>
-        <div class="col-9 offset-3 ">
+        <div class="col-10 offset-2 ">
             <form action='/editUserInformation?username=${usersEntity.username}' method="post">
                 <h2>Id пользователя:${usersEntity.userId}</h2>
                 <c:out value="Имя:${usersEntity.firstName}"/><br/>
