@@ -4,9 +4,9 @@
     <root id="1"/>
     <schema id="2" parent="1" name="C##MAX">
       <ObjectId>103</ObjectId>
-      <IntrospectionTimestamp>2018-08-22.00:34:43</IntrospectionTimestamp>
+      <IntrospectionTimestamp>2018-10-13.23:52:17</IntrospectionTimestamp>
       <CreatedTimestamp>2018-02-27.16:44:13</CreatedTimestamp>
-      <ModifiedTimestamp>2018-08-22.00:34:31</ModifiedTimestamp>
+      <ModifiedTimestamp>2018-09-10.00:51:33</ModifiedTimestamp>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -267,7 +267,7 @@
     <table id="60" parent="2" name="USER_MESSAGES">
       <ObjectId>107759</ObjectId>
       <CreatedTimestamp>2018-07-31.00:50:35</CreatedTimestamp>
-      <ModifiedTimestamp>2018-08-22.00:34:31</ModifiedTimestamp>
+      <ModifiedTimestamp>2018-09-10.00:51:33</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
     <routine id="61" parent="2" name="CREATENEWACCOUNT">
@@ -805,7 +805,7 @@
     </column>
     <column id="151" parent="60" name="TEXT_MESSAGE">
       <Position>2</Position>
-      <DataType>VARCHAR2(2000)|0</DataType>
+      <DataType>VARCHAR2(4000)|0</DataType>
       <NotNull>1</NotNull>
     </column>
     <column id="152" parent="60" name="CREATION_DATE">
@@ -823,7 +823,7 @@
     </column>
     <column id="155" parent="60" name="TITLE_MESSAGE">
       <Position>6</Position>
-      <DataType>VARCHAR2(100)|0</DataType>
+      <DataType>VARCHAR2(200)|0</DataType>
       <NotNull>1</NotNull>
     </column>
     <index id="156" parent="60" name="MESSAGE_PRIMARY_KEY">

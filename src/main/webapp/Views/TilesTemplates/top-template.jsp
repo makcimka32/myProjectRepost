@@ -67,7 +67,7 @@
                         <a class="myLinkButton m-2"  href="/createNewMessage">Создать новость</a>
                     </security:authorize>
                     <security:authorize access="hasRole('ROLE_DEFAULT_USER')">
-                        <a class="myLinkButton m-2"  href="/createNewRequest">Создать заказ</a>
+                        <a class="myLinkButton m-2"  href="/createNewRequest">Создать заявку</a>
                     </security:authorize>
                     <security:authorize  access="hasRole('ROLE_WORKER_USER')">
                         <a class="myLinkButton m-2"  href="/allRequestInSystem">Заявки в системе</a>
@@ -110,7 +110,7 @@
                                 <a class="myLinkButton m-2"  href="/createNewMessage">Создать новость</a>
                             </security:authorize>
                             <security:authorize access="hasRole('ROLE_DEFAULT_USER')">
-                                <a class="myLinkButton m-2"  href="/createNewRequest">Создать заказ</a>
+                                <a class="myLinkButton m-2"  href="/createNewRequest">Создать заявку</a>
                             </security:authorize>
                             <security:authorize  access="hasRole('ROLE_WORKER_USER')">
                                 <a class="myLinkButton m-2"  href="/allRequestInSystem">Заявки в системе</a>

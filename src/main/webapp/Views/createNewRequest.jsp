@@ -32,27 +32,27 @@
                 <sf:hidden path="workStatus"/>
                 <div>
                     <label for="pasportSeria" id="pasportSeria">Серия паспорта:</label>
-                    <sf:input path="pasportSeria" id="pasportSeria" cssClass="form-control"/>
+                    <sf:input path="pasportSeria" id="pasportSeria" cssClass="form-control" data-toggle="tooltip" data-placement="bottom"  title="Серия паспорта должна быть формата хххх или хх хх"/>
                     <sf:errors path="pasportSeria"  cssClass=" small text-danger"/>
                 </div>
                 <div>
                     <label for="pasportNumber">Номер паспорта:</label>
-                    <sf:input path="pasportNumber" id="pasportNumber" cssClass="form-control"/>
+                    <sf:input path="pasportNumber" id="pasportNumber" cssClass="form-control" data-toggle="tooltip" data-placement="bottom"  title="Номер паспорта должен состоять из 6 символов"/>
                     <sf:errors path="pasportNumber"  cssClass="small text-danger"/>
                 </div>
                 <div>
                     <label for="pasportDate">Дата выдачи</label>
-                    <sf:input type="date" path="pasportDate" id="pasportDate" cssClass="form-control"/>
+                    <sf:input type="date" path="pasportDate" id="pasportDate" cssClass="form-control" />
                     <sf:errors path="pasportDate"  cssClass="small text-danger"/>
                 </div>
                 <div>
                     <label for="pasportWhoLet">Кем выдан:</label>
-                    <sf:input path="pasportWhoLet" id="pasportWhoLet" cssClass="form-control"/>
+                    <sf:input path="pasportWhoLet" id="pasportWhoLet" cssClass="form-control" data-toggle="tooltip" data-placement="bottom"  title="Данное поле должно состоять от 10 до 80 символов"/>
                     <sf:errors path="pasportWhoLet"  cssClass="small text-danger"/>
                 </div>
                 <div >
                     <label for="snils">Снилс:</label>
-                    <sf:input path="snils" id="snils" cssClass="form-control"/>
+                    <sf:input path="snils" id="snils" cssClass="form-control" data-toggle="tooltip" data-placement="bottom"  title="Снилс должен указываться в формате xxx-xxx-xxx-xx"/>
                     <sf:errors path="snils"  cssClass="small text-danger"/>
                 </div>
                 <div >

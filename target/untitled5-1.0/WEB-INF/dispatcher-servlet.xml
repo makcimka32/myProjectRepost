@@ -8,6 +8,24 @@
     <mvc:resources mapping="/resources/**" location="/resources/"/>
     <mvc:resources location="file:C:\BRGZ\" mapping="/images/**"/>
     <context:component-scan base-package="mvc"/>
+    <!--Тестовый пример для сервиса-->
+   <!--<bean class="org.springframework.web.servlet.view.ContentNegotiatingViewResolver">
+       <property name="contentNegotiationManager" ref="contentNegotiationManager"/>
+    </bean>
+    <bean class="org.springframework.web.accept.ContentNegotiationManagerFactoryBean" id="contentNegotiationManager">
+        <property name="mediaTypes">
+            <map>
+                <entry key="json" value="application/json"/>
+                <entry key="xml" value="text/xml"/>
+                <entry key="htm" value="text/html"/>
+            </map>
+        </property>
+        <property name="defaultContentType" value="application/json"/>
+
+    </bean>-->
+    <!-- <bean class="org.springframework.remoting.jaxws.SimpleJaxWsServiceExporter">
+           <property name="baseAddress" value="http://localhost:8888/services/"/>
+       </bean>-->
     <bean class="org.springframework.web.servlet.view.tiles3.TilesViewResolver"/>
     <bean class="org.springframework.web.servlet.view.tiles3.TilesConfigurer">
         <property name="definitions">
@@ -17,4 +35,5 @@
         </property>
     </bean>
     <bean id="multipartResolver" class=     "org.springframework.web.multipart.commons.CommonsMultipartResolver" />
+
 </beans>

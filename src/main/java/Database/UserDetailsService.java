@@ -15,7 +15,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class UserDetailsService implements org.springframework.security.core.userdetails.UserDetailsService {
+ public class UserDetailsService implements org.springframework.security.core.userdetails.UserDetailsService {
 
     private UserTableInterract userTableInterract;
 
@@ -25,6 +25,7 @@ public class UserDetailsService implements org.springframework.security.core.use
     public UserDetails loadUserByUsername(String s) throws UsernameNotFoundException {
 
         UsersEntity usersEntity=userTableInterract.getUsersFromDbByUsername(s);
+
         List<GrantedAuthority> authorities=new ArrayList<>();
         authorities.add(new SimpleGrantedAuthority(usersEntity.getRole()));
         return new User(usersEntity.getUsername(),usersEntity.getPassword(),usersEntity.isEnabled(),true,true,true,authorities);
@@ -38,3 +39,4 @@ public void setUserTableInterract(UserTableInterract userTableInterract) {
         this.userTableInterract = userTableInterract;
     }
 }
+

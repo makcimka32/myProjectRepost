@@ -2,13 +2,23 @@
 <project version="4">
   <component name="dataSourceStorageLocal">
     <data-source name="@localhost" uuid="c1523106-09ca-4e82-affa-9a4ee1ac42f5">
-      <database-info product="Oracle" version="Oracle Database 12c Enterprise Edition Release 12.1.0.2.0 - 64bit Production&#10;With the Partitioning, OLAP, Advanced Analytics and Real Application Testing options" jdbc-version="4.0" driver-name="Oracle JDBC driver" driver-version="12.1.0.2.0">
+      <database-info product="Oracle" version="Oracle Database 12c Enterprise Edition Release 12.1.0.2.0 - 64bit Production&#10;With the Partitioning, Oracle Label Security, OLAP, Advanced Analytics&#10;and Real Application Testing options" jdbc-version="4.0" driver-name="Oracle JDBC driver" driver-version="12.1.0.2.0">
         <extra-name-characters>$#</extra-name-characters>
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>
       <case-sensitivity plain-identifiers="upper" quoted-identifiers="exact" />
       <user-name>C##Max</user-name>
       <introspection-schemas>*:C##MAX</introspection-schemas>
+    </data-source>
+    <data-source name="@192.168.0.199" uuid="d18546c2-1429-4184-9164-18b9e27d8d42">
+      <database-info product="Oracle" version="Oracle Database 12c Enterprise Edition Release 12.2.0.1.0 - 64bit Production" jdbc-version="4.0" driver-name="Oracle JDBC driver" driver-version="12.1.0.2.0">
+        <extra-name-characters>$#</extra-name-characters>
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="upper" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>Max</user-name>
+      <introspection-schemas>*:MAX</introspection-schemas>
     </data-source>
   </component>
 </project>

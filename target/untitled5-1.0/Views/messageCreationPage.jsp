@@ -26,13 +26,13 @@
                 <div class="row justify-content-center">
                     <div class="m-2 col-10">
                         <label for="titleMessage" class="control-label">Заголовок новости:</label>
-                        <sf:input id="titleMessage" class="form-control" path="titleMessage"/>
+                        <sf:input id="titleMessage" class="form-control" path="titleMessage" data-toggle="tooltip" data-placement="bottom"  title="Данное поле должно состоять от 1 до 200 символов"/>
                         <sf:errors path="titleMessage" cssClass="small text-danger"/>
                     </div>
                 </div>
                 <div class="m-2">
                     <label for="textMessage" class="control-label">Текст сообщения:</label>
-                    <sf:textarea path="textMessage" class="form-control" cols="80" rows="10"/>
+                    <sf:textarea path="textMessage" class="form-control" cols="80" rows="10" data-toggle="tooltip" data-placement="bottom"  title="Данное поле должно состоять от 1 до 4000 символов"/>
                     <sf:errors path="textMessage" cssClass="small text-danger"/>
                 </div>
                 <input type="submit" class="btn btn-success" value="Сохранить">

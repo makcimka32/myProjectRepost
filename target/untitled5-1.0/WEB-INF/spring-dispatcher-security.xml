@@ -17,7 +17,7 @@
         <intercept-url pattern="/allRequestInSystem" access="hasAnyRole('ROLE_WORKER_USER')"/>
         <intercept-url pattern="/rejectRequest" access="hasAnyRole('ROLE_WORKER_USER')"/>
         <intercept-url pattern="/executeRequest" access="hasAnyRole('ROLE_WORKER_USER')"/>
-        <intercept-url pattern="/createUser" access="hasAnyRole('ROLE_WORKER_USER') or isAnonymous()"/>
+        <!--<intercept-url pattern="/createUser" access="hasAnyRole('ROLE_WORKER_USER') or isAnonymous()"/>-->
         <intercept-url pattern="/createAdminUser" access="hasRole('ROLE_WORKER_USER')"/>
         <intercept-url pattern="/handleRequest" access="hasAnyRole('ROLE_WORKER_USER')"/>
         <intercept-url pattern="/performRequest" access="hasAnyRole('ROLE_WORKER_USER')"/>

@@ -115,9 +115,12 @@ public class RequestController {
                 saveFilesInDirectory(files, username, idRequest);
             }
 
-            //Отправляем письмо исполнителю
-            sendMailToWorker(requestsEntity,"Заявка с Id:"+requestsEntity.getRequestId()+" имзенена","Заявка с Id:"+requestsEntity.getRequestId()+" имзенена\nОзнакомтесь с изменениями в личном кабинете или на доске заявок\nС уважением,БрянскГипроЗем");
+            if(requestsEntity.getWorker()!=null)
+            {
+                //Отправляем письмо исполнителю
+                sendMailToWorker(requestsEntity,"Заявка с Id:"+requestsEntity.getRequestId()+" имзенена","Заявка с Id:"+requestsEntity.getRequestId()+" имзенена\nОзнакомтесь с изменениями в личном кабинете или на доске заявок\nС уважением,БрянскГипроЗем");
 
+            }
             return "redirect:/privateOffice?username="+username;
         }
     }
