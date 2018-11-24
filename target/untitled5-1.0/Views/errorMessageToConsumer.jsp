@@ -27,6 +27,7 @@
             <sf:hidden path="workStatus"/>
             <sf:hidden path="worker"/>
             <sf:hidden path="creationDate"/>
+            <sf:hidden path="price"/>
 
             <h2 class="">Id заявки:${requestEntity.requestId}</h2>
             <c:out value="Серия паспорта:${requestEntity.pasportSeria}"/><br/>
@@ -41,6 +42,7 @@
                 <c:out value="Исполнитель:${requestEntity.worker}"/><br/>
             </c:if>
             <c:out value="Дата создания:${requestEntity.creationDate}"/><br/>
+            <c:out value="Сумма заявки:${requestEntity.price}"/><br/>
             <h4>Опишите причину отказа</h4>
             <c:if test="${errorSize!=null}">
                 <p class="small text-danger">${errorSize}</p>

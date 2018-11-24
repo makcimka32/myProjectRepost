@@ -9,17 +9,18 @@ import java.time.LocalDateTime;
 import java.util.Objects;
 
 @Entity
-@Table(name = "USER_MESSAGES", schema = "C##MAX")
+@Table(name = "USER_MESSAGES", schema = "MAX")
 public class UserMessagesEntity {
     private long messageId;
     @Size(min = 1,max=4000,message = "Сообщение должно состоять от 1 до 4000 символов ")
     private String textMessage;
     private Timestamp creationDate;
     private Timestamp editDate;
-
     private UsersEntity usersEntity;
     @Size(min=1,max=200,message = "Заголовок должен состоять от 1 до 200 символов")
     private String titleMessage;
+
+
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -33,7 +34,7 @@ public class UserMessagesEntity {
     }
 
     @Basic
-    @Column(name = "TEXT_MESSAGE", nullable = false, length = 2000)
+    @Column(name = "TEXT_MESSAGE", nullable = false, length = 4000)
     public String getTextMessage() {
         return textMessage;
     }
@@ -89,7 +90,7 @@ public class UserMessagesEntity {
     }
 
     @Basic
-    @Column(name = "TITLE_MESSAGE", nullable = false, length = 100)
+    @Column(name = "TITLE_MESSAGE", nullable = false, length = 200)
     public String getTitleMessage() {
         return titleMessage;
     }

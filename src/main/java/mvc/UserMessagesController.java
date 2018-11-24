@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.validation.Valid;
+import java.io.UnsupportedEncodingException;
 import java.security.Principal;
 import java.sql.Date;
 import java.sql.Time;
@@ -42,23 +43,46 @@ public class UserMessagesController {
     {
         ///проверяем корректность заполнения формы
         if (bindingResult.hasErrors()) {
-            System.out.println(bindingResult);
             return "messageCreationPage";
         }
         //Если новая новость
         if(userMessagesEntity.getMessageId()==0)
         {
-            userMessagesEntity.setCreationDate(new Timestamp(System.currentTimeMillis()));
-            userMessagesEntity.setEditDate(new Timestamp(System.currentTimeMillis()));
 
-            userMessagesEntity.setUsersEntity(userTableInterract.getUsersFromDbByUsername(principal.getName()));
-            userMessagesTableInterract.saveMessageInDb(userMessagesEntity);
+            try {
+                String newStringText=new String(userMessagesEntity.getTextMessage().getBytes("UTF-16"),"UTF-8");
+                String newStringTitle=new String(userMessagesEntity.getTitleMessage().getBytes("UTF-16"),"UTF-8");
+
+                userMessagesEntity.setTextMessage(newStringText);
+                userMessagesEntity.setTitleMessage(newStringTitle);
+
+                userMessagesEntity.setCreationDate(new Timestamp(System.currentTimeMillis()));
+                userMessagesEntity.setEditDate(new Timestamp(System.currentTimeMillis()));
+
+                userMessagesEntity.setUsersEntity(userTableInterract.getUsersFromDbByUsername(principal.getName()));
+                userMessagesTableInterract.saveMessageInDb(userMessagesEntity);
+            } catch (UnsupportedEncodingException e) {
+                e.printStackTrace();
+            }
+
         }
         //Если новость после редактирования
         else {
-            userMessagesEntity.setEditDate(new Timestamp(System.currentTimeMillis()));
-            userMessagesEntity.setUsersEntity(userTableInterract.getUsersFromDbByUsername(principal.getName()));
-            userMessagesTableInterract.updateUserMessageIntoDb(userMessagesEntity);
+            String newStringText= null;
+            try {
+                newStringText = new String(userMessagesEntity.getTextMessage().getBytes("UTF-16"),"UTF-8");
+                String newStringTitle=new String(userMessagesEntity.getTitleMessage().getBytes("UTF-16"),"UTF-8");
+
+                userMessagesEntity.setTextMessage(newStringText);
+                userMessagesEntity.setTitleMessage(newStringTitle);
+
+                userMessagesEntity.setEditDate(new Timestamp(System.currentTimeMillis()));
+                userMessagesEntity.setUsersEntity(userTableInterract.getUsersFromDbByUsername(principal.getName()));
+                userMessagesTableInterract.updateUserMessageIntoDb(userMessagesEntity);
+            } catch (UnsupportedEncodingException e) {
+                e.printStackTrace();
+            }
+
         }
 
         return  "redirect:/";

@@ -82,7 +82,7 @@
                 <div class="col-md-3 mainPageCard m-2"  data-toggle="tooltip" data-placement="bottom"  title="После оформления заявки на электронную почту будет выслано письмо с информацией о заявке и реквизитами об оплате">
                     <div class="row justify-content-center">
                         <div class="col-12">
-                            <strong>Оформи заявку в личном кабинете</strong>
+                            <strong>Создай заявку</strong>
                         </div>
                         <div class="col-12">
                             <i class="fas fa-pen-square fa-4x "></i>
@@ -92,7 +92,7 @@
                 <div class="col-md-3 mainPageCard m-2">
                     <div class="row justify-content-center">
                         <div class="col-12">
-                            <strong>Оплати заявку</strong>
+                            <strong>Оплати заявку полностью или внеси предоплату</strong>
                         </div>
                         <div class="col-12">
                             <i class="far fa-credit-card fa-4x "></i>
@@ -106,6 +106,16 @@
                         </div>
                         <div class="col-12">
                             <i class="far fa-envelope fa-4x"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mainPageCard m-2">
+                    <div class="row justify-content-center">
+                        <div class="col-12">
+                            <strong>После полной оплаты заявки, результат работы можно забрать в нашем офисе</strong>
+                        </div>
+                        <div class="col-12 m-1">
+                            <i class="fas fa-file-alt fa-4x"></i>
                         </div>
                     </div>
                 </div>
@@ -144,7 +154,7 @@
                         <div class="text-left">
                             Разработка проектов межевания и межевых планов на выделение земель сельскохозяйственного назначения, включая и земельные доли
                             <br/>
-                            <strong>Цена:1000 рублей за 1 гектар </strong>
+                            <strong>Цена:3000 рублей за 1 гектар </strong>
                         </div>
                     </div>
                     <div class="col-md-3 m-auto card">
@@ -153,7 +163,7 @@
                         <div class="text-left">
                             Подготовка и оформление технических планов на жилые и производственные здания, сооружения, объекты незавершённого строительства с целью постановки их на кадастровый учет
                             <br/>
-                            <strong>Цена:5000 рублей</strong>
+                            <strong>Цена:6000 рублей</strong>
                         </div>
                     </div>
                     <div class="col-md-2 m-auto card">
@@ -197,31 +207,32 @@
         </div>
 
         <div class="col-12 justify-content-center">
-            <h1 class="text-center display-4"><small>Наши новости</small></h1>
-            <div class="row">
-                <c:forEach var="message" items="${userMessagesEntities}">
-                    <div class="col-md-6">
-                        <div class="card text-left m-2 news" onclick="window.location=('/news?messageId=${message.messageId}')">
-                            <p class="m-2 text-left " style="font-size: 14pt;"><strong>${message.titleMessage}</strong></p>
-                            <p class="mx-2" style="color:darkgray">Автор:${message.usersEntity.secondName} ${message.usersEntity.firstName} <br/>
-                                Дата редактирования:${message.editDate}</p>
-                            <security:authorize access="hasRole('ROLE_WORKER_USER')">
-                                <div class="row">
-                                    <div class="col-md-6 text-center">
-                                        <a class="btn btn-outline-primary m-2" style="width: 80%"href="/editNews?messageId=${message.messageId}">Редактировать</a>
-                                    </div>
-                                    <div class="col-md-6 text-center ">
-                                        <form action="/deleteNews?messageId=${message.messageId}" method="post">
-                                            <button  class="btn btn-outline-danger m-2"style="width: 80%">Удалить</button>
-                                        </form>
-                                    </div>
-                                </div>
-                            </security:authorize>
-                        </div>
-                    </div>
-                </c:forEach>
-            </div>
+
             <c:if test="${!empty(userMessagesEntities)}">
+                <h1 class="text-center display-4"><small>Наши новости</small></h1>
+                <div class="row">
+                    <c:forEach var="message" items="${userMessagesEntities}">
+                        <div class="col-md-6">
+                            <div class="card text-left m-2 news" onclick="window.location=('/news?messageId=${message.messageId}')">
+                                <p class="m-2 text-left " style="font-size: 14pt;"><strong>${message.titleMessage}</strong></p>
+                                <p class="mx-2" style="color:darkgray">Автор:${message.usersEntity.secondName} ${message.usersEntity.firstName} <br/>
+                                    Дата редактирования:${message.editDate}</p>
+                                <security:authorize access="hasRole('ROLE_WORKER_USER')">
+                                    <div class="row">
+                                        <div class="col-md-6 text-center">
+                                            <a class="btn btn-outline-primary m-2" style="width: 80%"href="/editNews?messageId=${message.messageId}">Редактировать</a>
+                                        </div>
+                                        <div class="col-md-6 text-center ">
+                                            <form action="/deleteNews?messageId=${message.messageId}" method="post">
+                                                <button  class="btn btn-outline-danger m-2"style="width: 80%">Удалить</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </security:authorize>
+                            </div>
+                        </div>
+                    </c:forEach>
+                </div>
                 <div class="row mt-2 justify-content-center">
                     <div class="nav nav-pills">
                         <a class="myLinkButton  m-1" id="firstPage"  href="#">Первая</a>

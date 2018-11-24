@@ -184,6 +184,8 @@
         }
     </style>
 
+
+
 </head>
 <body>
 <div class="container-fluid top">
@@ -202,6 +204,31 @@
     <!-- Modal Caption (Image Text) -->
     <div id="caption"></div>
 </div>
+
+<!-- add margin to body dymanicly-->
+<script>
+    $(function () {
+        $('.content').css('marginTop',$('.top').height()+17);
+        $('.modal').css('marginTop',($('.top').height()));
+
+       /* if($('.content').height()< screen.height)
+        {
+            console.log("Мы тут");
+            var targetHeight=screen.height*0.9;
+            $('.content').height(targetHeight);
+        }*/
+
+        $(window).resize(function () {
+            $('.content').css('marginTop',$('.top').height());
+            $('.modal').css('marginTop',$('.top').height());
+        });
+    }
+    )
+
+
+    $('[data-toggle="tooltip"]').tooltip();
+
+</script>
 <script>
     // Get the modal
     var modal = document.getElementById('myModal');
@@ -226,29 +253,5 @@
 
 
 </script>
-<!-- add margin to body dymanicly-->
-<script>
-    $(function () {
-        $('.content').css('marginTop',$('.top').height());
-        $('.modal').css('marginTop',($('.top').height()));
-
-       if($('.content').height()< screen.height)
-        {
-            console.log("Мы тут");
-            var targetHeight=screen.height*0.9;
-            $('.content').height(targetHeight);
-        }
-
-        $(window).resize(function () {
-            $('.content').css('marginTop',$('.top').height());
-            $('.modal').css('marginTop',$('.top').height());
-        })
-    })
-
-    $('[data-toggle="tooltip"]').tooltip();
-
-</script>
-
-
 </body>
 </html>

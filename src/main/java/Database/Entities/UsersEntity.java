@@ -6,7 +6,7 @@ import javax.validation.constraints.Size;
 import java.util.Objects;
 
 @Entity
-@Table(name = "USERS", schema = "C##MAX", catalog = "")
+@Table(name = "USERS", schema = "MAX", catalog = "")
 public class UsersEntity {
     private long userId;
     @Size(min=3,max=20,message = "Имя должно состоять из 3-20 символов")
@@ -40,7 +40,7 @@ public class UsersEntity {
     }
 
     @Basic
-    @Column(name = "FIRST_NAME", nullable = false, length = 20)
+    @Column(name = "FIRST_NAME", nullable = false, length = 30)
     public String getFirstName() {
         return firstName;
     }
@@ -50,7 +50,7 @@ public class UsersEntity {
     }
 
     @Basic
-    @Column(name = "SECOND_NAME", nullable = false, length = 20)
+    @Column(name = "SECOND_NAME", nullable = false, length = 30)
     public String getSecondName() {
         return secondName;
     }
@@ -90,7 +90,7 @@ public class UsersEntity {
     }
 
     @Basic
-    @Column(name = "EMAIL", nullable = false, length = 20)
+    @Column(name = "EMAIL", nullable = false, length = 40)
     public String getEmail() {
         return email;
     }

@@ -16,9 +16,26 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
 
-
-
-
+   <!-- <repositories>
+        <repository>
+            <id>maven.oracle.com</id>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <url>https://maven.oracle.com</url>
+            <layout>default</layout>
+        </repository>
+    </repositories>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>maven.oracle.com</id>
+            <url>https://maven.oracle.com</url>
+        </pluginRepository>
+    </pluginRepositories>
+-->
     <dependencies>
         <dependency>
             <groupId>org.springframework</groupId>
@@ -461,13 +478,22 @@
             <artifactId>tiles-velocity</artifactId>
             <version>3.0.8</version>
         </dependency>
-        <dependency>
+      <!--  <dependency>
             <groupId>ojdbc8</groupId>
             <artifactId>ojdbc8</artifactId>
             <version>8.0</version>
             <scope>system</scope>
             <systemPath>${project.basedir}/lib/ojdbc8.jar</systemPath>
-        </dependency>
+        </dependency>-->
+            <!-- ojdbc8.jar example -->
+            <dependency>
+                <groupId>com.oracle</groupId>
+                <artifactId>ojdbc8</artifactId>
+                <version>12.2.0.1</version>
+            </dependency>
+
+
+
         <!-- https://mvnrepository.com/artifact/javax.jws/jsr181-api
         <dependency>
             <groupId>javax.jws</groupId>
@@ -564,7 +590,7 @@
                 <artifactId>tomcat7-maven-plugin</artifactId>
                 <version>2.2</version>
                 <configuration>
-                    <url>http://192.168.0.103//manager/text</url>
+                    <url>http://77.232.139.185//manager/text</url>
                     <server>apache-tomcat-8.5.32</server>
                     <username>admin</username>
                     <password>admin</password>

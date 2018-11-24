@@ -62,6 +62,8 @@
                         <sf:option value="Межевой план" cssClass="form-control">Межевой план</sf:option>
                         <sf:option value="Топографическая съемка" cssClass="form-control">Топографическая сьемка</sf:option>
                         <sf:option value="Технический план" cssClass="form-control">Технический план</sf:option>
+                        <sf:option value="Проект межевания" cssClass="form-control">Проект межевания</sf:option>
+                        <sf:option value="Вынос границ в натуру" cssClass="form-control">Вынос границ в натуру</sf:option>
                     </sf:select><br/>
                     <div class="alert alert-warning" style="position: relative">
                         <div id="documentInfo" class="justify-content-start">
@@ -69,9 +71,23 @@
                         </div>
                     </div>
                 </div>
-                <div>
-                    <input type="file" class="form-control-file" multiple name="files" id="imagesFromUser"><br/>
-                    <p class="mt-1 alert alert-warning"><strong>Файлы должны быть в формате png, jpeg.Все сканы должны быть цветными</strong></p>
+                <div class="row justify-content-start">
+                    <div class="col-md-6">
+                        <label for="price">Стоимость(руб)</label>
+                        <sf:input path="price" id="price"  cssClass="form-control"  readonly="true"/>
+                        <sf:errors path="price" cssClass="small text-danger"/>
+                    </div>
+                    <div class="col-md-6" id="hiddenCountBlock" style="visibility: hidden">
+                        <label for="count" id="labelCount">Кол-во гектар</label>
+                        <input id="count" class="form-control" value="1"/>
+                    </div>
+
+                </div>
+                <div class="mt-1 row justify-content-start">
+                    <div class="col-md-8">
+                        <input type="file" class="form-control-file" multiple name="files" id="imagesFromUser"><br/>
+                        <p class="mt-1 alert alert-warning"><strong>Файлы должны быть в формате png, jpeg.Все сканы должны быть цветными</strong></p>
+                    </div>
                 </div>
                 <sf:button type="submit" class="btn btn-success" value="Подтвердить" >Сохранить</sf:button>
                 <p class="mt-4 alert alert-warning"><strong>Сохраняя заявку вы даете согласие на обработку персональных данных</strong></p>
@@ -81,8 +97,23 @@
     </div>
 </div>
 <script>
+   
     $(function () {
-        $('#requestType').click(function () {
+        function calculatePrice() {
+            var cost;
+            if ($('#requestType').val()=="Проект межевания")
+            {
+               cost=3000;
+            }
+            else if($('#requestType').val()=="Вынос границ в натуру")
+            {
+                cost=1500;
+            }
+            $('#price').val(cost*parseInt($('#count').val()));
+
+        }
+        $('#count').change(calculatePrice);
+        $('#requestType').change(function () {
             if ($(this).val() == "Межевой план") {
                 $('#documentInfo').html('<strong>Перечень документов для составления межевого плана:</strong><br/>'+'<ol>' +
                     '<li>Один из правоустанавливающих документов на землю на выбор</li>' +
@@ -91,6 +122,10 @@
                     '</ol>' +
                     '<li>Уведомление или выписка из ЕГРН на здание</li>' +
                     '</ol>');
+                $('#hiddenCountBlock').css("visibility","hidden");
+                $('#price').val('7000');
+                $('#count').val('1');
+
             }
             else if ($(this).val() == "Топографическая съемка") {
                 $('#documentInfo').html('<strong>Перечень документов для проведения топографической съемки:</strong><br/><ol>' +
@@ -98,6 +133,9 @@
                     '<li>Свидетельство на право собственности на здание</li>' +
                     '<li>Выписка из ЕГРН, содержащая координаты земельного участка</li>' +
                     '</ol>');
+                $('#hiddenCountBlock').css("visibility","hidden");
+                $('#price').val('7000');
+                $('#count').val('1');
             }
             else if ($(this).val() == "Технический план") {
                 $('#documentInfo').html('<strong>Перечень документов для составления технического плана:</strong><br/><ol >' +
@@ -106,12 +144,49 @@
                     '<li>Постановление о присвоениии адреса домовладению</li>' +
                     '<li>Разрешение на строительство</li>' +
                     '</ol >');
+                $('#hiddenCountBlock').css("visibility","hidden");
+                $('#price').val('6000');
+                $('#count').val('1');
             }
+            else if ($(this).val()=="Проект межевания")
+            {
+
+                $('#documentInfo').html('<strong>Перечень документов для составления проекта межевания:</strong><br/><ol >' +
+                    '<li>Копия паспорта</li>' +
+                    '<li>Свидетельство о государственной Регистрации права</li>' +
+                    '<li>Выписка из ЕГРН на земельный участок</li>'+
+                    '</ol >');
+                $('#hiddenCountBlock').css("visibility","visible");
+                $('#labelCount').text('Кол-во гектар');
+                if(location.pathname!="/createNewRequest")
+                {
+                    $('#count').val(parseInt($('#price').val()/3000));
+                }
+                calculatePrice();
+
+            }
+            else if($(this).val()=="Вынос границ в натуру")
+            {
+                $('#documentInfo').html('<strong>Перечень документов для выполнения выноса границ в натуру:</strong><br/><ol >' +
+                    '<li>Копия паспорта</li>' +
+                    '<li>Свидетельство о государственной Регистрации права</li>' +
+                    '<li>Выписка из ЕГРН на земельный участок</li>'+
+                    '</ol >');
+                $('#labelCount').text('Кол-во точек');
+                $('#hiddenCountBlock').css("visibility","visible");
+
+                if(location.pathname!='/createNewRequest')
+                {
+                    $('#count').val(parseInt($('#price').val()/1500));
+                }
+                calculatePrice();
+            }
+
         });
     })
     //вызываем событие
     $(function () {
-        $('#requestType').click();
+        $('#requestType').change();
     })
 
 

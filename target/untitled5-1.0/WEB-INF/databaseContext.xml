@@ -11,8 +11,8 @@
     </bean>-->
     <bean id="dataSource" class="oracle.jdbc.pool.OracleDataSource">
         <property name="dataSourceName" value="oracle.jdbc.OracleDriver"/>
-        <property name="URL" value="jdbc:oracle:thin:@localhost:1523:maxDatabase"/>
-        <property name="user" value="C##Max"/>
+        <property name="URL" value="jdbc:oracle:thin:@192.168.0.199:1523:maxDatabase"/>
+        <property name="user" value="Max"/>
         <property name="password" value="Max198919"/>
     </bean>
     <bean id="sessionFactory" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
@@ -25,7 +25,7 @@
         <property name="hibernateProperties">
             <props>
                 <prop key="hibernate.dialect">org.hibernate.dialect.Oracle12cDialect</prop>
-                <prop key="hibernate.connection.url">jdbc:oracle:thin:@localhost:1523:maxDatabase</prop>
+                <prop key="hibernate.connection.url">jdbc:oracle:thin:@192.168.0.199:1523:maxDatabase</prop>
                 <prop key="hibernate.connection.driver_class">oracle.jdbc.OracleDriver</prop>
             </props>
         </property>

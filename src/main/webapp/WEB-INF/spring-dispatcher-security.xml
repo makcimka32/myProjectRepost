@@ -12,16 +12,20 @@
         <form-login login-page="/login"
                     default-target-url="/"
                     authentication-failure-url="/login?login_error=t"  />
+        <intercept-url pattern="/" requires-channel="https"/>
         <intercept-url pattern="/createNewRequest" access="isAuthenticated()"/>
+        <intercept-url pattern="/createUser" />
+        <intercept-url pattern="/login"/>
         <intercept-url pattern="/privateOffice" access="isAuthenticated()"/>
-        <intercept-url pattern="/allRequestInSystem" access="hasAnyRole('ROLE_WORKER_USER')"/>
+        <intercept-url pattern="/allRequestInSystem" access="hasAnyRole('ROLE_WORKER_USER')" />
         <intercept-url pattern="/rejectRequest" access="hasAnyRole('ROLE_WORKER_USER')"/>
         <intercept-url pattern="/executeRequest" access="hasAnyRole('ROLE_WORKER_USER')"/>
         <!--<intercept-url pattern="/createUser" access="hasAnyRole('ROLE_WORKER_USER') or isAnonymous()"/>-->
         <intercept-url pattern="/createAdminUser" access="hasRole('ROLE_WORKER_USER')"/>
+        <intercept-url pattern="/createNewMessage" access="hasAnyRole('ROLE_WORKER_USER')"/>
         <intercept-url pattern="/handleRequest" access="hasAnyRole('ROLE_WORKER_USER')"/>
         <intercept-url pattern="/performRequest" access="hasAnyRole('ROLE_WORKER_USER')"/>
-        <intercept-url pattern="/requestDetail" access="isAuthenticated()"/>
+        <intercept-url pattern="/requestDetail" access="isAuthenticated()" />
 
         <remember-me key="brgzKey" token-validity-seconds="2419200"  />
     </http>

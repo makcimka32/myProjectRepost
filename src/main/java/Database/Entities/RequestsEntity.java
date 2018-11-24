@@ -1,8 +1,11 @@
 package Database.Entities;
 
-import org.springframework.web.bind.annotation.PathVariable;
+
+
+import org.springframework.beans.factory.annotation.Value;
 
 import javax.persistence.*;
+import javax.validation.constraints.Min;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 import java.sql.Date;
@@ -11,7 +14,7 @@ import java.sql.Timestamp;
 import java.util.Objects;
 
 @Entity
-@Table(name = "REQUESTS", schema = "C##MAX")
+@Table(name = "REQUESTS", schema = "MAX", catalog = "")
 public class RequestsEntity {
     private long requestId;
     //@Pattern(regexp ="^[0-9]{2}[ ][0-9]{2}[ ][0-9]{6}]" ,message ="Номер паспорта должен соответствовать виду xx-xx-xxxxxx")
@@ -29,8 +32,10 @@ public class RequestsEntity {
     private Timestamp creationDate;
     private String workStatus;
     private String worker;
-    @Size(min = 0,max = 200,message = "Размер сообщения должен быть до 200 знаков")
+    @Size(min = 1,max = 200,message = "Размер сообщения должен быть до 200 знаков")
     private String messageToCustomer;
+    @Min(value = 1,message = "Сумма должна быть положительной")
+    private long price;
 
     @Override
     public String toString() {
@@ -101,7 +106,7 @@ public class RequestsEntity {
     }
 
     @Basic
-    @Column(name = "REQUEST_TYPE", nullable = false, length = 40)
+    @Column(name = "REQUEST_TYPE", nullable = false, length = 43)
     public String getRequestType() {
         return requestType;
     }
@@ -152,7 +157,7 @@ public class RequestsEntity {
     }
 
     @Basic
-    @Column(name = "WORK_STATUS", nullable = false, length = 40)
+    @Column(name = "WORK_STATUS", nullable = true, length = 40)
     public String getWorkStatus() {
         return workStatus;
     }
@@ -179,5 +184,15 @@ public class RequestsEntity {
 
     public void setMessageToCustomer(String messageToCustomer) {
         this.messageToCustomer = messageToCustomer;
+    }
+
+    @Basic
+    @Column(name = "PRICE", nullable = true, precision = 0)
+    public long getPrice() {
+        return price;
+    }
+
+    public void setPrice(long price) {
+        this.price = price;
     }
 }

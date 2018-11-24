@@ -46,6 +46,7 @@
                     <c:out value="СНИЛС:${requestEntity.snils}"/><br/>
                     <c:out value="Тип заявки:${requestEntity.requestType}"/><br/>
                     <c:out value="Автор заявки:${requestEntity.usersEntity.username}"/><br/>
+                    <c:out value="Сумма заявки(руб.):${requestEntity.price}"/><br/>
                     <c:out value="Статус выполнения:${requestEntity.workStatus}"/><br/>
                     <c:if test="${requestEntity.worker!=null}">
                         <c:out value="Исполнитель:${requestEntity.worker}"/><br/>

@@ -81,7 +81,7 @@ public class RequestsDashboardController {
         //проверяем корректность заполнения
         if(bindingResult.hasErrors())
         {   model.addAttribute("requestEntity",requestsEntity);
-            model.addAttribute("errorSize","Сообщение должно состоять от 0 до 200 знаков");
+            model.addAttribute("errorSize","Размер сообщения должен быть до 200 знаков");
 
             return "errorMessage";
         }
@@ -92,7 +92,7 @@ public class RequestsDashboardController {
         requestsTableInterract.updateWorkStatusAfterReject("Отклонена",requestsEntity.getRequestId(),currentUser,requestsEntity.getMessageToCustomer());
 
         //посылаем сообщение на почту
-        Sender sender=new Sender("makcimka32@gmail.com","maks198919");
+        Sender sender=new Sender("brgiprozem@gmail.com","050142zem");
         SenderSimpleMailThread senderSimpleMailThread=new SenderSimpleMailThread(sender,"Ваша заявка с номером:"+requestsEntity.getRequestId()+" переведена в статус 'Отклонена'","Заявка переведена в статус 'Отклонена' по причине:"+requestsEntity.getMessageToCustomer()+"\n" +
                 "Пожалуйста, отредактируйте вашу заявку в личном кабинете.\nС уважением,БрянскГипроЗем.",requestsEntity.getUsersEntity().getEmail());
        /* sender.send("Ваша заявка с номером:"+requestsEntity.getRequestId()+" переведена в статус 'Отклонена'", "Заявка переведена в статус 'Отклонена' по причине:"+requestsEntity.getMessageToCustomer()+"\n" +
@@ -123,7 +123,7 @@ public class RequestsDashboardController {
     String performRequest(@PathVariable(value = "requestId")Long requestId, @RequestParam(value = "username") String username)
     {
         requestsTableInterract.updateWorkStatus("Выполнена",requestId,username);
-        Sender sender=new Sender("makcimka32@gmail.com","maks198919");
+        Sender sender=new Sender("brgiprozem@gmail.com","050142zem");
         SenderSimpleMailThread senderSimpleMailThread=new SenderSimpleMailThread(sender,"Ваша заявка с номером:"+requestId+" переведена в статус 'Выполнена'","Заявка переведена в статус 'Выполнена'\n" +
                 "Пожалуйста, явитесь в наш офис за получением документов.\nС уважением,БрянскГипроЗем.",requestsTableInterract.getRequestsByRequestId(requestId).getUsersEntity().getEmail());
         return "redirect:/allRequestInSystem";

@@ -93,6 +93,10 @@ public class RequestController {
             //Почтовая рассылка
             requestsEntity=requestsTableInterract.getRequestsByRequestId(idRequest);
             sendMailToAllWorkers(requestsEntity,"В систему поступила новая заявка с id:"+requestsEntity.getRequestId(),"В систему поступила заявка с Id:"+requestsEntity.getRequestId()+" со следующим типом работ:"+requestsEntity.getRequestType()+"\nАвтор заявки:"+requestsEntity.getUsersEntity().getUsername()+"\nДата создания:"+requestsEntity.getCreationDate()+"\nС уважением,БрянскГипроЗем");
+            sendMailToRequestCreator(requestsEntity,"Реквизиты об оплате заявки","В систему поступила заявка с Id:"+requestsEntity.getRequestId()+" со следующим типом работ:"+requestsEntity.getRequestType()+"\nАвтор заявки:"+requestsEntity.getUsersEntity().getUsername()+"\nДата создания:"+requestsEntity.getCreationDate()+"\nCумма:"+requestsEntity.getPrice()+" рублей\n" +
+                    "Для дальнейшей обработки заявки оплатите стоимость работ по следующим реквизитам:ИНН:3234031352,КПП:325701001" +
+                    "\nРасчетный счет:40702810808000100396,Корреспондирующий счет:30101810400000000601,БИК:041501601\n" +
+                    "Брянское  отделение 8605 ПАО Сбербанк , г. Брянск\n Для уточнения полной стоимоисти и процесса обработки можете обратиться по телефону 41-17-28/ 41-17-41"+"\nС уважением,БрянскГипроЗем");
             return "redirect:/";
         } else {
             requestsEntity.setUsersEntity(userTableInterract.getUsersFromDbByUsername(username));
@@ -118,7 +122,7 @@ public class RequestController {
             if(requestsEntity.getWorker()!=null)
             {
                 //Отправляем письмо исполнителю
-                sendMailToWorker(requestsEntity,"Заявка с Id:"+requestsEntity.getRequestId()+" имзенена","Заявка с Id:"+requestsEntity.getRequestId()+" имзенена\nОзнакомтесь с изменениями в личном кабинете или на доске заявок\nС уважением,БрянскГипроЗем");
+                sendMailToWorker(requestsEntity,"Заявка с Id:"+requestsEntity.getRequestId()+" изменена","Заявка с Id:"+requestsEntity.getRequestId()+" изменена \n Ознакомтесь с изменениями в личном кабинете или на доске заявок \n С уважением,БрянскГипроЗем");
 
             }
             return "redirect:/privateOffice?username="+username;
@@ -140,20 +144,25 @@ public class RequestController {
 
         }
     }
+    void sendMailToRequestCreator(RequestsEntity requestsEntity,String messageTitle,String messageText)
+    {
+        Sender sender=new Sender("brgiprozem@gmail.com","050142zem");
+       SenderSimpleMailThread senderSimpleMailThread=new SenderSimpleMailThread(sender,messageTitle,messageText,requestsEntity.getUsersEntity().getEmail());
 
+    }
     void sendMailToAllWorkers(RequestsEntity requestsEntity,String messageTitle,String messageText)
     {
-        Sender sender=new Sender("makcimka32@gmail.com","maks198919");
+        Sender sender=new Sender("brgiprozem@gmail.com","050142zem");
         ArrayList<UsersEntity> usersEntityArrayList = (ArrayList<UsersEntity>) userTableInterract.getUsersEntityFromDbWithWorkerRole();
         SenderAnotherThread senderAnotherThread=new SenderAnotherThread(sender,messageTitle,messageText,usersEntityArrayList);
 
     }
     void sendMailToWorker(RequestsEntity requestsEntity,String messageTitle,String messageText)
     {
-        Sender sender=new Sender("makcimka32@gmail.com","maks198919");
+        Sender sender=new Sender("brgiprozem@gmail.com","050142zem");
         UsersEntity usersEntity=userTableInterract.getUsersFromDbByUsername(requestsEntity.getWorker());
         SenderSimpleMailThread senderSimpleMailThread=new SenderSimpleMailThread(sender,messageTitle,messageText,usersEntity.getEmail());
-        sender.send(messageTitle,messageText,usersEntity.getEmail());
+
     }
 
     @RequestMapping(value = "/requestDetail")

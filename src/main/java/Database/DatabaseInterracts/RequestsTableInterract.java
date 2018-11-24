@@ -25,7 +25,7 @@ public class RequestsTableInterract {
   public   long saveRequestInDb(RequestsEntity requestsEntity)
     {
         Session session=sessionFactory.getCurrentSession();
-        SQLQuery insertQuery = session.createSQLQuery("INSERT INTO REQUESTS(PASPORT_NUMBER,PASPORT_SERIA,PASPORT_DATE,PASPORT_WHO_LET,SNILS,REQUEST_TYPE,USER_ID,CREATION_DATE,WORK_STATUS,WORKER)VALUES(?,?,?,?,?,?,?,?,?,?)");
+        SQLQuery insertQuery = session.createSQLQuery("INSERT INTO REQUESTS(PASPORT_NUMBER,PASPORT_SERIA,PASPORT_DATE,PASPORT_WHO_LET,SNILS,REQUEST_TYPE,USER_ID,CREATION_DATE,WORK_STATUS,WORKER,PRICE)VALUES(?,?,?,?,?,?,?,?,?,?,?)");
 
         insertQuery.setParameter(1-1,requestsEntity.getPasportNumber());
         insertQuery.setParameter(1,requestsEntity.getPasportSeria());
@@ -37,6 +37,7 @@ public class RequestsTableInterract {
         insertQuery.setParameter(7,requestsEntity.getCreationDate());
         insertQuery.setParameter(8,requestsEntity.getWorkStatus());
         insertQuery.setParameter(9,requestsEntity.getWorker());
+        insertQuery.setParameter(10,requestsEntity.getPrice());
         insertQuery.executeUpdate();
 
         RequestsEntity requestsEntityNewest = (RequestsEntity) session.createCriteria(RequestsEntity.class).addOrder(Order.desc("requestId")).setMaxResults(1).uniqueResult();
@@ -62,7 +63,7 @@ public class RequestsTableInterract {
     public long updateRequestFromRequest(RequestsEntity requestsEntity)
     {
         Query query=sessionFactory.getCurrentSession().createQuery("update RequestsEntity set pasportSeria=:tempSeria,pasportNumber=:tempNumber,pasportDate=:tempPasportDate,pasportWhoLet=:tempWhoLet,snils=:tempSnils," +
-                "requestType=:tempRequestType,creationDate=:tempCreationDate,workStatus=:tempWorkStatus,usersEntity=:tempUsersEntity where requestId=:tempId");
+                "requestType=:tempRequestType,creationDate=:tempCreationDate,workStatus=:tempWorkStatus,usersEntity=:tempUsersEntity,price=:tempPrice where requestId=:tempId");
         query.setParameter("tempSeria",requestsEntity.getPasportSeria());
         query.setParameter("tempNumber",requestsEntity.getPasportNumber());
         query.setParameter("tempPasportDate",requestsEntity.getPasportDate());
@@ -73,6 +74,7 @@ public class RequestsTableInterract {
         query.setParameter("tempWorkStatus",requestsEntity.getWorkStatus());
         query.setParameter("tempUsersEntity",requestsEntity.getUsersEntity());
         query.setParameter("tempId",requestsEntity.getRequestId());
+        query.setParameter("tempPrice",requestsEntity.getPrice());
         query.executeUpdate();
 
         return requestsEntity.getRequestId();
