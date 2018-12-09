@@ -45,5 +45,5 @@
         <constructor-arg ref="sessionFactory"/>
     </bean>
 
-
+<!--from main branch-->
 </beans>
