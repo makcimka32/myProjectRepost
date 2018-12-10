@@ -44,6 +44,6 @@
     <bean class="Database.DatabaseInterracts.UserMessagesTableInterract">
         <constructor-arg ref="sessionFactory"/>
     </bean>
-
+<!--from test branch-->
 <!--from main branch-->
 </beans>
